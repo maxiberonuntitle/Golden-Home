@@ -74,4 +74,12 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  .field-select {
+    @apply w-full appearance-none rounded-lg border border-charcoal/10 bg-white/50 py-3 pr-10 text-sm font-medium text-charcoal shadow-sm shadow-charcoal/[0.04] backdrop-blur-md transition-all duration-200 hover:border-gold/35 hover:bg-white/65 focus:border-gold/50 focus:bg-white/70 focus:outline-none focus:ring-2 focus:ring-gold/15;
+  }
+
+  .field-input {
+    @apply w-full rounded-lg border border-charcoal/10 bg-white/50 px-4 py-3 text-sm text-charcoal shadow-sm shadow-charcoal/[0.04] backdrop-blur-md transition-all duration-200 placeholder:text-charcoal/40 hover:border-gold/35 hover:bg-white/65 focus:border-gold/50 focus:bg-white/70 focus:outline-none focus:ring-2 focus:ring-gold/15;
+  }
 }

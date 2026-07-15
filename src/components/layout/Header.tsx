@@ -67,7 +67,7 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-charcoal/10 shadow-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-xl border-b border-charcoal/10 shadow-sm shadow-charcoal/[0.03]">
         <Container>
           <div className="flex items-center justify-between h-20 lg:h-24">
             <Logo to={`/${lang}`} />
@@ -203,7 +203,7 @@ export function Header() {
             >
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between p-6 border-b border-charcoal/10 bg-white">
-                  <Logo to={`/${lang}`} imageClassName="h-9" />
+                  <Logo to={`/${lang}`} />
                   <button
                     type="button"
                     onClick={() => setMobileOpen(false)}

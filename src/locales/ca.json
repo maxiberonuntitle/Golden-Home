@@ -49,6 +49,7 @@
     },
     "results": "{{count}} propietats trobades",
     "noResults": "No s'han trobat propietats amb els criteris seleccionats. Ajusti els filtres o contacti amb el nostre equip.",
+    "sortBy": "Ordenar per",
     "clearFilters": "Esborrar filtres"
   },
   "property": {

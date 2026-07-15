@@ -49,6 +49,7 @@
     },
     "results": "{{count}} propiedades encontradas",
     "noResults": "No se encontraron propiedades con los criterios seleccionados. Ajuste los filtros o contacte con nuestro equipo.",
+    "sortBy": "Ordenar por",
     "clearFilters": "Limpiar filtros"
   },
   "property": {

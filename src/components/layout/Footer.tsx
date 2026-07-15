@@ -67,10 +67,7 @@ export function Footer() {
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           <div className="lg:col-span-1">
-            <Logo
-              to={`/${lang}`}
-              imageClassName="h-10"
-            />
+            <Logo to={`/${lang}`} imageClassName="brightness-0 invert opacity-90" />
             <p className="mt-4 text-sm leading-relaxed text-warm-white/50">
               {t('footer.description')}
             </p>

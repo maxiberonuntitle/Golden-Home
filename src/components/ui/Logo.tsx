@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { COMPANY } from '@/utils/constants'
 import { cn } from '@/utils/cn'
 
 interface LogoProps {
@@ -8,15 +9,17 @@ interface LogoProps {
   showLink?: boolean
 }
 
+const logoSizeClass = 'h-14 sm:h-16 lg:h-[4.25rem] w-auto object-contain object-left'
+
 export function Logo({ to, className, imageClassName, showLink = true }: LogoProps) {
   const content = (
-    <span className={cn('inline-flex items-center bg-white', className)}>
+    <span className={cn('inline-flex items-center', className)}>
       <img
-        src="/logo.png"
+        src={COMPANY.logo}
         alt="Golden Home Lloret — Servicio Inmobiliario"
-        className={cn('h-10 sm:h-11 lg:h-12 w-auto object-contain', imageClassName)}
-        width={180}
-        height={48}
+        className={cn(logoSizeClass, imageClassName)}
+        width={220}
+        height={68}
         loading="eager"
         decoding="async"
       />

@@ -56,7 +56,7 @@ export function BlogPostPage() {
           publisher: {
             '@type': 'Organization',
             name: COMPANY.name,
-            logo: { '@type': 'ImageObject', url: `${COMPANY.website}/logo.png` },
+            logo: { '@type': 'ImageObject', url: `${COMPANY.website}${COMPANY.logo}` },
           },
         }}
       />

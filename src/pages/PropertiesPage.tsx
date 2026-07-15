@@ -98,7 +98,7 @@ export function PropertiesPage() {
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
             {isDesktop ? (
               <div id="property-filters" className="lg:w-72 xl:w-80 shrink-0 scroll-mt-32">
-                <div className="sticky top-32 p-6 bg-white/35 backdrop-blur-xl border border-charcoal/8 rounded-xl shadow-sm">
+                <div className="sticky top-32 p-6 bg-white/55 backdrop-blur-xl border border-white/40 border-charcoal/8 rounded-xl shadow-sm shadow-charcoal/[0.04]">
                   <FilterPanel />
                 </div>
               </div>
@@ -107,7 +107,7 @@ export function PropertiesPage() {
                 <button
                   type="button"
                   onClick={() => setMobileFiltersOpen(true)}
-                  className="flex items-center justify-center gap-2 px-4 py-3 bg-white/40 backdrop-blur-md border border-charcoal/10 rounded-lg text-sm font-medium"
+                  className="flex items-center justify-center gap-2 px-4 py-3 bg-white/55 backdrop-blur-md border border-charcoal/10 rounded-lg text-sm font-medium shadow-sm shadow-charcoal/[0.04] hover:border-gold/35 hover:bg-white/70 transition-colors"
                 >
                   <SlidersHorizontal className="w-4 h-4" />
                   {t('search.filters')}
@@ -116,7 +116,7 @@ export function PropertiesPage() {
                   <div className="fixed inset-0 z-50 bg-charcoal/40 backdrop-blur-sm">
                     <div
                       id="property-filters"
-                      className="absolute inset-y-0 left-0 w-full max-w-sm bg-warm-white/80 backdrop-blur-xl border-r border-charcoal/10 p-6 overflow-y-auto scroll-mt-32"
+                      className="absolute inset-y-0 left-0 w-full max-w-sm bg-white/75 backdrop-blur-xl border-r border-charcoal/10 p-6 overflow-y-auto scroll-mt-32"
                     >
                       <div className="flex items-center justify-between mb-6">
                         <h2 className="font-serif text-xl">{t('search.filters')}</h2>

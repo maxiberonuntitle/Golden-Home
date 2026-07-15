@@ -45,7 +45,7 @@ export function StickySearchBar({ visible = true }: StickySearchBarProps) {
       animate={{ opacity: 1, height: 'auto' }}
       exit={{ opacity: 0, height: 0 }}
       transition={{ duration: 0.25, ease: 'easeOut' }}
-      className="border-t border-charcoal/10 bg-white overflow-hidden"
+      className="border-t border-charcoal/10 bg-white/80 backdrop-blur-md overflow-hidden"
     >
       <form onSubmit={handleSubmit} className="flex items-center gap-2 py-3">
         <div className="relative flex-1 min-w-0">
@@ -58,14 +58,14 @@ export function StickySearchBar({ visible = true }: StickySearchBarProps) {
               if (!isPropertiesList) navigate(`/${lang}/properties`)
             }}
             placeholder={t('hero.searchPlaceholder')}
-            className="w-full pl-10 pr-4 py-2.5 text-sm bg-warm-white border border-charcoal/10 rounded-sm text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-gold/50 focus:bg-white transition-colors"
+            className="w-full pl-10 pr-4 field-input rounded-sm py-2.5"
             aria-label={t('nav.search')}
           />
         </div>
         <button
           type="button"
           onClick={handleFilters}
-          className="inline-flex items-center gap-2 shrink-0 px-4 py-2.5 text-sm font-medium bg-warm-white border border-charcoal/10 rounded-sm text-charcoal hover:border-gold/40 hover:bg-white transition-colors"
+          className="inline-flex items-center gap-2 shrink-0 px-4 field-input rounded-sm py-2.5 hover:border-gold/40 cursor-pointer"
         >
           <SlidersHorizontal className="w-4 h-4" />
           <span className="hidden sm:inline">{t('search.filters')}</span>

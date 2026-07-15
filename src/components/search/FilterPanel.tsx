@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { useFilterStore } from '@/stores/useFilterStore'
 import { PROPERTY_TYPES, DEFAULT_MAX_PRICE, DEFAULT_MAX_AREA } from '@/utils/constants'
 import { Button } from '@/components/ui/Button'
+import { Select } from '@/components/ui/Select'
 import { getLocalizedText } from '@/utils/format'
 import { useLocation } from 'react-router-dom'
 import type { Language, PropertyType } from '@/types'
@@ -56,26 +57,21 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
           type="text"
           value={filters.reference}
           onChange={(e) => setFilter('reference', e.target.value)}
-          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
+          className="field-input"
           placeholder="GH-2026-001"
         />
       </div>
 
-      <div className="space-y-3">
-        <label className="block text-sm font-medium text-charcoal">{t('search.type')}</label>
-        <select
-          value={filters.type}
-          onChange={(e) => setFilter('type', e.target.value as PropertyType | '')}
-          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm appearance-none cursor-pointer focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
-        >
-          <option value="">{t('search.type')}</option>
-          {PROPERTY_TYPES.map((pt) => (
-            <option key={pt.value} value={pt.value}>
-              {getLocalizedText(pt.label, lang)}
-            </option>
-          ))}
-        </select>
-      </div>
+      <Select
+        label={t('search.type')}
+        value={filters.type}
+        onChange={(value) => setFilter('type', value as PropertyType | '')}
+        placeholder={t('search.type')}
+        options={PROPERTY_TYPES.map((pt) => ({
+          value: pt.value,
+          label: getLocalizedText(pt.label, lang),
+        }))}
+      />
 
       <div className="space-y-4">
         <label className="block text-sm font-medium text-charcoal">{t('search.price')}</label>
@@ -179,7 +175,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
           type="text"
           value={filters.province}
           onChange={(e) => setFilter('province', e.target.value)}
-          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
+          className="field-input"
         />
       </div>
 
@@ -189,7 +185,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
           type="text"
           value={filters.city}
           onChange={(e) => setFilter('city', e.target.value)}
-          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
+          className="field-input"
         />
       </div>
 
