@@ -85,9 +85,13 @@
 
   :root {
     --header-nav-h: 5rem;
-    --header-search-h: 0px;
-    --header-total-h: calc(var(--header-nav-h) + var(--header-search-h));
-    --header-sticky-offset: calc(var(--header-total-h) + 1rem);
+    --header-search-h: 3.5rem;
+    --header-total-h: var(--header-nav-h);
+    --header-sticky-offset: calc(var(--header-nav-h) + 1rem);
+  }
+
+  :root[data-sticky-search='true'] {
+    --header-sticky-offset: calc(var(--header-nav-h) + var(--header-search-h) + 1rem);
   }
 
   @media (min-width: 1024px) {

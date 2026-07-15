@@ -62,11 +62,7 @@ export function StickySearchBar() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="py-2.5 lg:py-3"
-      role="search"
-    >
+    <form onSubmit={handleSubmit} className="flex h-full items-center" role="search">
       <div ref={containerRef} className="relative">
         <input
           ref={inputRef}

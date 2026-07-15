@@ -11,6 +11,7 @@ import { Logo } from '@/components/ui/Logo'
 import { Container } from '@/components/ui/Container'
 import { StickySearchBar } from '@/components/search/StickySearchBar'
 import { getLocalizedText } from '@/utils/format'
+import { cn } from '@/utils/cn'
 import type { Language } from '@/types'
 
 const LOCATIONS = [
@@ -43,10 +44,11 @@ export function Header() {
   ]
 
   useEffect(() => {
-    document.documentElement.style.setProperty(
-      '--header-search-h',
-      showStickySearch ? '3.5rem' : '0px',
-    )
+    if (showStickySearch) {
+      document.documentElement.dataset.stickySearch = 'true'
+    } else {
+      delete document.documentElement.dataset.stickySearch
+    }
   }, [showStickySearch])
 
   useEffect(() => {
@@ -73,7 +75,7 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-xl border-b border-charcoal/10 shadow-sm shadow-charcoal/[0.03]">
+      <header className="fixed top-0 left-0 right-0 z-50 overflow-visible bg-white/85 backdrop-blur-xl border-b border-charcoal/10 shadow-sm shadow-charcoal/[0.03]">
         <Container>
           <div className="flex items-center justify-between h-20 lg:h-24">
             <Logo to={`/${lang}`} />
@@ -182,22 +184,21 @@ export function Header() {
               </button>
             </div>
           </div>
-
-          <AnimatePresence initial={false}>
-            {showStickySearch && (
-              <motion.div
-                key="sticky-search"
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.2, ease: 'easeOut' }}
-                className="border-t border-charcoal/[0.06] bg-white/70 backdrop-blur-xl"
-              >
-                <StickySearchBar />
-              </motion.div>
-            )}
-          </AnimatePresence>
         </Container>
+
+        <div
+          aria-hidden={!showStickySearch}
+          className={cn(
+            'absolute left-0 right-0 top-[var(--header-nav-h)] h-[var(--header-search-h)] border-t border-charcoal/[0.06] bg-white/90 backdrop-blur-xl shadow-sm shadow-charcoal/[0.04] transition-[opacity,transform] duration-200 ease-out',
+            showStickySearch
+              ? 'opacity-100 translate-y-0 pointer-events-auto'
+              : 'opacity-0 -translate-y-full pointer-events-none',
+          )}
+        >
+          <Container className="h-full">
+            <StickySearchBar />
+          </Container>
+        </div>
       </header>
 
       <AnimatePresence>

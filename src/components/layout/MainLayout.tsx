@@ -10,7 +10,7 @@ export function MainLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-warm-white">
       <Header />
-      <main className="flex-1 pt-[var(--header-total-h)] transition-[padding-top] duration-200 ease-out">
+      <main className="flex-1 pt-[var(--header-nav-h)]">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
