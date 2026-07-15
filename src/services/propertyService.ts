@@ -1,0 +1,182 @@
+import Fuse from 'fuse.js'
+import type { Language, Property, PropertyFilters, SortOption } from '@/types'
+
+const propertyModules = import.meta.glob<Property>('../properties/*.json', {
+  eager: true,
+})
+
+const allProperties: Property[] = Object.values(propertyModules)
+
+export function getAllProperties(): Property[] {
+  return allProperties
+}
+
+export function getPropertyBySlug(slug: string): Property | undefined {
+  return allProperties.find((property) => property.slug === slug)
+}
+
+export function getFeaturedProperties(): Property[] {
+  return allProperties.filter((property) => property.featured)
+}
+
+export function getRelatedProperties(slug: string, limit = 3): Property[] {
+  const current = getPropertyBySlug(slug)
+  if (!current) return []
+
+  return allProperties
+    .filter((property) => property.slug !== slug)
+    .map((property) => ({
+      property,
+      score:
+        (property.city === current.city ? 3 : 0) +
+        (property.type === current.type ? 2 : 0) +
+        (property.province === current.province ? 1 : 0),
+    }))
+    .sort((a, b) => b.score - a.score)
+    .map(({ property }) => property)
+    .slice(0, limit)
+}
+
+export function getLatestProperties(limit = 6): Property[] {
+  return [...allProperties]
+    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .slice(0, limit)
+}
+
+export function getUniqueCities(): string[] {
+  return [...new Set(allProperties.map((property) => property.city))].sort()
+}
+
+export function getUniqueProvinces(): string[] {
+  return [...new Set(allProperties.map((property) => property.province))].sort()
+}
+
+export function getPriceRange(): { min: number; max: number } {
+  if (allProperties.length === 0) {
+    return { min: 0, max: 0 }
+  }
+
+  const prices = allProperties.map((property) => property.price)
+  return {
+    min: Math.min(...prices),
+    max: Math.max(...prices),
+  }
+}
+
+function matchesBooleanFilter(
+  filterValue: boolean,
+  propertyValue: boolean,
+): boolean {
+  return !filterValue || propertyValue
+}
+
+function applyStructuralFilters(
+  properties: Property[],
+  filters: PropertyFilters,
+): Property[] {
+  return properties.filter((property) => {
+    if (property.price < filters.priceMin || property.price > filters.priceMax) {
+      return false
+    }
+
+    if (filters.bedrooms !== null && property.bedrooms < filters.bedrooms) {
+      return false
+    }
+
+    if (filters.bathrooms !== null && property.bathrooms < filters.bathrooms) {
+      return false
+    }
+
+    if (filters.type && property.type !== filters.type) {
+      return false
+    }
+
+    if (filters.province && property.province !== filters.province) {
+      return false
+    }
+
+    if (filters.city && property.city !== filters.city) {
+      return false
+    }
+
+    if (property.builtArea < filters.areaMin || property.builtArea > filters.areaMax) {
+      return false
+    }
+
+    if (
+      filters.reference &&
+      !property.reference.toLowerCase().includes(filters.reference.toLowerCase())
+    ) {
+      return false
+    }
+
+    return (
+      matchesBooleanFilter(filters.pool, property.pool) &&
+      matchesBooleanFilter(filters.seaViews, property.seaViews) &&
+      matchesBooleanFilter(filters.garden, property.garden) &&
+      matchesBooleanFilter(filters.parking, property.parking) &&
+      matchesBooleanFilter(filters.elevator, property.elevator) &&
+      matchesBooleanFilter(filters.terrace, property.terrace) &&
+      matchesBooleanFilter(filters.newConstruction, property.newConstruction) &&
+      matchesBooleanFilter(filters.luxury, property.luxury) &&
+      matchesBooleanFilter(filters.exclusive, property.exclusive) &&
+      matchesBooleanFilter(filters.nearBeach, property.nearBeach) &&
+      matchesBooleanFilter(filters.mountain, property.mountain) &&
+      matchesBooleanFilter(filters.investment, property.investment)
+    )
+  })
+}
+
+function sortProperties(properties: Property[], sort: SortOption): Property[] {
+  const sorted = [...properties]
+
+  switch (sort) {
+    case 'price-asc':
+      return sorted.sort((a, b) => a.price - b.price)
+    case 'price-desc':
+      return sorted.sort((a, b) => b.price - a.price)
+    case 'views':
+      return sorted.sort((a, b) => b.views - a.views)
+    case 'featured':
+      return sorted.sort((a, b) => {
+        if (a.featured !== b.featured) {
+          return a.featured ? -1 : 1
+        }
+        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+      })
+    case 'newest':
+    default:
+      return sorted.sort(
+        (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+      )
+  }
+}
+
+export function filterProperties(
+  properties: Property[],
+  filters: PropertyFilters,
+  sort: SortOption,
+  lang: Language,
+): Property[] {
+  let result = properties
+  const query = filters.query.trim()
+
+  if (query) {
+    const fuse = new Fuse(properties, {
+      keys: [
+        { name: `title.${lang}`, weight: 0.3 },
+        { name: `description.${lang}`, weight: 0.2 },
+        { name: `location.${lang}`, weight: 0.15 },
+        { name: 'reference', weight: 0.15 },
+        { name: 'city', weight: 0.1 },
+        { name: 'province', weight: 0.1 },
+      ],
+      threshold: 0.4,
+      ignoreLocation: true,
+    })
+
+    result = fuse.search(query).map((match) => match.item)
+  }
+
+  return sortProperties(applyStructuralFilters(result, filters), sort)
+}

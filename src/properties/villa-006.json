@@ -1,0 +1,82 @@
+{
+  "id": "villa-006",
+  "reference": "GH-2026-006",
+  "slug": "villa-inversion-blanes",
+  "title": {
+    "es": "Villa de Inversión con Licencia Turística en Blanes",
+    "ca": "Vila d'Inversió amb Llicència Turística a Blanes",
+    "en": "Investment Villa with Tourist License in Blanes",
+    "fr": "Villa d'Investissement avec Licence Touristique à Blanes"
+  },
+  "price": 1650000,
+  "location": {
+    "es": "Cala Sant Francesc, Blanes",
+    "ca": "Cala Sant Francesc, Blanes",
+    "en": "Cala Sant Francesc, Blanes",
+    "fr": "Cala Sant Francesc, Blanes"
+  },
+  "province": "Girona",
+  "city": "Blanes",
+  "coordinates": { "lat": 41.6744, "lng": 2.7903 },
+  "type": "villa",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "builtArea": 280,
+  "plotArea": 600,
+  "description": {
+    "es": "Oportunidad de inversión excepcional: villa completamente equipada con licencia turística activa en la codiciada Cala Sant Francesc de Blanes. Generando un rendimiento anual del 8%, esta propiedad está lista para operar como alquiler vacacional de lujo. Cuatro dormitorios con capacidad para 8 huéspedes, cocina totalmente equipada, salón con Smart TV 65\" y terraza con barbacoa. Piscina privada con sistema de cloración salina y jardín con ducha exterior. A 200 metros de una de las calas más bonitas de la Costa Brava. Incluye mobiliario completo, equipamiento de hostelería y cartera de reservas existente transferible.",
+    "ca": "Oportunitat d'inversió excepcional: vila completament equipada amb llicència turística activa a la codiciada Cala Sant Francesc de Blanes. Generant un rendiment anual del 8%, aquesta propietat està preparada per operar com a lloguer vacacional de luxe. Quatre dormitoris amb capacitat per a 8 hostes, cuina totalment equipada, saló amb Smart TV 65\" i terrassa amb barbacoa. Piscina privada amb sistema de cloració salina i jardí amb dutxa exterior. A 200 metres d'una de les cales més boniques de la Costa Brava. Inclou mobiliari complet, equipament d'hostaleria i cartera de reserves existent transferible.",
+    "en": "Exceptional investment opportunity: fully equipped villa with active tourist license in coveted Cala Sant Francesc, Blanes. Generating 8% annual yield, this property is ready to operate as luxury vacation rental. Four bedrooms sleeping 8 guests, fully equipped kitchen, living room with 65\" Smart TV and terrace with barbecue. Private pool with salt chlorination system and garden with outdoor shower. 200 meters from one of the Costa Brava's most beautiful coves. Includes complete furniture, hospitality equipment and transferable existing booking portfolio.",
+    "fr": "Opportunité d'investissement exceptionnelle : villa entièrement équipée avec licence touristique active dans la convoitée Cala Sant Francesc de Blanes. Générant un rendement annuel de 8%, cette propriété est prête à fonctionner comme location vacances de luxe. Quatre chambres pour 8 personnes, cuisine entièrement équipée, salon avec Smart TV 65\" et terrasse avec barbecue. Piscine privée avec système de chloration salée et jardin avec douche extérieure. À 200 mètres de l'une des plus belles criques de la Costa Brava. Inclut mobilier complet, équipement hôtelier et portefeuille de réservations existant transférable."
+  },
+  "features": [
+    { "es": "Licencia turística activa", "ca": "Llicència turística activa", "en": "Active tourist license", "fr": "Licence touristique active" },
+    { "es": "Rendimiento 8% anual", "ca": "Rendiment 8% anual", "en": "8% annual yield", "fr": "Rendement 8% annuel" },
+    { "es": "Mobiliario completo incluido", "ca": "Mobiliari complet inclòs", "en": "Complete furniture included", "fr": "Mobilier complet inclus" },
+    { "es": "Cartera de reservas transferible", "ca": "Cartera de reserves transferible", "en": "Transferable booking portfolio", "fr": "Portefeuille réservations transférable" },
+    { "es": "A 200m de Cala Sant Francesc", "ca": "A 200m de Cala Sant Francesc", "en": "200m from Cala Sant Francesc", "fr": "À 200m de Cala Sant Francesc" }
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600047509806-2370e2283b74?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80"
+  ],
+  "energyCertificate": "D",
+  "featured": true,
+  "exclusive": false,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": false,
+  "garden": true,
+  "parking": true,
+  "elevator": false,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 789,
+  "createdAt": "2026-01-05",
+  "seo": {
+    "title": {
+      "es": "Villa Inversión Blanes con Licencia Turística | Golden Home",
+      "ca": "Vila Inversió Blanes amb Llicència Turística | Golden Home",
+      "en": "Investment Villa Blanes with Tourist License | Golden Home",
+      "fr": "Villa Investissement Blanes Licence Touristique | Golden Home"
+    },
+    "description": {
+      "es": "Villa con licencia turística en Cala Sant Francesc, Blanes. Rendimiento 8%, mobiliario incluido y reservas activas.",
+      "ca": "Vila amb llicència turística a Cala Sant Francesc, Blanes. Rendiment 8%, mobiliari inclòs i reserves actives.",
+      "en": "Villa with tourist license in Cala Sant Francesc, Blanes. 8% yield, furniture included and active bookings.",
+      "fr": "Villa avec licence touristique à Cala Sant Francesc, Blanes. Rendement 8%, mobilier inclus et réservations actives."
+    },
+    "keywords": {
+      "es": "villa inversion blanes, licencia turistica costa brava, alquiler vacacional blanes",
+      "ca": "vila inversió blanes, llicència turística costa brava, lloguer vacacional blanes",
+      "en": "investment villa blanes, tourist license costa brava, vacation rental blanes",
+      "fr": "villa investissement blanes, licence touristique costa brava, location vacances blanes"
+    }
+  }
+}

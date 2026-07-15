@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "Home",
+    "properties": "Properties",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog",
+    "search": "Search",
+    "favorites": "Favorites",
+    "compare": "Compare"
+  },
+  "hero": {
+    "title": "Luxury Real Estate in Lloret de Mar",
+    "subtitle": "Exclusive properties on the Costa Brava, where the Mediterranean meets timeless elegance",
+    "cta": "Explore properties",
+    "searchPlaceholder": "Search villas, apartments, estates..."
+  },
+  "search": {
+    "title": "Find your ideal property",
+    "filters": "Filters",
+    "price": "Price",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "type": "Property type",
+    "features": {
+      "pool": "Swimming pool",
+      "seaViews": "Sea views",
+      "garden": "Garden",
+      "parking": "Parking",
+      "elevator": "Elevator",
+      "terrace": "Terrace",
+      "newConstruction": "New build",
+      "luxury": "Luxury",
+      "exclusive": "Exclusive",
+      "nearBeach": "Near the beach",
+      "mountain": "Mountain",
+      "investment": "Investment"
+    },
+    "reference": "Reference",
+    "province": "Province",
+    "city": "City",
+    "area": "Area",
+    "sort": {
+      "newest": "Newest",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low",
+      "views": "Most viewed",
+      "featured": "Featured"
+    },
+    "results": "{{count}} properties found",
+    "noResults": "No properties match your selected criteria. Adjust your filters or contact our team for assistance.",
+    "clearFilters": "Clear filters"
+  },
+  "property": {
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "builtArea": "Built area",
+    "plotArea": "Plot area",
+    "features": "Features",
+    "description": "Description",
+    "characteristics": "Key characteristics",
+    "location": "Location",
+    "energyCertificate": "Energy certificate",
+    "virtualTour": "Virtual tour",
+    "video": "Video",
+    "downloadPdf": "Download PDF brochure",
+    "share": "Share",
+    "related": "Related properties",
+    "contactAgent": "Contact an advisor",
+    "scheduleVisit": "Schedule a viewing",
+    "mortgageCalculator": "Mortgage calculator",
+    "monthlyPayment": "Estimated monthly payment",
+    "loanAmount": "Loan amount",
+    "interestRate": "Interest rate",
+    "loanTerm": "Loan term",
+    "nearbyPlaces": "Nearby points of interest",
+    "reference": "Reference"
+  },
+  "home": {
+    "featuredTitle": "Featured properties",
+    "featuredSubtitle": "A curated selection of the most exceptional residences on the Costa Brava",
+    "categoriesTitle": "Browse by category",
+    "whyChooseTitle": "Why choose Golden Home",
+    "whyChoose": {
+      "expertise": {
+        "title": "Luxury market expertise",
+        "description": "Over a decade specialising in premium properties in Lloret de Mar and the Costa Brava, with deep knowledge of both local and international markets."
+      },
+      "portfolio": {
+        "title": "Exclusive portfolio",
+        "description": "Access to seafront villas, designer penthouses and unique estates you won't find on any other property portal."
+      },
+      "service": {
+        "title": "Bespoke service",
+        "description": "Comprehensive, discreet support at every stage — from the first viewing to completion — with multilingual assistance throughout."
+      },
+      "location": {
+        "title": "Local knowledge",
+        "description": "Experts in the finest areas of Lloret de Mar — Fenals, Cala Canyelles, Santa Cristina and beyond — to find your perfect location."
+      }
+    },
+    "lifestyleTitle": "The Mediterranean lifestyle",
+    "lifestyleText": "Lloret de Mar offers a unique balance of coastal sophistication and Catalan authenticity. Dream beaches, world-class golf courses, fine dining and the tranquillity of the Costa Brava await just minutes from your new home.",
+    "latestTitle": "Latest listings",
+    "testimonialsTitle": "What our clients say",
+    "ctaTitle": "Looking for your dream property?",
+    "ctaSubtitle": "Our team of advisors is at your disposal to deliver a real estate experience that exceeds your expectations.",
+    "ctaButton": "Get in touch",
+    "partnersTitle": "Our partners",
+    "instagramTitle": "Follow us on Instagram",
+    "stats": {
+      "propertiesSold": "Properties sold",
+      "yearsExperience": "Years of experience",
+      "satisfiedClients": "Satisfied clients",
+      "totalValue": "Total value managed"
+    }
+  },
+  "about": {
+    "title": "About Golden Home",
+    "subtitle": "Leaders in luxury real estate in Lloret de Mar since 2010",
+    "mission": "Our mission is to connect discerning buyers with exceptional properties on the Costa Brava, delivering the highest standards of service, transparency and personal dedication in every transaction.",
+    "vision": "To be the reference luxury real estate agency on the Costa Brava, recognised for our excellence, integrity and ability to anticipate the needs of an increasingly sophisticated international market.",
+    "values": {
+      "excellence": {
+        "title": "Excellence",
+        "description": "Every property in our portfolio meets the highest standards of quality, location and design. We never compromise on excellence in anything we do."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Absolute transparency in every transaction. Our clients trust us because we always act with honesty, ethics and professionalism."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Cutting-edge technology, 360° virtual tours, international digital marketing and analytical tools to deliver the best possible experience."
+      },
+      "dedication": {
+        "title": "Dedication",
+        "description": "Every client receives personalised attention and genuine commitment. Your satisfaction and the success of your investment are our top priorities."
+      }
+    },
+    "teamTitle": "Our team",
+    "timelineTitle": "Our journey",
+    "awardsTitle": "Awards & recognition",
+    "timeline": {
+      "2010": "Golden Home founded in Lloret de Mar with the ambition to redefine luxury real estate on the Costa Brava.",
+      "2015": "Portfolio expansion across the province of Girona and partnerships established with prestigious architecture and design studios.",
+      "2020": "Established as an international reference with clients from over 30 countries, embracing digital innovation with virtual tours and e-signatures.",
+      "2026": "Market leadership in Lloret de Mar's premium segment with over 200 high-value transactions and an unparalleled property portfolio."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We are here to help you find the perfect property on the Costa Brava",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening hours",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "message": "Message",
+      "submit": "Send message",
+      "success": "Your message has been sent successfully. We will be in touch shortly.",
+      "error": "An error occurred while sending your message. Please try again or call us directly."
+    },
+    "directions": "Directions",
+    "schedule": "Monday to Friday: 9:00 AM – 7:00 PM | Saturdays: 10:00 AM – 2:00 PM"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "News, trends and insights on the luxury real estate market on the Costa Brava",
+    "readMore": "Read more",
+    "readingTime": "{{minutes}} min read",
+    "relatedArticles": "Related articles",
+    "categories": "Categories",
+    "author": "Author",
+    "publishedOn": "Published on"
+  },
+  "footer": {
+    "description": "Golden Home — Luxury real estate in Lloret de Mar. Exclusive properties on the Costa Brava with bespoke service and multilingual support.",
+    "quickLinks": "Quick links",
+    "contactInfo": "Contact information",
+    "followUs": "Follow us",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "rights": "© {{year}} Golden Home Lloret. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "viewAll": "View all",
+    "viewDetails": "View details",
+    "from": "From",
+    "perMonth": "per month",
+    "sqm": "m²",
+    "currency": "€",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode",
+    "language": "Language",
+    "backToTop": "Back to top",
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "contactUs": "Contact us",
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites",
+    "addToCompare": "Add to compare",
+    "removeFromCompare": "Remove from compare",
+    "compareLimit": "You can compare a maximum of 3 properties",
+    "recentlyViewed": "Recently viewed",
+    "exclusive": "Exclusive",
+    "luxury": "Luxury",
+    "newConstruction": "New build",
+    "featured": "Featured",
+    "sold": "Sold",
+    "reserved": "Reserved",
+    "forSale": "For sale",
+    "forRent": "For rent"
+  },
+  "floatingButtons": {
+    "whatsapp": "WhatsApp",
+    "phone": "Call",
+    "contact": "Contact",
+    "backToTop": "Top"
+  },
+  "seo": {
+    "defaultTitle": "Golden Home — Luxury Real Estate in Lloret de Mar | Costa Brava",
+    "defaultDescription": "Discover exclusive properties in Lloret de Mar and the Costa Brava. Luxury villas, premium apartments and unique estates with Golden Home, your trusted real estate agency."
+  }
+}

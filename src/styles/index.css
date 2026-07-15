@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-gold: #c9a962;
+  --color-gold-light: #d4bc7e;
+  --color-gold-dark: #a88b4a;
+  --color-charcoal: #1a1a1a;
+  --color-graphite: #2d2d2d;
+  --color-warm-white: #faf8f5;
+  --color-cream: #f5f0e8;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-warm-white text-charcoal font-sans;
+  }
+
+  .dark body,
+  html.dark body {
+    @apply bg-charcoal text-warm-white;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  ::selection {
+    @apply bg-gold/30 text-charcoal;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-charcoal/80 backdrop-blur-xl border border-white/10;
+  }
+
+  .luxury-gradient {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #c9a962 0%, #d4bc7e 50%, #a88b4a 100%);
+  }
+
+  .image-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(26, 26, 26, 0.3) 0%,
+      rgba(26, 26, 26, 0.6) 100%
+    );
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

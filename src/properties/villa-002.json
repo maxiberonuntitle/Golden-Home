@@ -1,0 +1,84 @@
+{
+  "id": "villa-002",
+  "reference": "GH-2026-002",
+  "slug": "villa-moderna-tossa-de-mar",
+  "title": {
+    "es": "Villa Moderna con Vistas a Tossa de Mar",
+    "ca": "Vila Moderna amb Vistes a Tossa de Mar",
+    "en": "Modern Villa with Views of Tossa de Mar",
+    "fr": "Villa Moderne avec Vues sur Tossa de Mar"
+  },
+  "price": 3200000,
+  "location": {
+    "es": "Polígono 18, Tossa de Mar",
+    "ca": "Polígon 18, Tossa de Mar",
+    "en": "Polígono 18, Tossa de Mar",
+    "fr": "Polígono 18, Tossa de Mar"
+  },
+  "province": "Girona",
+  "city": "Tossa de Mar",
+  "coordinates": { "lat": 41.7201, "lng": 2.9329 },
+  "type": "villa",
+  "status": "sale",
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "builtArea": 380,
+  "plotArea": 900,
+  "description": {
+    "es": "Impresionante villa de diseño vanguardista en la exclusiva zona del Polígono 18 de Tossa de Mar, con vistas despejadas al castillo medieval y al mar. Arquitectura de vanguardia con fachada de piedra natural y grandes ventanales de aluminio negro. Interior de 380m² distribuidos en planta abierta con cocina central de isla en cuarzo blanco, salón-comedor de 80m² y galería de arte integrada. Cinco suites con baño privado, la principal con sauna finlandesa y ducha de lluvia. Piscina climatizada con cubierta retráctil, zona de spa con hammam y gimnasio equipado Technogym. Sistema de seguridad perimetral con cámaras y alarma conectada a central.",
+    "ca": "Impressionant vila de disseny avantguardista a l'exclusiva zona del Polígon 18 de Tossa de Mar, amb vistes despejades al castell medieval i al mar. Arquitectura d'avantguarda amb façana de pedra natural i grans finestrals d'alumini negre. Interior de 380m² distribuïts en planta oberta amb cuina central d'illa en quars blanc, saló-menjador de 80m² i galeria d'art integrada. Cinc suites amb bany privat, la principal amb sauna finlandesa i dutxa de pluja. Piscina climatitzada amb coberta retràctil, zona de spa amb hammam i gimnàs equipat Technogym. Sistema de seguretat perimetral amb càmeres i alarma connectada a central.",
+    "en": "Stunning avant-garde design villa in the exclusive Polígono 18 area of Tossa de Mar, with unobstructed views of the medieval castle and sea. Cutting-edge architecture with natural stone facade and large black aluminum windows. 380m² interior distributed in open plan with central quartz white island kitchen, 80m² living-dining room and integrated art gallery. Five suites with private bathroom, the master with Finnish sauna and rain shower. Heated pool with retractable cover, spa area with hammam and Technogym-equipped gym. Perimeter security system with cameras and central-connected alarm.",
+    "fr": "Superbe villa de design avant-gardiste dans l'exclusif Polígono 18 de Tossa de Mar, avec vues dégagées sur le château médiéval et la mer. Architecture avant-gardiste avec façade en pierre naturelle et grandes baies vitrées en aluminium noir. Intérieur de 380m² en plan ouvert avec cuisine centrale en quartz blanc, salon-salle à manger de 80m² et galerie d'art intégrée. Cinq suites avec salle de bain privée, la principale avec sauna finlandais et douche pluie. Piscine chauffée avec couverture rétractable, espace spa avec hammam et salle de sport Technogym. Système de sécurité périmétrique avec caméras et alarme connectée."
+  },
+  "features": [
+    { "es": "Vistas al castillo de Tossa", "ca": "Vistes al castell de Tossa", "en": "Views of Tossa castle", "fr": "Vues sur le château de Tossa" },
+    { "es": "Piscina climatizada", "ca": "Piscina climatitzada", "en": "Heated pool", "fr": "Piscine chauffée" },
+    { "es": "Spa con hammam y sauna", "ca": "Spa amb hammam i sauna", "en": "Spa with hammam and sauna", "fr": "Spa avec hammam et sauna" },
+    { "es": "Gimnasio Technogym", "ca": "Gimnàs Technogym", "en": "Technogym fitness room", "fr": "Salle de sport Technogym" },
+    { "es": "Galería de arte", "ca": "Galeria d'art", "en": "Art gallery", "fr": "Galerie d'art" },
+    { "es": "Sistema de seguridad avanzado", "ca": "Sistema de seguretat avançat", "en": "Advanced security system", "fr": "Système de sécurité avancé" }
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80",
+    "https://images.unsplash.com/photo-1605276374101-dee48cb7939e?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1600&q=80"
+  ],
+  "energyCertificate": "A",
+  "featured": true,
+  "exclusive": true,
+  "luxury": true,
+  "newConstruction": true,
+  "pool": true,
+  "seaViews": true,
+  "garden": true,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": false,
+  "views": 892,
+  "createdAt": "2026-02-01",
+  "seo": {
+    "title": {
+      "es": "Villa Moderna Tossa de Mar | Golden Home Lloret",
+      "ca": "Vila Moderna Tossa de Mar | Golden Home Lloret",
+      "en": "Modern Villa Tossa de Mar | Golden Home Lloret",
+      "fr": "Villa Moderne Tossa de Mar | Golden Home Lloret"
+    },
+    "description": {
+      "es": "Villa de diseño de 380m² en Tossa de Mar con vistas al castillo. 5 suites, spa, piscina climatizada. Obra nueva de lujo.",
+      "ca": "Vila de disseny de 380m² a Tossa de Mar amb vistes al castell. 5 suites, spa, piscina climatitzada. Obra nova de luxe.",
+      "en": "380m² design villa in Tossa de Mar with castle views. 5 suites, spa, heated pool. New luxury construction.",
+      "fr": "Villa design de 380m² à Tossa de Mar avec vues château. 5 suites, spa, piscine chauffée. Construction neuve de luxe."
+    },
+    "keywords": {
+      "es": "villa tossa de mar, casa lujo costa brava, obra nueva tossa",
+      "ca": "vila tossa de mar, casa luxe costa brava, obra nova tossa",
+      "en": "villa tossa de mar, luxury house costa brava, new build tossa",
+      "fr": "villa tossa de mar, maison luxe costa brava, construction neuve tossa"
+    }
+  }
+}

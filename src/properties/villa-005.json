@@ -1,0 +1,82 @@
+{
+  "id": "villa-005",
+  "reference": "GH-2026-005",
+  "slug": "apartamento-lujo-platja-d-aro",
+  "title": {
+    "es": "Apartamento de Lujo en Platja d'Aro",
+    "ca": "Apartament de Luxe a Platja d'Aro",
+    "en": "Luxury Apartment in Platja d'Aro",
+    "fr": "Appartement de Luxe à Platja d'Aro"
+  },
+  "price": 890000,
+  "location": {
+    "es": "Primera línea de mar, Platja d'Aro",
+    "ca": "Primera línia de mar, Platja d'Aro",
+    "en": "Seafront, Platja d'Aro",
+    "fr": "Front de mer, Platja d'Aro"
+  },
+  "province": "Girona",
+  "city": "Platja d'Aro",
+  "coordinates": { "lat": 41.8178, "lng": 3.0667 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "builtArea": 145,
+  "plotArea": 0,
+  "description": {
+    "es": "Refinado apartamento en primera línea de mar en Platja d'Aro, a escasos metros de la playa de Cala Rovira. Reformado integralmente en 2024 con un diseño minimalista y materiales premium. Amplio salón-comedor con ventanales de suelo a techo y acceso directo a terraza de 25m² con vistas al mar. Cocina abierta equipada con electrodomésticos Siemens y encimera de Dekton. Tres dormitorios dobles con armarios empotrados, el principal con baño en suite y vestidor. Dos plazas de garaje en subsuelo y trastero. Edificio con conserje, piscina comunitaria y acceso directo al paseo marítimo.",
+    "ca": "Refinat apartament en primera línia de mar a Platja d'Aro, a escassos metres de la platja de Cala Rovira. Refomat integralment el 2024 amb un disseny minimalista i materials premium. Ampli saló-menjador amb finestrals de terra a sostre i accés directe a terrassa de 25m² amb vistes al mar. Cuina oberta equipada amb electrodomèstics Siemens i encimera de Dekton. Tres dormitoris dobles amb armaris encastats, el principal amb bany en suite i vestidor. Dues places de garatge en subsòl i traster. Edifici amb conserge, piscina comunitària i accés directe al passeig marítim.",
+    "en": "Refined seafront apartment in Platja d'Aro, just meters from Cala Rovira beach. Fully renovated in 2024 with minimalist design and premium materials. Spacious living-dining room with floor-to-ceiling windows and direct access to 25m² terrace with sea views. Open kitchen equipped with Siemens appliances and Dekton countertop. Three double bedrooms with built-in wardrobes, master with en-suite bathroom and dressing room. Two underground garage spaces and storage. Building with concierge, communal pool and direct access to the seafront promenade.",
+    "fr": "Appartement raffiné en front de mer à Platja d'Aro, à quelques mètres de la plage de Cala Rovira. Entièrement rénové en 2024 avec un design minimaliste et des matériaux premium. Spacieux salon-salle à manger avec baies vitrées du sol au plafond et accès direct à la terrasse de 25m² avec vue mer. Cuisine ouverte équipée d'appareils Siemens et plan de travail Dekton. Trois chambres doubles avec placards intégrés, la principale avec salle de bain en suite et dressing. Deux places de garage en sous-sol et cave. Immeuble avec concierge, piscine commune et accès direct à la promenade maritime."
+  },
+  "features": [
+    { "es": "Primera línea de mar", "ca": "Primera línia de mar", "en": "Seafront location", "fr": "Front de mer" },
+    { "es": "Reformado 2024", "ca": "Refomat 2024", "en": "Renovated 2024", "fr": "Rénové 2024" },
+    { "es": "Terraza 25m² con vistas al mar", "ca": "Terrassa 25m² amb vistes al mar", "en": "25m² terrace with sea views", "fr": "Terrasse 25m² vue mer" },
+    { "es": "Piscina comunitaria", "ca": "Piscina comunitària", "en": "Communal pool", "fr": "Piscine commune" },
+    { "es": "Conserje y seguridad 24h", "ca": "Conserge i seguretat 24h", "en": "Concierge and 24h security", "fr": "Concierge et sécurité 24h" }
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1493809842364-78817afe7e53?w=1600&q=80",
+    "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1600&q=80",
+    "https://images.unsplash.com/photo-1560184897-ae75f418493e?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1600&q=80"
+  ],
+  "energyCertificate": "B",
+  "featured": false,
+  "exclusive": false,
+  "luxury": true,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": true,
+  "garden": false,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 567,
+  "createdAt": "2026-02-10",
+  "seo": {
+    "title": {
+      "es": "Apartamento Lujo Platja d'Aro | Golden Home Lloret",
+      "ca": "Apartament Luxe Platja d'Aro | Golden Home Lloret",
+      "en": "Luxury Apartment Platja d'Aro | Golden Home Lloret",
+      "fr": "Appartement Luxe Platja d'Aro | Golden Home Lloret"
+    },
+    "description": {
+      "es": "Apartamento reformado en primera línea de mar en Platja d'Aro. 3 dormitorios, terraza con vistas al mar y garaje doble.",
+      "ca": "Apartament refomat en primera línia de mar a Platja d'Aro. 3 dormitoris, terrassa amb vistes al mar i garatge doble.",
+      "en": "Renovated seafront apartment in Platja d'Aro. 3 bedrooms, terrace with sea views and double garage.",
+      "fr": "Appartement rénové en front de mer à Platja d'Aro. 3 chambres, terrasse vue mer et double garage."
+    },
+    "keywords": {
+      "es": "apartamento platja d aro, piso lujo costa brava, inmobiliaria platja d aro",
+      "ca": "apartament platja d aro, pis luxe costa brava, immobiliària platja d aro",
+      "en": "apartment platja d aro, luxury flat costa brava, real estate platja d aro",
+      "fr": "appartement platja d aro, appartement luxe costa brava, immobilier platja d aro"
+    }
+  }
+}

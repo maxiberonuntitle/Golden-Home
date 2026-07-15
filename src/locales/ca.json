@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "Inici",
+    "properties": "Propietats",
+    "about": "Nosaltres",
+    "contact": "Contacte",
+    "blog": "Blog",
+    "search": "Cercar",
+    "favorites": "Favorits",
+    "compare": "Comparar"
+  },
+  "hero": {
+    "title": "Immobiliària de Luxe a Lloret de Mar",
+    "subtitle": "Propietats exclusives a la Costa Brava, on la Mediterrània es troba amb l'elegància atemporal",
+    "cta": "Explorar propietats",
+    "searchPlaceholder": "Cercar viles, apartaments, masies..."
+  },
+  "search": {
+    "title": "Trobi la seva propietat ideal",
+    "filters": "Filtres",
+    "price": "Preu",
+    "bedrooms": "Habitacions",
+    "bathrooms": "Banys",
+    "type": "Tipus de propietat",
+    "features": {
+      "pool": "Piscina",
+      "seaViews": "Vistes al mar",
+      "garden": "Jardí",
+      "parking": "Aparcament",
+      "elevator": "Ascensor",
+      "terrace": "Terrassa",
+      "newConstruction": "Obra nova",
+      "luxury": "Luxe",
+      "exclusive": "Exclusiva",
+      "nearBeach": "A prop de la platja",
+      "mountain": "Muntanya",
+      "investment": "Inversió"
+    },
+    "reference": "Referència",
+    "province": "Província",
+    "city": "Ciutat",
+    "area": "Zona",
+    "sort": {
+      "newest": "Més recents",
+      "priceAsc": "Preu: menor a major",
+      "priceDesc": "Preu: major a menor",
+      "views": "Més visitades",
+      "featured": "Destacades"
+    },
+    "results": "{{count}} propietats trobades",
+    "noResults": "No s'han trobat propietats amb els criteris seleccionats. Ajusti els filtres o contacti amb el nostre equip.",
+    "clearFilters": "Esborrar filtres"
+  },
+  "property": {
+    "bedrooms": "Habitacions",
+    "bathrooms": "Banys",
+    "builtArea": "Superfície construïda",
+    "plotArea": "Superfície parcel·la",
+    "features": "Característiques",
+    "description": "Descripció",
+    "characteristics": "Característiques principals",
+    "location": "Ubicació",
+    "energyCertificate": "Certificat energètic",
+    "virtualTour": "Visita virtual",
+    "video": "Vídeo",
+    "downloadPdf": "Descarregar fitxa PDF",
+    "share": "Compartir",
+    "related": "Propietats relacionades",
+    "contactAgent": "Contactar amb un assessor",
+    "scheduleVisit": "Sol·licitar visita",
+    "mortgageCalculator": "Calculadora d'hipoteca",
+    "monthlyPayment": "Quota mensual estimada",
+    "loanAmount": "Import del préstec",
+    "interestRate": "Tipus d'interès",
+    "loanTerm": "Termini del préstec",
+    "nearbyPlaces": "Llocs d'interès propers",
+    "reference": "Referència"
+  },
+  "home": {
+    "featuredTitle": "Propietats destacades",
+    "featuredSubtitle": "Una selecció curada de les residències més excepcionals de la Costa Brava",
+    "categoriesTitle": "Explori per categoria",
+    "whyChooseTitle": "Per què triar Golden Home",
+    "whyChoose": {
+      "expertise": {
+        "title": "Experiència en el mercat de luxe",
+        "description": "Més d'una dècada especialitzats en propietats premium de Lloret de Mar i la Costa Brava, amb un profund coneixement del mercat local i internacional."
+      },
+      "portfolio": {
+        "title": "Cartera exclusiva",
+        "description": "Accés a viles front mar, àtics de disseny i masies singulars que no trobarà en cap altre portal immobiliari."
+      },
+      "service": {
+        "title": "Servei personalitzat",
+        "description": "Acompanyament integral i discret en cada etapa: des de la primera visita fins a la signatura davant notari, amb atenció multilingüe."
+      },
+      "location": {
+        "title": "Coneixement local",
+        "description": "Experts en les millors zones de Lloret de Mar — Fenals, Cala Canyelles, Santa Cristina i més enllà — per trobar la seva ubicació perfecta."
+      }
+    },
+    "lifestyleTitle": "Estil de vida mediterrani",
+    "lifestyleText": "Lloret de Mar ofereix un equilibri únic entre la sofisticació costanera i l'autenticitat catalana. Platges de somni, camps de golf de primer nivell, gastronomia d'autor i la tranquil·litat de la Costa Brava l'esperen a pocs minuts de la seva nova residència.",
+    "latestTitle": "Últimes incorporacions",
+    "testimonialsTitle": "El que diuen els nostres clients",
+    "ctaTitle": "Busca la seva propietat de somni?",
+    "ctaSubtitle": "El nostre equip d'assessors està a la seva disposició per oferir-li una experiència immobiliària a l'alçada de les seves expectatives.",
+    "ctaButton": "Contactar ara",
+    "partnersTitle": "Els nostres col·laboradors",
+    "instagramTitle": "Segueixi'ns a Instagram",
+    "stats": {
+      "propertiesSold": "Propietats venudes",
+      "yearsExperience": "Anys d'experiència",
+      "satisfiedClients": "Clients satisfets",
+      "totalValue": "Valor total gestionat"
+    }
+  },
+  "about": {
+    "title": "Sobre Golden Home",
+    "subtitle": "Referents en immobiliària de luxe a Lloret de Mar des de 2010",
+    "mission": "La nostra missió és connectar compradors exigents amb propietats excepcionals a la Costa Brava, oferint un servei immobiliari de màxima qualitat, transparència i dedicació personal en cada operació.",
+    "vision": "Ser l'agència immobiliària de referència en el segment de luxe de la Costa Brava, reconeguda per la nostra excel·lència, integritat i capacitat d'anticipar les necessitats d'un mercat internacional cada cop més sofisticat.",
+    "values": {
+      "excellence": {
+        "title": "Excel·lència",
+        "description": "Cada propietat de la nostra cartera compleix els més alts estàndards de qualitat, ubicació i disseny. No comprometem l'excel·lència en res del que fem."
+      },
+      "integrity": {
+        "title": "Integritat",
+        "description": "Transparència absoluta en cada transacció. Els nostres clients confien en nosaltres perquè actuem sempre amb honestedat, ètica i professionalitat."
+      },
+      "innovation": {
+        "title": "Innovació",
+        "description": "Tecnologia d'avantguarda, visites virtuals 360°, màrqueting digital internacional i eines d'anàlisi per oferir la millor experiència possible."
+      },
+      "dedication": {
+        "title": "Dedicació",
+        "description": "Cada client rep atenció personalitzada i un compromís genuí. La seva satisfacció i l'èxit de la seva inversió són la nostra màxima prioritat."
+      }
+    },
+    "teamTitle": "El nostre equip",
+    "timelineTitle": "La nostra trajectòria",
+    "awardsTitle": "Reconeixements",
+    "timeline": {
+      "2010": "Fundació de Golden Home a Lloret de Mar, amb l'objectiu de redefinir el sector immobiliari de luxe a la Costa Brava.",
+      "2015": "Expansió de la cartera a tota la província de Girona i establiment d'aliançes amb estudis d'arquitectura i disseny de prestigi.",
+      "2020": "Consolidació com a referent internacional amb clients de més de 30 països i adaptació digital amb visites virtuals i signatura electrònica.",
+      "2026": "Lideratge en el segment premium de Lloret de Mar amb més de 200 operacions d'alt valor i una cartera de propietats sense precedents."
+    }
+  },
+  "contact": {
+    "title": "Contacte",
+    "subtitle": "Som aquí per ajudar-lo a trobar la propietat perfecta a la Costa Brava",
+    "address": "Adreça",
+    "phone": "Telèfon",
+    "email": "Correu electrònic",
+    "hours": "Horari d'atenció",
+    "form": {
+      "name": "Nom complet",
+      "email": "Correu electrònic",
+      "phone": "Telèfon",
+      "message": "Missatge",
+      "submit": "Enviar missatge",
+      "success": "El seu missatge s'ha enviat correctament. Ens posarem en contacte amb vostè al més aviat possible.",
+      "error": "S'ha produït un error en enviar el missatge. Si us plau, torni-ho a provar o truqui'ns directament."
+    },
+    "directions": "Com arribar",
+    "schedule": "Dilluns a Divendres: 9:00 – 19:00 | Dissabtes: 10:00 – 14:00"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Notícies, tendències i consells sobre el mercat immobiliari de luxe a la Costa Brava",
+    "readMore": "Llegir més",
+    "readingTime": "{{minutes}} min de lectura",
+    "relatedArticles": "Articles relacionats",
+    "categories": "Categories",
+    "author": "Autor",
+    "publishedOn": "Publicat el"
+  },
+  "footer": {
+    "description": "Golden Home — Immobiliària de luxe a Lloret de Mar. Propietats exclusives a la Costa Brava amb servei personalitzat i atenció multilingüe.",
+    "quickLinks": "Enllaços ràpids",
+    "contactInfo": "Informació de contacte",
+    "followUs": "Segueixi'ns",
+    "legal": "Avís legal",
+    "privacy": "Política de privacitat",
+    "cookies": "Política de galetes",
+    "rights": "© {{year}} Golden Home Lloret. Tots els drets reservats."
+  },
+  "common": {
+    "loading": "Carregant...",
+    "error": "S'ha produït un error",
+    "back": "Tornar",
+    "next": "Següent",
+    "previous": "Anterior",
+    "viewAll": "Veure tot",
+    "viewDetails": "Veure detalls",
+    "from": "Des de",
+    "perMonth": "al mes",
+    "sqm": "m²",
+    "currency": "€",
+    "darkMode": "Mode fosc",
+    "lightMode": "Mode clar",
+    "language": "Idioma",
+    "backToTop": "Tornar amunt",
+    "whatsapp": "WhatsApp",
+    "call": "Trucar",
+    "contactUs": "Contacti'ns",
+    "addToFavorites": "Afegir a favorits",
+    "removeFromFavorites": "Treure de favorits",
+    "addToCompare": "Afegir a comparar",
+    "removeFromCompare": "Treure de comparar",
+    "compareLimit": "Pot comparar un màxim de 3 propietats",
+    "recentlyViewed": "Vistos recentment",
+    "exclusive": "Exclusiva",
+    "luxury": "Luxe",
+    "newConstruction": "Obra nova",
+    "featured": "Destacada",
+    "sold": "Venuda",
+    "reserved": "Reservada",
+    "forSale": "En venda",
+    "forRent": "En lloguer"
+  },
+  "floatingButtons": {
+    "whatsapp": "WhatsApp",
+    "phone": "Trucar",
+    "contact": "Contacte",
+    "backToTop": "Amunt"
+  },
+  "seo": {
+    "defaultTitle": "Golden Home — Immobiliària de Luxe a Lloret de Mar | Costa Brava",
+    "defaultDescription": "Descobreixi propietats exclusives a Lloret de Mar i la Costa Brava. Viles de luxe, apartaments premium i masies singulars amb Golden Home, la seva immobiliària de confiança."
+  }
+}

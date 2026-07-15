@@ -1,0 +1,82 @@
+{
+  "id": "villa-003",
+  "reference": "GH-2026-003",
+  "slug": "penthouse-exclusivo-lloret-centro",
+  "title": {
+    "es": "Ático Exclusivo en el Centro de Lloret de Mar",
+    "ca": "Àtic Exclusiu al Centre de Lloret de Mar",
+    "en": "Exclusive Penthouse in Lloret de Mar Center",
+    "fr": "Penthouse Exclusif au Centre de Lloret de Mar"
+  },
+  "price": 1890000,
+  "location": {
+    "es": "Centro, Lloret de Mar",
+    "ca": "Centre, Lloret de Mar",
+    "en": "Center, Lloret de Mar",
+    "fr": "Centre, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6997, "lng": 2.8457 },
+  "type": "penthouse",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "builtArea": 245,
+  "plotArea": 0,
+  "description": {
+    "es": "Espectacular ático dúplex en edificio emblemático rehabilitado del centro de Lloret de Mar. La propiedad ocupa la última planta con terraza privada de 120m² con jacuzzi y vistas 360° al mar y montaña. Acabados de máxima calidad con suelos de roble natural, carpintería interior lacada en blanco y cocina italiana Dada con encimera de Silestone. Planta baja con salón de 60m², cocina americana y dos dormitorios. Planta superior con suite principal, despacho y terraza-solarium. Ascensor privado directo al ático. Plaza de garaje doble y trastero incluidos.",
+    "ca": "Espectacular àtic dúplex en edifici emblemàtic rehabilitat del centre de Lloret de Mar. La propietat ocupa l'última planta amb terrassa privada de 120m² amb jacuzzi i vistes 360° al mar i muntanya. Acabats de màxima qualitat amb terres de roure natural, fusteria interior lacada en blanc i cuina italiana Dada amb encimera de Silestone. Planta baixa amb saló de 60m², cuina americana i dos dormitoris. Planta superior amb suite principal, despatx i terrassa-solarium. Ascensor privat directe a l'àtic. Plaça de garatge doble i traster inclosos.",
+    "en": "Spectacular duplex penthouse in a rehabilitated landmark building in Lloret de Mar center. The property occupies the top floor with a 120m² private terrace with jacuzzi and 360° sea and mountain views. Top-quality finishes with natural oak floors, white lacquered interior carpentry and Italian Dada kitchen with Silestone countertop. Lower floor with 60m² living room, open kitchen and two bedrooms. Upper floor with master suite, office and solarium terrace. Private elevator direct to penthouse. Double garage space and storage included.",
+    "fr": "Spectaculaire penthouse duplex dans un bâtiment emblématique réhabilité du centre de Lloret de Mar. La propriété occupe le dernier étage avec terrasse privée de 120m² avec jacuzzi et vues 360° mer et montagne. Finitions de qualité supérieure avec parquets en chêne naturel, menuiserie intérieure laquée blanche et cuisine italienne Dada avec plan de travail Silestone. Rez-de-chaussée avec salon de 60m², cuisine ouverte et deux chambres. Étage supérieur avec suite principale, bureau et terrasse-solarium. Ascenseur privé direct au penthouse. Double place de garage et cave inclus."
+  },
+  "features": [
+    { "es": "Terraza 120m² con jacuzzi", "ca": "Terrassa 120m² amb jacuzzi", "en": "120m² terrace with jacuzzi", "fr": "Terrasse 120m² avec jacuzzi" },
+    { "es": "Vistas 360° mar y montaña", "ca": "Vistes 360° mar i muntanya", "en": "360° sea and mountain views", "fr": "Vues 360° mer et montagne" },
+    { "es": "Ascensor privado", "ca": "Ascensor privat", "en": "Private elevator", "fr": "Ascenseur privé" },
+    { "es": "Garaje doble incluido", "ca": "Garatge doble inclòs", "en": "Double garage included", "fr": "Double garage inclus" },
+    { "es": "Edificio rehabilitado", "ca": "Edifici rehabilitat", "en": "Rehabilitated building", "fr": "Bâtiment réhabilité" }
+  ],
+  "images": [
+    "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&q=80",
+    "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600&q=80",
+    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600&q=80",
+    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1600&q=80"
+  ],
+  "energyCertificate": "C",
+  "featured": true,
+  "exclusive": false,
+  "luxury": true,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": true,
+  "garden": false,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": true,
+  "investment": true,
+  "views": 654,
+  "createdAt": "2026-01-20",
+  "seo": {
+    "title": {
+      "es": "Ático Exclusivo Centro Lloret | Golden Home",
+      "ca": "Àtic Exclusiu Centre Lloret | Golden Home",
+      "en": "Exclusive Penthouse Lloret Center | Golden Home",
+      "fr": "Penthouse Exclusif Centre Lloret | Golden Home"
+    },
+    "description": {
+      "es": "Ático dúplex de 245m² en el centro de Lloret de Mar. Terraza 120m² con jacuzzi, vistas 360° y garaje doble.",
+      "ca": "Àtic dúplex de 245m² al centre de Lloret de Mar. Terrassa 120m² amb jacuzzi, vistes 360° i garatge doble.",
+      "en": "245m² duplex penthouse in Lloret de Mar center. 120m² terrace with jacuzzi, 360° views and double garage.",
+      "fr": "Penthouse duplex de 245m² au centre de Lloret de Mar. Terrasse 120m² avec jacuzzi, vues 360° et double garage."
+    },
+    "keywords": {
+      "es": "ático lloret de mar, penthouse costa brava, apartamento lujo lloret",
+      "ca": "àtic lloret de mar, penthouse costa brava, apartament luxe lloret",
+      "en": "penthouse lloret de mar, costa brava penthouse, luxury apartment lloret",
+      "fr": "penthouse lloret de mar, costa brava penthouse, appartement luxe lloret"
+    }
+  }
+}
