@@ -85,7 +85,7 @@
 
   :root {
     --header-nav-h: 5rem;
-    --header-search-h: 3.5rem;
+    --header-search-h: 3.75rem;
     --header-total-h: var(--header-nav-h);
     --header-sticky-offset: calc(var(--header-nav-h) + 1rem);
   }

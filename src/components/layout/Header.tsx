@@ -189,13 +189,13 @@ export function Header() {
         <div
           aria-hidden={!showStickySearch}
           className={cn(
-            'absolute left-0 right-0 top-[var(--header-nav-h)] h-[var(--header-search-h)] border-t border-charcoal/[0.06] bg-white/90 backdrop-blur-xl shadow-sm shadow-charcoal/[0.04] transition-[opacity,transform] duration-200 ease-out',
+            'absolute inset-x-0 top-[var(--header-nav-h)] h-[var(--header-search-h)] border-t border-charcoal/[0.06] bg-white/90 backdrop-blur-xl shadow-sm shadow-charcoal/[0.04] transition-[opacity,transform] duration-200 ease-out',
             showStickySearch
-              ? 'opacity-100 translate-y-0 pointer-events-auto'
-              : 'opacity-0 -translate-y-full pointer-events-none',
+              ? 'opacity-100 translate-y-0 pointer-events-auto visible'
+              : 'opacity-0 -translate-y-full pointer-events-none invisible',
           )}
         >
-          <Container className="h-full">
+          <Container className="flex h-full w-full items-center">
             <StickySearchBar />
           </Container>
         </div>

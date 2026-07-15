@@ -62,8 +62,8 @@ export function StickySearchBar() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex h-full items-center" role="search">
-      <div ref={containerRef} className="relative">
+    <form onSubmit={handleSubmit} className="flex h-full w-full items-center" role="search">
+      <div ref={containerRef} className="relative w-full min-w-0">
         <input
           ref={inputRef}
           type="search"
@@ -76,7 +76,7 @@ export function StickySearchBar() {
             if (query.length >= 2) setOpen(true)
           }}
           placeholder={t('hero.searchPlaceholder')}
-          className="field-input !py-2.5 pr-24"
+          className="field-input w-full !py-2.5 pr-[5.5rem] sm:pr-28"
           aria-label={t('nav.search')}
           aria-expanded={open && query.length >= 2}
           aria-controls="global-search-results"
