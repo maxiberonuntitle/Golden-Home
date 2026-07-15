@@ -63,6 +63,39 @@ export function getPriceRange(): { min: number; max: number } {
   }
 }
 
+function createPropertyFuse(properties: Property[], lang: Language) {
+  return new Fuse(properties, {
+    keys: [
+      { name: `title.${lang}`, weight: 0.25 },
+      { name: `description.${lang}`, weight: 0.2 },
+      { name: `location.${lang}`, weight: 0.15 },
+      { name: 'reference', weight: 0.15 },
+      { name: 'city', weight: 0.1 },
+      { name: 'province', weight: 0.05 },
+      { name: 'slug', weight: 0.05 },
+      { name: `features.${lang}`, weight: 0.05 },
+    ],
+    threshold: 0.35,
+    ignoreLocation: true,
+    minMatchCharLength: 2,
+  })
+}
+
+export function searchPropertiesByQuery(
+  query: string,
+  lang: Language,
+  limit?: number,
+): Property[] {
+  const trimmed = query.trim()
+  if (!trimmed) return []
+
+  const results = createPropertyFuse(allProperties, lang)
+    .search(trimmed)
+    .map((match) => match.item)
+
+  return limit ? results.slice(0, limit) : results
+}
+
 function matchesBooleanFilter(
   filterValue: boolean,
   propertyValue: boolean,
@@ -162,20 +195,7 @@ export function filterProperties(
   const query = filters.query.trim()
 
   if (query) {
-    const fuse = new Fuse(properties, {
-      keys: [
-        { name: `title.${lang}`, weight: 0.3 },
-        { name: `description.${lang}`, weight: 0.2 },
-        { name: `location.${lang}`, weight: 0.15 },
-        { name: 'reference', weight: 0.15 },
-        { name: 'city', weight: 0.1 },
-        { name: 'province', weight: 0.1 },
-      ],
-      threshold: 0.4,
-      ignoreLocation: true,
-    })
-
-    result = fuse.search(query).map((match) => match.item)
+    result = searchPropertiesByQuery(query, lang)
   }
 
   return sortProperties(applyStructuralFilters(result, filters), sort)

@@ -255,7 +255,7 @@ export function PropertyDetailPage() {
               </Swiper>
             </div>
 
-            <div className="lg:sticky lg:top-24 lg:self-start space-y-6">
+            <div className="lg:sticky lg:top-[var(--header-sticky-offset)] lg:self-start space-y-6 transition-[top] duration-200 ease-out">
               <div className="p-6 lg:p-8 bg-cream rounded-xl">
                 <PropertyBadges
                   exclusive={property.exclusive}

@@ -82,4 +82,17 @@
   .field-input {
     @apply w-full rounded-lg border border-charcoal/10 bg-white/50 px-4 py-3 text-sm text-charcoal shadow-sm shadow-charcoal/[0.04] backdrop-blur-md transition-all duration-200 placeholder:text-charcoal/40 hover:border-gold/35 hover:bg-white/65 focus:border-gold/50 focus:bg-white/70 focus:outline-none focus:ring-2 focus:ring-gold/15;
   }
+
+  :root {
+    --header-nav-h: 5rem;
+    --header-search-h: 0px;
+    --header-total-h: calc(var(--header-nav-h) + var(--header-search-h));
+    --header-sticky-offset: calc(var(--header-total-h) + 1rem);
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --header-nav-h: 6rem;
+    }
+  }
 }

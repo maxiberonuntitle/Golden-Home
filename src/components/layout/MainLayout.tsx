@@ -3,23 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { FloatingButtons } from '@/components/layout/FloatingButtons'
-import { useScrollPosition } from '@/hooks/useScrollPosition'
-import { cn } from '@/utils/cn'
 
 export function MainLayout() {
   const location = useLocation()
-  const scrollY = useScrollPosition()
-  const showStickySearch = scrollY > 280
 
   return (
     <div className="min-h-screen flex flex-col bg-warm-white">
       <Header />
-      <main
-        className={cn(
-          'flex-1 transition-[padding-top] duration-250 ease-out',
-          showStickySearch ? 'pt-[8.75rem] lg:pt-[10.75rem]' : 'pt-20 lg:pt-24',
-        )}
-      >
+      <main className="flex-1 pt-[var(--header-total-h)] transition-[padding-top] duration-200 ease-out">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}

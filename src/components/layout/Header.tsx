@@ -7,7 +7,6 @@ import { useScrollPosition } from '@/hooks/useScrollPosition'
 import { PROPERTY_TYPES } from '@/utils/constants'
 import { LanguageSelector } from '@/components/ui/LanguageSelector'
 import { CurrencySelector } from '@/components/ui/CurrencySelector'
-import { DarkModeToggle } from '@/components/ui/DarkModeToggle'
 import { Logo } from '@/components/ui/Logo'
 import { Container } from '@/components/ui/Container'
 import { StickySearchBar } from '@/components/search/StickySearchBar'
@@ -42,6 +41,13 @@ export function Header() {
     { href: `/${lang}/blog`, label: t('nav.blog') },
     { href: `/${lang}/contact`, label: t('nav.contact') },
   ]
+
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--header-search-h',
+      showStickySearch ? '3.5rem' : '0px',
+    )
+  }, [showStickySearch])
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -148,7 +154,6 @@ export function Header() {
             <div className="hidden lg:flex items-center gap-1">
               <LanguageSelector />
               <CurrencySelector />
-              <DarkModeToggle />
               <Link
                 to={`/${lang}/favorites`}
                 className="p-2 text-charcoal/70 hover:text-gold transition-colors"
@@ -178,8 +183,19 @@ export function Header() {
             </div>
           </div>
 
-          <AnimatePresence>
-            {showStickySearch && <StickySearchBar visible />}
+          <AnimatePresence initial={false}>
+            {showStickySearch && (
+              <motion.div
+                key="sticky-search"
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.2, ease: 'easeOut' }}
+                className="border-t border-charcoal/[0.06] bg-white/70 backdrop-blur-xl"
+              >
+                <StickySearchBar />
+              </motion.div>
+            )}
           </AnimatePresence>
         </Container>
       </header>
@@ -266,7 +282,6 @@ export function Header() {
 
                 <div className="p-6 border-t border-charcoal/10 flex items-center justify-end gap-1 bg-white">
                   <CurrencySelector />
-                  <DarkModeToggle />
                 </div>
               </div>
             </motion.div>

@@ -13,7 +13,7 @@
     "title": "Golden Home Inmobiliaria",
     "subtitle": "Votre maison idéale, à un clic. Vente et conseil immobilier avec un service personnalisé à Lloret de Mar et sur la Costa Brava.",
     "cta": "Explorer les propriétés",
-    "searchPlaceholder": "Rechercher villas, appartements, domaines..."
+    "searchPlaceholder": "Rechercher par zone, référence, ville..."
   },
   "search": {
     "title": "Trouvez votre propriété idéale",
@@ -49,6 +49,8 @@
     },
     "results": "{{count}} propriétés trouvées",
     "noResults": "Aucune propriété ne correspond à vos critères. Ajustez vos filtres ou contactez notre équipe.",
+    "noMatches": "Aucune propriété ne correspond à votre recherche.",
+    "viewAllResults": "Voir les {{count}} résultats",
     "sortBy": "Trier par",
     "clearFilters": "Effacer les filtres"
   },

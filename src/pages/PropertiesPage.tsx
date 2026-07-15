@@ -97,8 +97,11 @@ export function PropertiesPage() {
         <Container>
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
             {isDesktop ? (
-              <div id="property-filters" className="lg:w-72 xl:w-80 shrink-0 scroll-mt-32">
-                <div className="sticky top-32 p-6 bg-white/55 backdrop-blur-xl border border-white/40 border-charcoal/8 rounded-xl shadow-sm shadow-charcoal/[0.04]">
+              <div
+                id="property-filters"
+                className="lg:w-72 xl:w-80 shrink-0 scroll-mt-[var(--header-sticky-offset)]"
+              >
+                <div className="sticky top-[var(--header-sticky-offset)] transition-[top] duration-200 ease-out p-6 bg-white/90 backdrop-blur-xl border border-charcoal/10 rounded-xl shadow-sm shadow-charcoal/[0.06] max-h-[calc(100dvh-var(--header-sticky-offset)-1rem)] overflow-y-auto">
                   <FilterPanel />
                 </div>
               </div>
@@ -116,7 +119,7 @@ export function PropertiesPage() {
                   <div className="fixed inset-0 z-50 bg-charcoal/40 backdrop-blur-sm">
                     <div
                       id="property-filters"
-                      className="absolute inset-y-0 left-0 w-full max-w-sm bg-white/75 backdrop-blur-xl border-r border-charcoal/10 p-6 overflow-y-auto scroll-mt-32"
+                      className="absolute inset-y-0 left-0 w-full max-w-sm bg-white/95 backdrop-blur-xl border-r border-charcoal/10 p-6 overflow-y-auto scroll-mt-[var(--header-sticky-offset)]"
                     >
                       <div className="flex items-center justify-between mb-6">
                         <h2 className="font-serif text-xl">{t('search.filters')}</h2>

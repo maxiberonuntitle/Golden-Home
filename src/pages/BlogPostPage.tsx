@@ -109,7 +109,7 @@ export function BlogPostPage() {
               </ScrollReveal>
 
               <ScrollReveal delay={0.2} className="lg:col-span-4">
-                <aside className="sticky top-24 p-8 bg-cream rounded-xl">
+                <aside className="sticky top-[var(--header-sticky-offset)] p-8 bg-cream rounded-xl transition-[top] duration-200 ease-out">
                   <h3 className="font-serif text-xl text-charcoal mb-4">{t('blog.author')}</h3>
                   <p className="font-medium text-charcoal">{post.author}</p>
                   <p className="text-sm text-gold mb-4">{authorRole}</p>

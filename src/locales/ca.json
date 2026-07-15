@@ -13,7 +13,7 @@
     "title": "Golden Home Immobiliària",
     "subtitle": "La teva llar ideal, a un clic de distància. Venda i assessorament immobiliari amb servei personalitzat a Lloret de Mar i la Costa Brava.",
     "cta": "Explorar propietats",
-    "searchPlaceholder": "Cercar viles, apartaments, masies..."
+    "searchPlaceholder": "Cercar per zona, referència, ciutat..."
   },
   "search": {
     "title": "Trobi la seva propietat ideal",
@@ -49,6 +49,8 @@
     },
     "results": "{{count}} propietats trobades",
     "noResults": "No s'han trobat propietats amb els criteris seleccionats. Ajusti els filtres o contacti amb el nostre equip.",
+    "noMatches": "No hi ha propietats que coincideixin amb la cerca.",
+    "viewAllResults": "Veure els {{count}} resultats",
     "sortBy": "Ordenar per",
     "clearFilters": "Esborrar filtres"
   },
