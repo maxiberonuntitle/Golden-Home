@@ -46,7 +46,7 @@
     "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1600&q=80"
   ],
   "energyCertificate": "A",
-  "featured": true,
+  "featured": false,
   "exclusive": true,
   "luxury": true,
   "newConstruction": true,

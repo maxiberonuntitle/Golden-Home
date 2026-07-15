@@ -1,0 +1,82 @@
+{
+  "id": "piso-camino-sant-pere-del-bosc-blanes",
+  "reference": "GH-BLANES-SPB-001",
+  "slug": "piso-camino-sant-pere-del-bosc-blanes",
+  "title": {
+    "es": "Piso seminuevo de 2 habitaciones con balcón en Blanes",
+    "ca": "Pis seminou de 2 habitacions amb balcó a Blanes",
+    "en": "Semi-new 2-bedroom apartment with balcony in Blanes",
+    "fr": "Appartement semi-neuf 2 chambres avec balcon à Blanes"
+  },
+  "price": 186000,
+  "location": {
+    "es": "Camino Sant Pere del Bosc, Semicentre, Blanes",
+    "ca": "Camí Sant Pere del Bosc, Semicentre, Blanes",
+    "en": "Camino Sant Pere del Bosc, Semicentre, Blanes",
+    "fr": "Camino Sant Pere del Bosc, Semicentre, Blanes"
+  },
+  "province": "Girona",
+  "city": "Blanes",
+  "coordinates": { "lat": 41.6759, "lng": 2.7925 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "builtArea": 62,
+  "plotArea": 0,
+  "description": {
+    "es": "Si buscas un piso listo para entrar a vivir, con una distribución funcional y en una excelente ubicación, esta vivienda es para ti.\n\nUbicado en la zona de la Carretera de Lloret de Blanes, este acogedor piso de 62 m² construidos, construido en 2004, se encuentra en perfecto estado de conservación, por lo que no tendrás que preocuparte por realizar reformas.\n\nLa vivienda dispone de 2 dormitorios, una amplia habitación doble y una habitación individual con salida directa al balcón, ideal como dormitorio, despacho o habitación infantil. El salón-comedor, luminoso y confortable, se integra con una cocina abierta, creando un espacio moderno y práctico para el día a día.\n\nCuenta con 1 baño completo, armarios empotrados, calefacción de gas natural y se encuentra en una segunda planta con ascensor, con orientación oeste, lo que proporciona una agradable luz natural durante gran parte del día.\n\nEl balcón ofrece un espacio perfecto para disfrutar del aire libre, tomar un café o relajarse al finalizar la jornada.\n\nUna excelente oportunidad tanto como primera vivienda, segunda residencia o inversión, en una zona tranquila y bien comunicada, con todos los servicios necesarios a pocos minutos.",
+    "ca": "Si busques un pis a punt per entrar a viure, amb una distribució funcional i en una excel·lent ubicació, aquesta vivenda és per a tu.\n\nUbicat a la zona de la Carretera de Lloret de Blanes, aquest acollidor pis de 62 m² construïts, construït el 2004, es troba en perfecte estat de conservació.\n\nLa vivenda disposa de 2 dormitoris, una àmplia habitació doble i una habitació individual amb sortida directa al balcó. El saló-menjador, lluminós i confortable, s'integra amb una cuina oberta.\n\nCompta amb 1 bany complet, armaris encastats, calefacció de gas natural i es troba en una segona planta amb ascensor, amb orientació oest.\n\nEl balcó ofereix un espai perfecte per gaudir de l'aire lliure. Una excel·lent oportunitat com a primera vivenda, segona residència o inversió, en una zona tranquil·la i ben comunicada.",
+    "en": "If you are looking for a move-in ready apartment with a functional layout in an excellent location, this home is for you.\n\nLocated in the Lloret de Blanes road area, this cozy 62 m² apartment built in 2004 is in perfect condition, so you won't need to worry about renovations.\n\nThe property has 2 bedrooms — a spacious double room and a single room with direct access to the balcony — plus a bright open-plan living-dining area with an open kitchen. It includes 1 full bathroom, fitted wardrobes and natural gas heating.\n\nSituated on the second floor with elevator and west-facing orientation, it enjoys pleasant natural light throughout much of the day. The balcony is ideal for relaxing outdoors.\n\nAn excellent opportunity as a first home, second residence or investment in a quiet, well-connected area with all services nearby.",
+    "fr": "Si vous recherchez un appartement prêt à emménager, avec une distribution fonctionnelle et un excellent emplacement, ce logement est fait pour vous.\n\nSitué dans la zone de la route Lloret de Blanes, ce cosy appartement de 62 m² construit en 2004 est en parfait état de conservation.\n\nLe logement comprend 2 chambres — une grande chambre double et une chambre individuelle avec accès direct au balcon — ainsi qu'un salon-salle à manger lumineux avec cuisine ouverte. Il dispose d'1 salle de bain complète, de placards intégrés et d'un chauffage au gaz naturel.\n\nAu 2e étage avec ascenseur et orientation ouest, il bénéficie d'une agréable lumière naturelle. Le balcon est parfait pour profiter de l'extérieur.\n\nUne excellente opportunité comme résidence principale, résidence secondaire ou investissement dans un quartier calme et bien desservi."
+  },
+  "features": [
+    { "es": "Balcón", "ca": "Balcó", "en": "Balcony", "fr": "Balcon" },
+    { "es": "Cocina abierta", "ca": "Cuina oberta", "en": "Open kitchen", "fr": "Cuisine ouverte" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Calefacción de gas natural", "ca": "Calefacció de gas natural", "en": "Natural gas heating", "fr": "Chauffage au gaz naturel" },
+    { "es": "Orientación oeste", "ca": "Orientació oest", "en": "West-facing", "fr": "Orientation ouest" },
+    { "es": "Segunda planta exterior con ascensor", "ca": "Segona planta exterior amb ascensor", "en": "Second floor exterior with elevator", "fr": "2e étage extérieur avec ascenseur" },
+    { "es": "Construido en 2004", "ca": "Construït el 2004", "en": "Built in 2004", "fr": "Construit en 2004" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "images": [
+    "/properties/piso-camino-sant-pere-del-bosc-blanes/01.png"
+  ],
+  "energyCertificate": "A",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": false,
+  "garden": false,
+  "parking": false,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": false,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-15",
+  "seo": {
+    "title": {
+      "es": "Piso 2 hab. con balcón en Blanes | 186.000 € | Golden Home",
+      "ca": "Pis 2 hab. amb balcó a Blanes | 186.000 € | Golden Home",
+      "en": "2-bed apartment with balcony in Blanes | €186,000 | Golden Home",
+      "fr": "Appartement 2 ch. avec balcon à Blanes | 186 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso seminuevo de 62 m² con 2 habitaciones y balcón en Camino Sant Pere del Bosc, Blanes. Segunda planta con ascensor. 186.000 €. Consulte con Golden Home.",
+      "ca": "Pis seminou de 62 m² amb 2 habitacions i balcó al Camí Sant Pere del Bosc, Blanes. Segona planta amb ascensor. 186.000 €. Consulteu amb Golden Home.",
+      "en": "Semi-new 62 m² apartment with 2 bedrooms and balcony on Camino Sant Pere del Bosc, Blanes. Second floor with elevator. €186,000. Contact Golden Home.",
+      "fr": "Appartement semi-neuf de 62 m² avec 2 chambres et balcon au Camino Sant Pere del Bosc, Blanes. 2e étage avec ascenseur. 186 000 €. Contactez Golden Home."
+    },
+    "keywords": {
+      "es": "piso blanes venta, piso 2 habitaciones blanes, inmobiliaria blanes, golden home blanes",
+      "ca": "pis blanes venda, pis 2 habitacions blanes, immobiliària blanes, golden home blanes",
+      "en": "apartment blanes sale, 2 bedroom flat blanes, real estate blanes, golden home blanes",
+      "fr": "appartement blanes vente, appartement 2 chambres blanes, immobilier blanes, golden home blanes"
+    }
+  }
+}
