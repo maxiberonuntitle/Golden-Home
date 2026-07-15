@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useLocation } from 'react-router-dom'
 import { SlidersHorizontal } from 'lucide-react'
 import { SEO } from '@/components/seo/SEO'
 import { Container } from '@/components/ui/Container'
@@ -13,12 +14,14 @@ import { useProperties } from '@/hooks/useProperties'
 import { useFilterStore } from '@/stores/useFilterStore'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { COMPANY } from '@/utils/constants'
+import { openFiltersPanel } from '@/utils/filtersNavigation'
 import type { Language } from '@/types'
 
 const PAGE_SIZE = 6
 
 export function PropertiesPage() {
   const { t, i18n } = useTranslation()
+  const location = useLocation()
   const lang = (i18n.language.split('-')[0] || 'es') as Language
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
@@ -46,6 +49,23 @@ export function PropertiesPage() {
     setVisibleCount(PAGE_SIZE)
   }, [filterKey])
 
+  useEffect(() => {
+    if (location.hash !== '#filters') return
+    if (isDesktop) {
+      openFiltersPanel()
+      return
+    }
+    setMobileFiltersOpen(true)
+  }, [location.hash, isDesktop])
+
+  useEffect(() => {
+    const onOpenFilters = () => {
+      if (!isDesktop) setMobileFiltersOpen(true)
+    }
+    window.addEventListener('gh:open-filters', onOpenFilters)
+    return () => window.removeEventListener('gh:open-filters', onOpenFilters)
+  }, [isDesktop])
+
   return (
     <>
       <SEO
@@ -61,12 +81,12 @@ export function PropertiesPage() {
               title={t('nav.properties')}
               description={
                 lang === 'es'
-                  ? 'Explore nuestra cartera exclusiva de villas, apartamentos y fincas de lujo en Lloret de Mar y la Costa Brava.'
+                  ? 'Explore nuestra cartera de villas, apartamentos y fincas en Lloret de Mar y la Costa Brava.'
                   : lang === 'ca'
-                    ? 'Explori la nostra cartera exclusiva de viles, apartaments i masies de luxe a Lloret de Mar i la Costa Brava.'
+                    ? 'Explori la nostra cartera de viles, apartaments i masies a Lloret de Mar i la Costa Brava.'
                     : lang === 'en'
-                      ? 'Explore our exclusive portfolio of luxury villas, apartments and estates in Lloret de Mar and the Costa Brava.'
-                      : 'Explorez notre portefeuille exclusif de villas, appartements et domaines de luxe à Lloret de Mar et sur la Costa Brava.'
+                      ? 'Explore our portfolio of villas, apartments and estates in Lloret de Mar and the Costa Brava.'
+                      : 'Explorez notre portefeuille de villas, appartements et domaines à Lloret de Mar et sur la Costa Brava.'
               }
             />
           </ScrollReveal>
@@ -77,8 +97,8 @@ export function PropertiesPage() {
         <Container>
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
             {isDesktop ? (
-              <div className="lg:w-72 xl:w-80 shrink-0">
-                <div className="sticky top-24 p-6 bg-cream rounded-xl">
+              <div id="property-filters" className="lg:w-72 xl:w-80 shrink-0 scroll-mt-32">
+                <div className="sticky top-32 p-6 bg-white/35 backdrop-blur-xl border border-charcoal/8 rounded-xl shadow-sm">
                   <FilterPanel />
                 </div>
               </div>
@@ -87,14 +107,17 @@ export function PropertiesPage() {
                 <button
                   type="button"
                   onClick={() => setMobileFiltersOpen(true)}
-                  className="flex items-center justify-center gap-2 px-4 py-3 border border-charcoal/15 rounded-lg text-sm font-medium"
+                  className="flex items-center justify-center gap-2 px-4 py-3 bg-white/40 backdrop-blur-md border border-charcoal/10 rounded-lg text-sm font-medium"
                 >
                   <SlidersHorizontal className="w-4 h-4" />
                   {t('search.filters')}
                 </button>
                 {mobileFiltersOpen && (
-                  <div className="fixed inset-0 z-50 bg-charcoal/50">
-                    <div className="absolute inset-y-0 left-0 w-full max-w-sm bg-warm-white p-6 overflow-y-auto">
+                  <div className="fixed inset-0 z-50 bg-charcoal/40 backdrop-blur-sm">
+                    <div
+                      id="property-filters"
+                      className="absolute inset-y-0 left-0 w-full max-w-sm bg-warm-white/80 backdrop-blur-xl border-r border-charcoal/10 p-6 overflow-y-auto scroll-mt-32"
+                    >
                       <div className="flex items-center justify-between mb-6">
                         <h2 className="font-serif text-xl">{t('search.filters')}</h2>
                         <button

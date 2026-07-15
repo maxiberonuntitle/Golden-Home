@@ -56,7 +56,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
           type="text"
           value={filters.reference}
           onChange={(e) => setFilter('reference', e.target.value)}
-          className="w-full px-4 py-3 bg-warm-white border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
           placeholder="GH-2026-001"
         />
       </div>
@@ -66,7 +66,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
         <select
           value={filters.type}
           onChange={(e) => setFilter('type', e.target.value as PropertyType | '')}
-          className="w-full px-4 py-3 bg-warm-white border border-charcoal/10 text-sm appearance-none cursor-pointer focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm appearance-none cursor-pointer focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
         >
           <option value="">{t('search.type')}</option>
           {PROPERTY_TYPES.map((pt) => (
@@ -179,7 +179,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
           type="text"
           value={filters.province}
           onChange={(e) => setFilter('province', e.target.value)}
-          className="w-full px-4 py-3 bg-warm-white border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
         />
       </div>
 
@@ -189,7 +189,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
           type="text"
           value={filters.city}
           onChange={(e) => setFilter('city', e.target.value)}
-          className="w-full px-4 py-3 bg-warm-white border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full px-4 py-3 bg-white/40 backdrop-blur-sm border border-charcoal/10 text-sm focus:outline-none focus:border-gold/50 focus:bg-white/55 transition-colors"
         />
       </div>
 

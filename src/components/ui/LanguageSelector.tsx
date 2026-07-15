@@ -3,7 +3,12 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ChevronDown, Globe } from 'lucide-react'
 import { languages } from '@/i18n'
+import { cn } from '@/utils/cn'
 import type { Language } from '@/types'
+
+interface LanguageSelectorProps {
+  variant?: 'default' | 'hero'
+}
 
 const languageLabels: Record<Language, string> = {
   es: 'ES',
@@ -12,7 +17,7 @@ const languageLabels: Record<Language, string> = {
   fr: 'FR',
 }
 
-export function LanguageSelector() {
+export function LanguageSelector({ variant = 'default' }: LanguageSelectorProps) {
   const { i18n } = useTranslation()
   const location = useLocation()
   const navigate = useNavigate()
@@ -49,7 +54,12 @@ export function LanguageSelector() {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-charcoal/70 hover:text-gold transition-colors"
+        className={cn(
+          'flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium transition-colors',
+          variant === 'hero'
+            ? 'text-warm-white/80 hover:text-gold-light'
+            : 'text-charcoal/70 hover:text-gold',
+        )}
         aria-label="Select language"
         aria-expanded={open}
       >

@@ -93,7 +93,7 @@ export function HomePage() {
           <div className="absolute inset-0 image-overlay" />
         </div>
 
-        <Container className="relative z-10 pt-32 pb-20">
+        <Container className="relative z-10 pt-8 pb-20">
           <div className="text-center mb-12">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -295,7 +295,7 @@ export function HomePage() {
                 return (
                   <Link
                     key={property.id}
-                    to={`/${lang}/properties/${property.slug}`}
+                    to={`/${lang}/properties`}
                     className="absolute group"
                     style={{ top: pos.top, left: pos.left }}
                   >

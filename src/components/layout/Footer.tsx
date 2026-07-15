@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { COMPANY, SOCIAL } from '@/utils/constants'
+import { Logo } from '@/components/ui/Logo'
 import { Container } from '@/components/ui/Container'
 import type { Language } from '@/types'
 
@@ -66,12 +67,10 @@ export function Footer() {
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           <div className="lg:col-span-1">
-            <Link
+            <Logo
               to={`/${lang}`}
-              className="font-serif text-2xl text-gold hover:text-gold-light transition-colors"
-            >
-              Golden Home
-            </Link>
+              imageClassName="h-10"
+            />
             <p className="mt-4 text-sm leading-relaxed text-warm-white/50">
               {t('footer.description')}
             </p>
@@ -129,7 +128,7 @@ export function Footer() {
             <h3 className="text-xs font-medium uppercase tracking-[0.2em] text-gold mb-6">
               {t('footer.followUs')}
             </h3>
-            <div className="flex gap-3">
+            <div className="flex gap-3 mb-5">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -143,6 +142,16 @@ export function Footer() {
                 </a>
               ))}
             </div>
+            <a
+              href={SOCIAL.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-5 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white text-sm font-medium rounded-sm hover:opacity-90 transition-opacity"
+            >
+              <InstagramIcon className="w-4 h-4" />
+              <span>{t('footer.instagramButton')}</span>
+              <span className="text-white/80">{t('footer.instagramHandle')}</span>
+            </a>
           </div>
         </div>
 

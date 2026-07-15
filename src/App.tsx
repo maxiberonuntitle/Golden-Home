@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes, useParams } from 'react-router-dom'
 import { MainLayout } from '@/components/layout/MainLayout'
 import { languages, defaultLanguage } from '@/i18n'
 import type { Language } from '@/types'
@@ -7,9 +7,6 @@ import type { Language } from '@/types'
 const HomePage = lazy(() => import('@/pages/HomePage').then((m) => ({ default: m.HomePage })))
 const PropertiesPage = lazy(() =>
   import('@/pages/PropertiesPage').then((m) => ({ default: m.PropertiesPage })),
-)
-const PropertyDetailPage = lazy(() =>
-  import('@/pages/PropertyDetailPage').then((m) => ({ default: m.PropertyDetailPage })),
 )
 const ContactPage = lazy(() => import('@/pages/ContactPage').then((m) => ({ default: m.ContactPage })))
 const AboutPage = lazy(() => import('@/pages/AboutPage').then((m) => ({ default: m.AboutPage })))
@@ -24,6 +21,11 @@ const ComparePage = lazy(() => import('@/pages/ComparePage').then((m) => ({ defa
 const NotFoundPage = lazy(() =>
   import('@/pages/NotFoundPage').then((m) => ({ default: m.NotFoundPage })),
 )
+
+function PropertyListRedirect() {
+  const { lang } = useParams<{ lang: string }>()
+  return <Navigate to={`/${lang ?? 'es'}/properties`} replace />
+}
 
 function PageLoader() {
   return (
@@ -65,14 +67,7 @@ export default function App() {
               </SuspenseWrap>
             }
           />
-          <Route
-            path="properties/:slug"
-            element={
-              <SuspenseWrap>
-                <PropertyDetailPage />
-              </SuspenseWrap>
-            }
-          />
+          <Route path="properties/:slug" element={<PropertyListRedirect />} />
           <Route
             path="about"
             element={

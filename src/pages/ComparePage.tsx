@@ -49,12 +49,9 @@ function CompareCell({ property, lang }: { property: Property; lang: Language })
           <X className="w-4 h-4 text-charcoal" />
         </button>
       </div>
-      <Link
-        to={`/${lang}/properties/${property.slug}`}
-        className="font-serif text-xl text-charcoal hover:text-gold transition-colors line-clamp-2"
-      >
+      <p className="font-serif text-xl text-charcoal line-clamp-2">
         {localized.title}
-      </Link>
+      </p>
       <p className="text-gold font-medium mt-1">
         {formatPrice(localized.price, currency, lang)}
       </p>

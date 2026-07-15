@@ -10,8 +10,8 @@
     "compare": "Compare"
   },
   "hero": {
-    "title": "Luxury Real Estate in Lloret de Mar",
-    "subtitle": "Exclusive properties on the Costa Brava, where the Mediterranean meets timeless elegance",
+    "title": "Golden Home Inmobiliaria",
+    "subtitle": "Your ideal home, just a click away. Property sales and real estate advisory with personalized service in Lloret de Mar and the Costa Brava.",
     "cta": "Explore properties",
     "searchPlaceholder": "Search villas, apartments, estates..."
   },
@@ -178,10 +178,12 @@
     "publishedOn": "Published on"
   },
   "footer": {
-    "description": "Golden Home — Luxury real estate in Lloret de Mar. Exclusive properties on the Costa Brava with bespoke service and multilingual support.",
+    "description": "Golden Home Inmobiliaria in Lloret de Mar. Your ideal home, just a click away. Sales, advisory and personalized service on the Costa Brava.",
     "quickLinks": "Quick links",
     "contactInfo": "Contact information",
     "followUs": "Follow us",
+    "instagramButton": "Follow us on Instagram",
+    "instagramHandle": "@goldenhomelloret",
     "legal": "Legal notice",
     "privacy": "Privacy policy",
     "cookies": "Cookie policy",
@@ -228,7 +230,7 @@
     "backToTop": "Top"
   },
   "seo": {
-    "defaultTitle": "Golden Home — Luxury Real Estate in Lloret de Mar | Costa Brava",
-    "defaultDescription": "Discover exclusive properties in Lloret de Mar and the Costa Brava. Luxury villas, premium apartments and unique estates with Golden Home, your trusted real estate agency."
+    "defaultTitle": "Golden Home Inmobiliaria | Lloret de Mar · Costa Brava",
+    "defaultDescription": "Your ideal home, just a click away. Golden Home Inmobiliaria: property sales and real estate advisory with personalized service in Lloret de Mar and the Costa Brava."
   }
 }

@@ -49,7 +49,7 @@ export function SearchBar() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-4xl mx-auto bg-warm-white/95 backdrop-blur-xl border border-charcoal/10 shadow-2xl p-2 sm:p-3"
+      className="w-full max-w-4xl mx-auto bg-white/92 backdrop-blur-xl border border-white/60 shadow-2xl p-2 sm:p-3 rounded-sm"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-0">
         <div className="relative sm:border-r border-charcoal/10">

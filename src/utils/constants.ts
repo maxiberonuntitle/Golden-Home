@@ -4,16 +4,17 @@ export const COMPANY = {
   name: 'Golden Home Lloret',
   legalName: 'Golden Home Lloret S.L.',
   tagline: {
-    es: 'Inmobiliaria de lujo en la Costa Brava',
-    ca: 'Immobiliària de luxe a la Costa Brava',
-    en: 'Luxury real estate on the Costa Brava',
-    fr: 'Immobilier de luxe sur la Costa Brava',
+    es: 'Servicio Inmobiliario · Costa Brava',
+    ca: 'Servei Immobiliari · Costa Brava',
+    en: 'Real Estate Service · Costa Brava',
+    fr: 'Service Immobilier · Costa Brava',
   } satisfies LocalizedString,
   address: 'Av. Pau Casals 38, 17310 Lloret de Mar, Girona, Spain',
   phone: '+34 601 901 275',
   whatsapp: 'https://wa.me/34601901275',
   email: 'info@goldenhomelloret.es',
   website: 'https://goldenhomelloret.es',
+  logo: '/logo.png',
   coordinates: { lat: 41.6994, lng: 2.8451 },
   openingHours: {
     es: 'Lunes a Viernes: 9:30–19:00 | Sábados: 10:00–14:00',
@@ -135,7 +136,7 @@ export const SORT_OPTIONS: { value: SortOption; label: LocalizedString }[] = [
 ]
 
 export const SOCIAL = {
-  instagram: 'https://www.instagram.com/goldenhomelloret',
+  instagram: 'https://www.instagram.com/goldenhomelloret/',
   facebook: 'https://www.facebook.com/goldenhomelloret',
   linkedin: 'https://www.linkedin.com/company/golden-home-lloret',
   youtube: 'https://www.youtube.com/@goldenhomelloret',
