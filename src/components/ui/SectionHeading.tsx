@@ -24,11 +24,11 @@ export function SectionHeading({
           {subtitle}
         </p>
       )}
-      <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal leading-tight text-balance">
+      <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal dark:text-warm-white leading-tight text-balance">
         {title}
       </h2>
       {description && (
-        <div className="mt-5 text-charcoal/60 text-base sm:text-lg leading-relaxed text-balance">
+        <div className="mt-5 text-charcoal/60 dark:text-warm-white/60 text-base sm:text-lg leading-relaxed text-balance">
           {description}
         </div>
       )}

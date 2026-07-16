@@ -43,52 +43,52 @@ function CompareCell({ property, lang }: { property: Property; lang: Language })
         <button
           type="button"
           onClick={() => toggleCompare(property.id)}
-          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 flex items-center justify-center hover:bg-white transition-colors"
+          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 dark:bg-graphite/90 flex items-center justify-center hover:bg-white dark:hover:bg-graphite transition-colors"
           aria-label={t('common.removeFromCompare')}
         >
-          <X className="w-4 h-4 text-charcoal" />
+          <X className="w-4 h-4 text-charcoal dark:text-warm-white" />
         </button>
       </div>
-      <p className="font-serif text-xl text-charcoal line-clamp-2">
+      <p className="font-serif text-xl text-charcoal dark:text-warm-white line-clamp-2">
         {localized.title}
       </p>
       <p className="text-gold font-medium mt-1">
         {formatPrice(localized.price, currency, lang)}
       </p>
-      <p className="text-sm text-charcoal/60 mt-1">{localized.location}</p>
+      <p className="text-sm text-charcoal/60 dark:text-warm-white/60 mt-1">{localized.location}</p>
 
-      <dl className="mt-6 space-y-3 text-sm">
-        <div className="flex justify-between border-b border-charcoal/10 pb-2">
-          <dt className="text-charcoal/60">{t('property.reference')}</dt>
+      <dl className="mt-6 space-y-3 text-sm text-charcoal dark:text-warm-white">
+        <div className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+          <dt className="text-charcoal/60 dark:text-warm-white/60">{t('property.reference')}</dt>
           <dd className="font-medium">{property.reference}</dd>
         </div>
-        <div className="flex justify-between border-b border-charcoal/10 pb-2">
-          <dt className="text-charcoal/60">{t('search.type')}</dt>
+        <div className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+          <dt className="text-charcoal/60 dark:text-warm-white/60">{t('search.type')}</dt>
           <dd className="font-medium capitalize">{localized.type}</dd>
         </div>
-        <div className="flex justify-between border-b border-charcoal/10 pb-2">
-          <dt className="text-charcoal/60">{t('property.bedrooms')}</dt>
+        <div className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+          <dt className="text-charcoal/60 dark:text-warm-white/60">{t('property.bedrooms')}</dt>
           <dd className="font-medium">{property.bedrooms}</dd>
         </div>
-        <div className="flex justify-between border-b border-charcoal/10 pb-2">
-          <dt className="text-charcoal/60">{t('property.bathrooms')}</dt>
+        <div className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+          <dt className="text-charcoal/60 dark:text-warm-white/60">{t('property.bathrooms')}</dt>
           <dd className="font-medium">{property.bathrooms}</dd>
         </div>
-        <div className="flex justify-between border-b border-charcoal/10 pb-2">
-          <dt className="text-charcoal/60">{t('property.builtArea')}</dt>
+        <div className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+          <dt className="text-charcoal/60 dark:text-warm-white/60">{t('property.builtArea')}</dt>
           <dd className="font-medium">{formatArea(property.builtArea)}</dd>
         </div>
-        <div className="flex justify-between border-b border-charcoal/10 pb-2">
-          <dt className="text-charcoal/60">{t('property.plotArea')}</dt>
+        <div className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+          <dt className="text-charcoal/60 dark:text-warm-white/60">{t('property.plotArea')}</dt>
           <dd className="font-medium">{formatArea(property.plotArea)}</dd>
         </div>
-        <div className="flex justify-between border-b border-charcoal/10 pb-2">
-          <dt className="text-charcoal/60">{t('property.energyCertificate')}</dt>
+        <div className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+          <dt className="text-charcoal/60 dark:text-warm-white/60">{t('property.energyCertificate')}</dt>
           <dd className="font-medium">{property.energyCertificate}</dd>
         </div>
         {FEATURE_KEYS.map((key) => (
-          <div key={key} className="flex justify-between border-b border-charcoal/10 pb-2">
-            <dt className="text-charcoal/60">{t(`search.features.${key}`)}</dt>
+          <div key={key} className="flex justify-between border-b border-charcoal/10 dark:border-white/10 pb-2">
+            <dt className="text-charcoal/60 dark:text-warm-white/60">{t(`search.features.${key}`)}</dt>
             <dd className="font-medium">{property[key] ? '✓' : '—'}</dd>
           </div>
         ))}
@@ -170,8 +170,8 @@ export function ComparePage() {
               <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
                 <GitCompare className="w-8 h-8 text-gold" />
               </div>
-              <h2 className="font-serif text-2xl text-charcoal mb-3">{empty.title}</h2>
-              <p className="text-charcoal/60 max-w-md mx-auto mb-8">{empty.description}</p>
+              <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-3">{empty.title}</h2>
+              <p className="text-charcoal/60 dark:text-warm-white/60 max-w-md mx-auto mb-8">{empty.description}</p>
               <Link to={`/${lang}/properties`}>
                 <Button variant="primary" size="lg">
                   {t('nav.properties')}

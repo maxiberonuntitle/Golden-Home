@@ -49,15 +49,15 @@ export function SearchBar() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-4xl mx-auto bg-white/92 backdrop-blur-xl border border-white/60 shadow-2xl p-2 sm:p-3 rounded-sm"
+      className="w-full max-w-4xl mx-auto bg-white/92 backdrop-blur-xl border border-white/60 shadow-2xl p-2 sm:p-3 rounded-sm dark:bg-graphite/90 dark:border-white/10 dark:shadow-black/40"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-0">
-        <div className="relative sm:border-r border-charcoal/10">
+        <div className="relative sm:border-r border-charcoal/10 dark:border-white/10">
           <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gold" />
           <select
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className="w-full pl-11 pr-8 py-4 bg-transparent text-sm text-charcoal appearance-none cursor-pointer focus:outline-none"
+            className="w-full pl-11 pr-8 py-4 bg-transparent text-sm text-charcoal dark:text-warm-white appearance-none cursor-pointer focus:outline-none"
             aria-label={t('search.city')}
           >
             <option value="">{t('search.city')}</option>
@@ -67,15 +67,15 @@ export function SearchBar() {
               </option>
             ))}
           </select>
-          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal/30 pointer-events-none" />
+          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal/30 dark:text-warm-white/30 pointer-events-none" />
         </div>
 
-        <div className="relative sm:border-r border-charcoal/10">
+        <div className="relative sm:border-r border-charcoal/10 dark:border-white/10">
           <Home className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gold" />
           <select
             value={type}
             onChange={(e) => setType(e.target.value as PropertyType | '')}
-            className="w-full pl-11 pr-8 py-4 bg-transparent text-sm text-charcoal appearance-none cursor-pointer focus:outline-none"
+            className="w-full pl-11 pr-8 py-4 bg-transparent text-sm text-charcoal dark:text-warm-white appearance-none cursor-pointer focus:outline-none"
             aria-label={t('search.type')}
           >
             <option value="">{t('search.type')}</option>
@@ -85,14 +85,14 @@ export function SearchBar() {
               </option>
             ))}
           </select>
-          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal/30 pointer-events-none" />
+          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal/30 dark:text-warm-white/30 pointer-events-none" />
         </div>
 
-        <div className="relative sm:border-r border-charcoal/10">
+        <div className="relative sm:border-r border-charcoal/10 dark:border-white/10">
           <select
             value={priceRange}
             onChange={(e) => setPriceRange(Number(e.target.value))}
-            className="w-full px-4 py-4 bg-transparent text-sm text-charcoal appearance-none cursor-pointer focus:outline-none"
+            className="w-full px-4 py-4 bg-transparent text-sm text-charcoal dark:text-warm-white appearance-none cursor-pointer focus:outline-none"
             aria-label={t('search.price')}
           >
             {PRICE_RANGES.map((range, i) => (
@@ -101,7 +101,7 @@ export function SearchBar() {
               </option>
             ))}
           </select>
-          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal/30 pointer-events-none" />
+          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal/30 dark:text-warm-white/30 pointer-events-none" />
         </div>
 
         <Button type="submit" size="lg" className="w-full h-full min-h-[52px]">

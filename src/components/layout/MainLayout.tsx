@@ -8,7 +8,7 @@ export function MainLayout() {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen flex flex-col bg-warm-white">
+    <div className="min-h-screen flex flex-col overflow-x-hidden bg-warm-white dark:bg-charcoal">
       <Header />
       <main className="flex-1 pt-[var(--header-nav-h)]">
         <AnimatePresence mode="wait">

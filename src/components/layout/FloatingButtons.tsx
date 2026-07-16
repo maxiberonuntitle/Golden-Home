@@ -55,7 +55,7 @@ export function FloatingButtons() {
             transition={{ duration: 0.3 }}
             type="button"
             onClick={scrollToTop}
-            className="p-3 bg-warm-white border border-charcoal/10 text-charcoal hover:text-gold shadow-lg transition-colors"
+            className="p-3 bg-warm-white dark:bg-graphite border border-charcoal/10 dark:border-white/10 text-charcoal dark:text-warm-white hover:text-gold shadow-lg transition-colors"
             aria-label={t('floatingButtons.backToTop')}
           >
             <ArrowUp className="w-5 h-5" />

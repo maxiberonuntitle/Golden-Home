@@ -49,7 +49,7 @@ export function BlogPage() {
                 className={`px-4 py-2 text-sm border transition-colors ${
                   activeCategory === ''
                     ? 'bg-gold text-charcoal border-gold'
-                    : 'border-charcoal/15 text-charcoal/60 hover:border-gold/30'
+                    : 'border-charcoal/15 dark:border-white/15 text-charcoal/60 dark:text-warm-white/60 hover:border-gold/30'
                 }`}
               >
                 {lang === 'es'
@@ -70,7 +70,7 @@ export function BlogPage() {
                     className={`px-4 py-2 text-sm border transition-colors ${
                       activeCategory === category
                         ? 'bg-gold text-charcoal border-gold'
-                        : 'border-charcoal/15 text-charcoal/60 hover:border-gold/30'
+                        : 'border-charcoal/15 dark:border-white/15 text-charcoal/60 dark:text-warm-white/60 hover:border-gold/30'
                     }`}
                   >
                     {category}
@@ -95,13 +95,13 @@ export function BlogPage() {
                         {getLocalizedText(post.category, lang)}
                       </span>
                     </div>
-                    <h2 className="font-serif text-xl text-charcoal group-hover:text-gold transition-colors line-clamp-2 mb-3">
+                    <h2 className="font-serif text-xl text-charcoal dark:text-warm-white group-hover:text-gold transition-colors line-clamp-2 mb-3">
                       {getLocalizedText(post.title, lang)}
                     </h2>
-                    <p className="text-charcoal/60 text-sm leading-relaxed line-clamp-3 mb-4">
+                    <p className="text-charcoal/60 dark:text-warm-white/60 text-sm leading-relaxed line-clamp-3 mb-4">
                       {getLocalizedText(post.excerpt, lang)}
                     </p>
-                    <div className="flex items-center justify-between text-xs text-charcoal/50">
+                    <div className="flex items-center justify-between text-xs text-charcoal/50 dark:text-warm-white/50">
                       <span>{post.author}</span>
                       <span className="flex items-center gap-1">
                         <Clock className="w-3.5 h-3.5" />

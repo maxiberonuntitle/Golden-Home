@@ -94,7 +94,7 @@ export function StickySearchBar() {
         {open && query.length >= 2 && (
           <div
             id="global-search-results"
-            className="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-50 overflow-hidden rounded-xl border border-charcoal/10 bg-white/95 backdrop-blur-xl shadow-xl shadow-charcoal/10"
+            className="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-50 overflow-hidden rounded-xl border border-charcoal/10 dark:border-white/10 bg-white/95 dark:bg-graphite/95 backdrop-blur-xl shadow-xl shadow-charcoal/10 dark:shadow-black/30"
           >
             {previewMatches.length > 0 ? (
               <ul className="max-h-80 overflow-y-auto py-1">
@@ -107,9 +107,9 @@ export function StickySearchBar() {
                       <Link
                         to={`/${lang}/properties/${property.slug}`}
                         onClick={handleSelect}
-                        className="flex items-center gap-3 px-3 py-2.5 hover:bg-gold/10 transition-colors"
+                        className="flex items-center gap-3 px-3 py-2.5 hover:bg-gold/10 dark:hover:bg-gold/15 transition-colors"
                       >
-                        <div className="h-12 w-14 shrink-0 overflow-hidden rounded-md bg-cream">
+                        <div className="h-12 w-14 shrink-0 overflow-hidden rounded-md bg-cream dark:bg-charcoal">
                           {property.images[0] ? (
                             <img
                               src={property.images[0]}
@@ -119,8 +119,8 @@ export function StickySearchBar() {
                           ) : null}
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className="truncate text-sm font-medium text-charcoal">{title}</p>
-                          <p className="mt-0.5 flex items-center gap-1 truncate text-xs text-charcoal/55">
+                          <p className="truncate text-sm font-medium text-charcoal dark:text-warm-white">{title}</p>
+                          <p className="mt-0.5 flex items-center gap-1 truncate text-xs text-charcoal/55 dark:text-warm-white/55">
                             <MapPin className="h-3 w-3 shrink-0 text-gold" />
                             {propertyLocation}
                           </p>
@@ -134,14 +134,14 @@ export function StickySearchBar() {
                 })}
               </ul>
             ) : (
-              <p className="px-4 py-5 text-sm text-charcoal/55">{t('search.noMatches')}</p>
+              <p className="px-4 py-5 text-sm text-charcoal/55 dark:text-warm-white/55">{t('search.noMatches')}</p>
             )}
 
             {allMatches.length > 0 && (
               <button
                 type="button"
                 onClick={goToAllResults}
-                className="w-full border-t border-charcoal/8 px-4 py-3 text-left text-sm font-medium text-gold hover:bg-gold/5 transition-colors"
+                className="w-full border-t border-charcoal/8 dark:border-white/10 px-4 py-3 text-left text-sm font-medium text-gold hover:bg-gold/5 dark:hover:bg-gold/10 transition-colors"
               >
                 {t('search.viewAllResults', { count: allMatches.length })}
               </button>

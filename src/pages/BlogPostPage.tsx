@@ -23,7 +23,7 @@ export function BlogPostPage() {
   if (!post) {
     return (
       <Container className="py-24 text-center">
-        <p className="text-charcoal/60">{t('common.error')}</p>
+        <p className="text-charcoal/60 dark:text-warm-white/60">{t('common.error')}</p>
         <Link to={`/${lang}/blog`} className="text-gold hover:underline mt-4 inline-block">
           {t('common.back')}
         </Link>
@@ -103,17 +103,17 @@ export function BlogPostPage() {
           <Container>
             <div className="grid lg:grid-cols-12 gap-12">
               <ScrollReveal className="lg:col-span-8">
-                <div className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-charcoal prose-p:text-charcoal/70 prose-a:text-gold prose-strong:text-charcoal prose-li:text-charcoal/70">
+                <div className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-charcoal dark:prose-headings:text-warm-white prose-p:text-charcoal/70 dark:prose-p:text-warm-white/70 prose-a:text-gold prose-strong:text-charcoal dark:prose-strong:text-warm-white prose-li:text-charcoal/70 dark:prose-li:text-warm-white/70">
                   <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
                 </div>
               </ScrollReveal>
 
               <ScrollReveal delay={0.2} className="lg:col-span-4">
-                <aside className="sticky top-[var(--header-sticky-offset)] p-8 bg-cream rounded-xl transition-[top] duration-200 ease-out">
-                  <h3 className="font-serif text-xl text-charcoal mb-4">{t('blog.author')}</h3>
-                  <p className="font-medium text-charcoal">{post.author}</p>
+                <aside className="sticky top-[var(--header-sticky-offset)] p-8 bg-cream dark:bg-graphite rounded-xl transition-[top] duration-200 ease-out">
+                  <h3 className="font-serif text-xl text-charcoal dark:text-warm-white mb-4">{t('blog.author')}</h3>
+                  <p className="font-medium text-charcoal dark:text-warm-white">{post.author}</p>
                   <p className="text-sm text-gold mb-4">{authorRole}</p>
-                  <p className="text-sm text-charcoal/60 leading-relaxed">
+                  <p className="text-sm text-charcoal/60 dark:text-warm-white/60 leading-relaxed">
                     {lang === 'es' &&
                       'Experto en mercado inmobiliario de la Costa Brava con amplia experiencia asesorando a compradores nacionales e internacionales.'}
                     {lang === 'ca' &&
@@ -130,9 +130,9 @@ export function BlogPostPage() {
         </section>
 
         {relatedPosts.length > 0 && (
-          <section className="py-16 lg:py-24 bg-cream">
+          <section className="py-16 lg:py-24 bg-cream dark:bg-graphite">
             <Container>
-              <h2 className="font-serif text-3xl text-charcoal mb-10 text-center">
+              <h2 className="font-serif text-3xl text-charcoal dark:text-warm-white mb-10 text-center">
                 {t('blog.relatedArticles')}
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
@@ -149,7 +149,7 @@ export function BlogPostPage() {
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     </div>
-                    <h3 className="font-serif text-lg text-charcoal group-hover:text-gold transition-colors line-clamp-2">
+                    <h3 className="font-serif text-lg text-charcoal dark:text-warm-white group-hover:text-gold transition-colors line-clamp-2">
                       {getLocalizedText(related.title, lang)}
                     </h3>
                   </Link>

@@ -77,7 +77,18 @@
     "interestRate": "Interest rate",
     "loanTerm": "Loan term",
     "nearbyPlaces": "Nearby points of interest",
-    "reference": "Reference"
+    "reference": "Reference",
+    "forSale": "Apartment for sale",
+    "forRent": "Apartment for rent",
+    "viewMap": "View map",
+    "basicFeatures": "Basic features",
+    "building": "Building",
+    "energyConsumption": "Consumption",
+    "energyEmissions": "Emissions",
+    "advertiserComment": "Advertiser's comment",
+    "builtIn": "Built in {{year}}",
+    "habShort": "bed.",
+    "calculateMortgage": "Calculate mortgage"
   },
   "home": {
     "featuredTitle": "Featured properties",

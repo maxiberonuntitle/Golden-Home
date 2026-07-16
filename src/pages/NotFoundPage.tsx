@@ -28,13 +28,13 @@ export function NotFoundPage() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-gold text-sm uppercase tracking-[0.3em] mb-6">404</p>
-            <h1 className="font-serif text-5xl sm:text-7xl text-charcoal mb-6">
+            <h1 className="font-serif text-5xl sm:text-7xl text-charcoal dark:text-warm-white mb-6">
               {lang === 'es' && 'Página no encontrada'}
               {lang === 'ca' && 'Pàgina no trobada'}
               {lang === 'en' && 'Page not found'}
               {lang === 'fr' && 'Page introuvable'}
             </h1>
-            <p className="text-charcoal/60 text-lg max-w-md mx-auto mb-10 leading-relaxed">
+            <p className="text-charcoal/60 dark:text-warm-white/60 text-lg max-w-md mx-auto mb-10 leading-relaxed">
               {lang === 'es' &&
                 'La página que busca no existe o ha sido movida. Explore nuestra cartera de propiedades de lujo en la Costa Brava.'}
               {lang === 'ca' &&
@@ -60,7 +60,7 @@ export function NotFoundPage() {
               <button
                 type="button"
                 onClick={() => window.history.back()}
-                className="inline-flex items-center gap-2 text-sm text-charcoal/60 hover:text-gold transition-colors"
+                className="inline-flex items-center gap-2 text-sm text-charcoal/60 dark:text-warm-white/60 hover:text-gold transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
                 {t('common.back')}

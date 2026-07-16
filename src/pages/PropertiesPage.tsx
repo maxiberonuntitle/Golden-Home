@@ -74,7 +74,7 @@ export function PropertiesPage() {
         url={`${COMPANY.website}/${lang}/properties`}
       />
 
-      <section className="py-12 lg:py-16 border-b border-charcoal/5">
+      <section className="py-12 lg:py-16 border-b border-charcoal/5 dark:border-white/10">
         <Container>
           <ScrollReveal>
             <SectionHeading
@@ -101,7 +101,7 @@ export function PropertiesPage() {
                 id="property-filters"
                 className="lg:w-72 xl:w-80 shrink-0 scroll-mt-[var(--header-sticky-offset)]"
               >
-                <div className="sticky top-[var(--header-sticky-offset)] transition-[top] duration-200 ease-out p-6 bg-white/90 backdrop-blur-xl border border-charcoal/10 rounded-xl shadow-sm shadow-charcoal/[0.06] max-h-[calc(100dvh-var(--header-sticky-offset)-1rem)] overflow-y-auto">
+                <div className="sticky top-[var(--header-sticky-offset)] transition-[top] duration-200 ease-out p-6 bg-white/90 dark:bg-graphite/90 backdrop-blur-xl border border-charcoal/10 dark:border-white/10 rounded-xl shadow-sm shadow-charcoal/[0.06] dark:shadow-black/20 max-h-[calc(100dvh-var(--header-sticky-offset)-1rem)] overflow-y-auto">
                   <FilterPanel />
                 </div>
               </div>
@@ -110,7 +110,7 @@ export function PropertiesPage() {
                 <button
                   type="button"
                   onClick={() => setMobileFiltersOpen(true)}
-                  className="flex items-center justify-center gap-2 px-4 py-3 bg-white/55 backdrop-blur-md border border-charcoal/10 rounded-lg text-sm font-medium shadow-sm shadow-charcoal/[0.04] hover:border-gold/35 hover:bg-white/70 transition-colors"
+                  className="flex items-center justify-center gap-2 px-4 py-3 bg-white/55 dark:bg-graphite/55 backdrop-blur-md border border-charcoal/10 dark:border-white/10 rounded-lg text-sm font-medium shadow-sm shadow-charcoal/[0.04] dark:shadow-black/20 hover:border-gold/35 hover:bg-white/70 dark:hover:bg-graphite/70 transition-colors"
                 >
                   <SlidersHorizontal className="w-4 h-4" />
                   {t('search.filters')}
@@ -119,14 +119,14 @@ export function PropertiesPage() {
                   <div className="fixed inset-0 z-50 bg-charcoal/40 backdrop-blur-sm">
                     <div
                       id="property-filters"
-                      className="absolute inset-y-0 left-0 w-full max-w-sm bg-white/95 backdrop-blur-xl border-r border-charcoal/10 p-6 overflow-y-auto scroll-mt-[var(--header-sticky-offset)]"
+                      className="absolute inset-y-0 left-0 w-full max-w-sm bg-white/95 dark:bg-graphite/95 backdrop-blur-xl border-r border-charcoal/10 dark:border-white/10 p-6 overflow-y-auto scroll-mt-[var(--header-sticky-offset)]"
                     >
                       <div className="flex items-center justify-between mb-6">
-                        <h2 className="font-serif text-xl">{t('search.filters')}</h2>
+                        <h2 className="font-serif text-xl text-charcoal dark:text-warm-white">{t('search.filters')}</h2>
                         <button
                           type="button"
                           onClick={() => setMobileFiltersOpen(false)}
-                          className="text-charcoal/60 hover:text-charcoal"
+                          className="text-charcoal/60 hover:text-charcoal dark:text-warm-white/60 dark:hover:text-warm-white"
                         >
                           ✕
                         </button>
@@ -146,7 +146,7 @@ export function PropertiesPage() {
 
             <div className="flex-1 min-w-0">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
-                <p className="text-charcoal/60 text-sm">
+                <p className="text-charcoal/60 dark:text-warm-white/60 text-sm">
                   {allFiltered.length > 0
                     ? t('search.results', { count: allFiltered.length })
                     : t('search.noResults')}
@@ -161,7 +161,7 @@ export function PropertiesPage() {
                 </>
               ) : (
                 <div className="text-center py-20">
-                  <p className="text-charcoal/60 max-w-md mx-auto">{t('search.noResults')}</p>
+                  <p className="text-charcoal/60 dark:text-warm-white/60 max-w-md mx-auto">{t('search.noResults')}</p>
                 </div>
               )}
             </div>

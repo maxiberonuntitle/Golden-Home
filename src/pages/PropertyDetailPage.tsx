@@ -1,24 +1,17 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Thumbs, FreeMode } from 'swiper/modules'
-import type { Swiper as SwiperType } from 'swiper'
 import {
   Bed,
   Bath,
   Maximize,
   MapPin,
-  Heart,
-  GitCompareArrows,
   Share2,
   Copy,
   Download,
   ExternalLink,
   X,
   ZoomIn,
-  Calendar,
   MessageCircle,
   Leaf,
 } from 'lucide-react'
@@ -28,54 +21,17 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { Button } from '@/components/ui/Button'
 import { PropertyGrid } from '@/components/property/PropertyGrid'
 import { PropertyBadges } from '@/components/property/PropertyBadges'
+import { PropertyDetailGallery } from '@/components/property/PropertyDetailGallery'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { useProperty } from '@/hooks/useProperty'
 import { useLocalizedProperty } from '@/hooks/useLocalizedProperty'
 import { useAppStore } from '@/stores/useAppStore'
 import { getRelatedProperties } from '@/services/propertyService'
-import { formatArea, formatPrice } from '@/utils/format'
+import { formatArea, formatPrice, getLocalizedText } from '@/utils/format'
 import { COMPANY } from '@/utils/constants'
 import type { Language } from '@/types'
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/thumbs'
-import 'swiper/css/free-mode'
-
-interface ContactFormData {
-  name: string
-  email: string
-  phone: string
-  message: string
-}
-
-interface VisitFormData {
-  name: string
-  email: string
-  phone: string
-  date: string
-  time: string
-}
-
-function calculateMortgage(principal: number, annualRate: number, years: number): number {
-  if (principal <= 0 || years <= 0) return 0
-  const monthlyRate = annualRate / 100 / 12
-  const months = years * 12
-  if (monthlyRate === 0) return principal / months
-  return (
-    (principal * monthlyRate * Math.pow(1 + monthlyRate, months)) /
-    (Math.pow(1 + monthlyRate, months) - 1)
-  )
-}
-
-const NEARBY_PLACES = [
-  { name: 'Playa de Fenals', distance: '200 m' },
-  { name: 'Centro de Lloret de Mar', distance: '1.2 km' },
-  { name: 'Campo de Golf PGA Catalunya', distance: '18 km' },
-  { name: 'Aeropuerto Girona-Costa Brava', distance: '35 km' },
-  { name: 'Barcelona', distance: '75 km' },
-]
+const DEFAULT_NEARBY_PLACES: { name: string; distance: string }[] = []
 
 export function PropertyDetailPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -84,22 +40,12 @@ export function PropertyDetailPage() {
 
   const property = useProperty(slug)
   const localized = useLocalizedProperty(property, lang)
-  const { favorites, compare, currency, toggleFavorite, toggleCompare, addRecentlyViewed } =
-    useAppStore()
+  const { currency, addRecentlyViewed } = useAppStore()
 
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null)
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxIndex, setLightboxIndex] = useState(0)
   const [zoomLevel, setZoomLevel] = useState(1)
   const [copied, setCopied] = useState(false)
-  const [loanAmount, setLoanAmount] = useState(0)
-  const [interestRate, setInterestRate] = useState(3.5)
-  const [loanTerm, setLoanTerm] = useState(25)
-  const [contactSent, setContactSent] = useState(false)
-  const [visitSent, setVisitSent] = useState(false)
-
-  const contactForm = useForm<ContactFormData>()
-  const visitForm = useForm<VisitFormData>()
 
   const relatedProperties = useMemo(
     () => (slug ? getRelatedProperties(slug, 3) : []),
@@ -109,14 +55,13 @@ export function PropertyDetailPage() {
   useEffect(() => {
     if (property) {
       addRecentlyViewed(property.id)
-      setLoanAmount(Math.round(property.price * 0.7))
     }
   }, [property, addRecentlyViewed])
 
   if (!property || !localized) {
     return (
       <Container className="py-24 text-center">
-        <p className="text-charcoal/60">{t('common.error')}</p>
+        <p className="text-charcoal/60 dark:text-warm-white/60">{t('common.error')}</p>
         <Link to={`/${lang}/properties`} className="text-gold hover:underline mt-4 inline-block">
           {t('nav.properties')}
         </Link>
@@ -124,11 +69,52 @@ export function PropertyDetailPage() {
     )
   }
 
-  const isFavorite = favorites.includes(property.id)
-  const isCompare = compare.includes(property.id)
-  const monthlyPayment = calculateMortgage(loanAmount, interestRate, loanTerm)
   const mapsUrl = `https://maps.google.com/maps?q=${property.coordinates.lat},${property.coordinates.lng}&z=15&output=embed`
+  const mapsExternalUrl = `https://www.google.com/maps?q=${property.coordinates.lat},${property.coordinates.lng}`
   const shareUrl = `${COMPANY.website}/${lang}/properties/${property.slug}`
+  const listing = property.listingDetails
+  const nearbyPlaces =
+    property.nearbyPlaces?.map((place) => ({
+      name: getLocalizedText(place.name, lang),
+      distance: place.distance,
+    })) ?? DEFAULT_NEARBY_PLACES
+
+  const statusLabel =
+    property.status === 'rent' ? t('property.forRent') : t('property.forSale')
+
+  const basicFeatureItems = [
+    property.builtArea > 0 &&
+      `${property.builtArea} m² ${lang === 'es' ? 'construidos' : lang === 'ca' ? 'construïts' : lang === 'fr' ? 'construits' : 'built'}`,
+    property.bedrooms > 0 && `${property.bedrooms} ${t('property.habShort')}`,
+    property.bathrooms > 0 &&
+      `${property.bathrooms} ${t('property.bathrooms').toLowerCase()}`,
+    listing?.condition && getLocalizedText(listing.condition, lang),
+    listing?.orientation && getLocalizedText(listing.orientation, lang),
+    listing?.yearBuilt &&
+      `${lang === 'es' ? 'Construido en' : lang === 'ca' ? 'Construït el' : lang === 'fr' ? 'Construit en' : 'Built in'} ${listing.yearBuilt}`,
+    listing?.heating && getLocalizedText(listing.heating, lang),
+    ...localized.features.filter((feature) => {
+      const floorLabel = listing?.floor ? getLocalizedText(listing.floor, lang) : ''
+      return (
+        feature !== floorLabel &&
+        !feature.toLowerCase().includes('ascensor') &&
+        !feature.toLowerCase().includes('elevator') &&
+        !feature.toLowerCase().includes('ascenseur')
+      )
+    }),
+  ].filter(Boolean) as string[]
+
+  const buildingFeatureItems = [
+    listing?.floor && getLocalizedText(listing.floor, lang),
+    property.elevator &&
+      (lang === 'es'
+        ? 'Con ascensor'
+        : lang === 'ca'
+          ? 'Amb ascensor'
+          : lang === 'en'
+            ? 'With elevator'
+            : 'Avec ascenseur'),
+  ].filter(Boolean) as string[]
   const whatsappMessage = encodeURIComponent(
     `${localized.title} - ${formatPrice(property.price, currency, lang)} ${shareUrl}`,
   )
@@ -139,23 +125,13 @@ export function PropertyDetailPage() {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  const onContactSubmit = async (_data: ContactFormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 600))
-    setContactSent(true)
-    contactForm.reset()
-  }
-
-  const onVisitSubmit = async (_data: VisitFormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 600))
-    setVisitSent(true)
-    visitForm.reset()
-  }
-
   const characteristics = [
     { icon: Bed, label: t('property.bedrooms'), value: property.bedrooms },
     { icon: Bath, label: t('property.bathrooms'), value: property.bathrooms },
     { icon: Maximize, label: t('property.builtArea'), value: formatArea(property.builtArea) },
-    { icon: Maximize, label: t('property.plotArea'), value: formatArea(property.plotArea) },
+    ...(property.plotArea > 0
+      ? [{ icon: Maximize, label: t('property.plotArea'), value: formatArea(property.plotArea) }]
+      : []),
     { icon: MapPin, label: t('property.location'), value: localized.location },
     { icon: Leaf, label: t('property.energyCertificate'), value: property.energyCertificate },
   ]
@@ -199,64 +175,26 @@ export function PropertyDetailPage() {
         />
       </Container>
 
-      <section className="pb-8">
+      <section className="overflow-x-hidden pb-6">
         <Container>
-          <div className="grid lg:grid-cols-3 gap-4">
-            <div className="lg:col-span-2 relative">
-              <Swiper
-                modules={[Navigation, Pagination, Thumbs]}
-                navigation
-                pagination={{ clickable: true }}
-                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-                className="rounded-xl overflow-hidden aspect-[16/10]"
-              >
-                {property.images.map((image, index) => (
-                  <SwiperSlide key={image}>
-                    <button
-                      type="button"
-                      className="w-full h-full relative group cursor-zoom-in"
-                      onClick={() => {
-                        setLightboxIndex(index)
-                        setLightboxOpen(true)
-                        setZoomLevel(1)
-                      }}
-                    >
-                      <img
-                        src={image}
-                        alt={`${localized.title} - ${index + 1}`}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors flex items-center justify-center">
-                        <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </div>
-                    </button>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-
-              <Swiper
-                onSwiper={setThumbsSwiper}
-                modules={[FreeMode, Thumbs]}
-                spaceBetween={8}
-                slidesPerView={4}
-                freeMode
-                watchSlidesProgress
-                className="mt-3 thumbs-gallery"
-              >
-                {property.images.map((image) => (
-                  <SwiperSlide key={`thumb-${image}`}>
-                    <img
-                      src={image}
-                      alt=""
-                      className="w-full aspect-[4/3] object-cover rounded-lg cursor-pointer opacity-60 hover:opacity-100 transition-opacity swiper-slide-thumb-active:opacity-100"
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+          <div className="grid min-w-0 lg:grid-cols-3 gap-4 lg:gap-6">
+            <div className="min-w-0 lg:col-span-2">
+              <PropertyDetailGallery
+                images={property.images}
+                title={localized.title}
+                onImageClick={(index) => {
+                  setLightboxIndex(index)
+                  setLightboxOpen(true)
+                  setZoomLevel(1)
+                }}
+              />
             </div>
 
-            <div className="lg:sticky lg:top-[var(--header-sticky-offset)] lg:self-start space-y-6 transition-[top] duration-200 ease-out">
-              <div className="p-6 lg:p-8 bg-cream rounded-xl">
+            <div className="min-w-0 lg:sticky lg:top-[var(--header-sticky-offset)] lg:self-start space-y-6 transition-[top] duration-200 ease-out">
+              <div className="p-6 lg:p-8 bg-cream dark:bg-graphite rounded-xl border border-charcoal/5 dark:border-white/10">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-gold mb-3">
+                  {statusLabel}
+                </p>
                 <PropertyBadges
                   exclusive={property.exclusive}
                   luxury={property.luxury}
@@ -264,46 +202,52 @@ export function PropertyDetailPage() {
                   newConstruction={property.newConstruction}
                   sold={property.status === 'sold'}
                 />
-                <p className="text-sm text-charcoal/50 mt-4">
+                <p className="text-sm text-charcoal/50 dark:text-warm-white/50 mt-4">
                   {t('property.reference')}: {property.reference}
                 </p>
-                <h1 className="font-serif text-2xl lg:text-3xl text-charcoal mt-2 mb-3">
+                <h1 className="font-serif text-2xl lg:text-3xl text-charcoal dark:text-warm-white mt-2 mb-3">
                   {localized.title}
                 </h1>
-                <p className="flex items-center gap-2 text-charcoal/60 text-sm mb-4">
-                  <MapPin className="w-4 h-4 text-gold" />
-                  {localized.location}
-                </p>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-charcoal/60 dark:text-warm-white/60 mb-2">
+                  <p className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-gold shrink-0" />
+                    {localized.location}
+                  </p>
+                  <a
+                    href={mapsExternalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold hover:text-gold-dark transition-colors"
+                  >
+                    {t('property.viewMap')}
+                  </a>
+                </div>
+
+                <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-charcoal/70 dark:text-warm-white/70 mb-4 pb-4 border-b border-charcoal/10 dark:border-white/10">
+                  {property.builtArea > 0 && <span>{formatArea(property.builtArea)}</span>}
+                  {property.bedrooms > 0 && (
+                    <span>
+                      {property.bedrooms} {t('property.habShort')}
+                    </span>
+                  )}
+                  {listing?.floor && <span>{getLocalizedText(listing.floor, lang)}</span>}
+                  {property.elevator && listing?.floor && <span>·</span>}
+                  {property.elevator && (
+                    <span>
+                      {lang === 'es'
+                        ? 'con ascensor'
+                        : lang === 'ca'
+                          ? 'amb ascensor'
+                          : lang === 'en'
+                            ? 'with elevator'
+                            : 'avec ascenseur'}
+                    </span>
+                  )}
+                </div>
+
                 <p className="font-serif text-3xl text-gold mb-6">
                   {formatPrice(property.price, currency, lang)}
                 </p>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <button
-                    type="button"
-                    onClick={() => toggleFavorite(property.id)}
-                    className={`flex items-center gap-2 px-4 py-2 text-sm border transition-colors ${
-                      isFavorite
-                        ? 'bg-gold text-charcoal border-gold'
-                        : 'border-charcoal/15 hover:border-gold'
-                    }`}
-                  >
-                    <Heart className={`w-4 h-4 ${isFavorite ? 'fill-current' : ''}`} />
-                    {isFavorite ? t('common.removeFromFavorites') : t('common.addToFavorites')}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => toggleCompare(property.id)}
-                    className={`flex items-center gap-2 px-4 py-2 text-sm border transition-colors ${
-                      isCompare
-                        ? 'bg-gold text-charcoal border-gold'
-                        : 'border-charcoal/15 hover:border-gold'
-                    }`}
-                  >
-                    <GitCompareArrows className="w-4 h-4" />
-                    {isCompare ? t('common.removeFromCompare') : t('common.addToCompare')}
-                  </button>
-                </div>
 
                 <Button href={COMPANY.whatsapp} variant="primary" size="lg" className="w-full mb-3">
                   <MessageCircle className="w-4 h-4" />
@@ -378,47 +322,75 @@ export function PropertyDetailPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-12">
               <ScrollReveal>
-                <h2 className="font-serif text-2xl text-charcoal mb-6">{t('property.description')}</h2>
-                <p className="text-charcoal/70 leading-relaxed whitespace-pre-line">
+                <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-4">
+                  {t('property.advertiserComment')}
+                </h2>
+                <p className="text-charcoal/70 dark:text-warm-white/70 leading-relaxed whitespace-pre-line">
                   {localized.description}
                 </p>
+                {listing?.advertiserNote && (
+                  <p className="mt-6 p-4 bg-cream dark:bg-charcoal rounded-lg text-sm text-charcoal/70 dark:text-warm-white/70 border border-charcoal/5 dark:border-white/10">
+                    {getLocalizedText(listing.advertiserNote, lang)}
+                  </p>
+                )}
               </ScrollReveal>
 
+              {basicFeatureItems.length > 0 && (
+                <ScrollReveal>
+                  <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-6">
+                    {t('property.basicFeatures')}
+                  </h2>
+                  <ul className="grid sm:grid-cols-2 gap-3">
+                    {basicFeatureItems.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-center gap-2 text-charcoal/70 dark:text-warm-white/70 text-sm py-2 border-b border-charcoal/5 dark:border-white/10"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+
+              {buildingFeatureItems.length > 0 && (
+                <ScrollReveal>
+                  <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-6">{t('property.building')}</h2>
+                  <ul className="space-y-3">
+                    {buildingFeatureItems.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-center gap-2 text-charcoal/70 dark:text-warm-white/70 text-sm py-2 border-b border-charcoal/5 dark:border-white/10"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              )}
+
               <ScrollReveal>
-                <h2 className="font-serif text-2xl text-charcoal mb-6">
+                <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-6">
                   {t('property.characteristics')}
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {characteristics.map(({ icon: Icon, label, value }) => (
                     <div
                       key={label}
-                      className="p-4 bg-cream rounded-lg text-center"
+                      className="p-4 bg-cream dark:bg-graphite rounded-lg text-center"
                     >
                       <Icon className="w-5 h-5 text-gold mx-auto mb-2" />
-                      <p className="text-xs text-charcoal/50 mb-1">{label}</p>
-                      <p className="font-medium text-charcoal">{value}</p>
+                      <p className="text-xs text-charcoal/50 dark:text-warm-white/50 mb-1">{label}</p>
+                      <p className="font-medium text-charcoal dark:text-warm-white">{value}</p>
                     </div>
                   ))}
                 </div>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="font-serif text-2xl text-charcoal mb-6">{t('property.features')}</h2>
-                <ul className="grid sm:grid-cols-2 gap-3">
-                  {localized.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-center gap-2 text-charcoal/70 text-sm"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </ScrollReveal>
-
-              <ScrollReveal>
-                <h2 className="font-serif text-2xl text-charcoal mb-6">{t('property.location')}</h2>
+                <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-6">{t('property.location')}</h2>
                 <div className="rounded-xl overflow-hidden h-[350px] mb-6">
                   <iframe
                     title={localized.title}
@@ -429,12 +401,12 @@ export function PropertyDetailPage() {
                     allowFullScreen
                   />
                 </div>
-                <h3 className="font-medium text-charcoal mb-4">{t('property.nearbyPlaces')}</h3>
+                <h3 className="font-medium text-charcoal dark:text-warm-white mb-4">{t('property.nearbyPlaces')}</h3>
                 <ul className="space-y-2">
-                  {NEARBY_PLACES.map((place) => (
+                  {nearbyPlaces.map((place) => (
                     <li
                       key={place.name}
-                      className="flex justify-between text-sm text-charcoal/70 border-b border-charcoal/5 pb-2"
+                      className="flex justify-between text-sm text-charcoal/70 dark:text-warm-white/70 border-b border-charcoal/5 dark:border-white/10 pb-2"
                     >
                       <span>{place.name}</span>
                       <span className="text-gold">{place.distance}</span>
@@ -445,7 +417,7 @@ export function PropertyDetailPage() {
 
               {property.youtube && (
                 <ScrollReveal>
-                  <h2 className="font-serif text-2xl text-charcoal mb-6">{t('property.video')}</h2>
+                  <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-6">{t('property.video')}</h2>
                   <div className="aspect-video rounded-xl overflow-hidden">
                     <iframe
                       src={property.youtube}
@@ -474,7 +446,7 @@ export function PropertyDetailPage() {
                   <button
                     type="button"
                     onClick={() => window.print()}
-                    className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 text-sm hover:border-gold transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 dark:border-white/15 text-charcoal dark:text-warm-white text-sm hover:border-gold transition-colors"
                   >
                     <Download className="w-4 h-4" />
                     {t('property.downloadPdf')}
@@ -482,7 +454,7 @@ export function PropertyDetailPage() {
                   <button
                     type="button"
                     onClick={handleCopyLink}
-                    className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 text-sm hover:border-gold transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 dark:border-white/15 text-charcoal dark:text-warm-white text-sm hover:border-gold transition-colors"
                   >
                     <Copy className="w-4 h-4" />
                     {copied ? '✓' : t('property.share')}
@@ -491,7 +463,7 @@ export function PropertyDetailPage() {
                     href={`${COMPANY.whatsapp}?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 text-sm hover:border-gold transition-colors"
+                    className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 dark:border-white/15 text-charcoal dark:text-warm-white text-sm hover:border-gold transition-colors"
                   >
                     <Share2 className="w-4 h-4" />
                     WhatsApp
@@ -502,167 +474,43 @@ export function PropertyDetailPage() {
 
             <div className="space-y-8">
               <ScrollReveal>
-                <div className="p-6 bg-cream rounded-xl">
+                <div className="p-6 bg-cream dark:bg-graphite rounded-xl">
                   <div className="flex items-center gap-3 mb-4">
                     <div
                       className={`w-12 h-12 rounded-full flex items-center justify-center font-serif text-xl font-bold ${
                         property.energyCertificate <= 'C'
-                          ? 'bg-green-100 text-green-700'
+                          ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
                           : property.energyCertificate <= 'E'
-                            ? 'bg-yellow-100 text-yellow-700'
-                            : 'bg-red-100 text-red-700'
+                            ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300'
+                            : 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300'
                       }`}
                     >
                       {property.energyCertificate}
                     </div>
                     <div>
-                      <p className="font-medium text-charcoal">{t('property.energyCertificate')}</p>
-                      <p className="text-xs text-charcoal/50">CEE vigente</p>
+                      <p className="font-medium text-charcoal dark:text-warm-white">{t('property.energyCertificate')}</p>
+                      <p className="text-xs text-charcoal/50 dark:text-warm-white/50">CEE vigente</p>
                     </div>
                   </div>
-                </div>
-              </ScrollReveal>
-
-              <ScrollReveal>
-                <div className="p-6 bg-cream rounded-xl">
-                  <h3 className="font-serif text-xl text-charcoal mb-6">
-                    {t('property.mortgageCalculator')}
-                  </h3>
-                  <div className="space-y-4">
-                    <div>
-                      <label className="text-sm text-charcoal/60 block mb-1">
-                        {t('property.loanAmount')}
-                      </label>
-                      <input
-                        type="range"
-                        min={0}
-                        max={property.price}
-                        step={10000}
-                        value={loanAmount}
-                        onChange={(e) => setLoanAmount(Number(e.target.value))}
-                        className="w-full accent-gold"
-                      />
-                      <p className="text-sm font-medium mt-1">
-                        {formatPrice(loanAmount, currency, lang)}
-                      </p>
+                  {(listing?.energyConsumption || listing?.energyEmissions) && (
+                    <div className="pt-4 border-t border-charcoal/10 dark:border-white/10 space-y-2 text-sm">
+                      {listing.energyConsumption && (
+                        <p className="flex justify-between text-charcoal/70 dark:text-warm-white/70">
+                          <span>{t('property.energyConsumption')}</span>
+                          <span className="font-medium text-charcoal dark:text-warm-white">
+                            {listing.energyConsumption} kWh/m² {lang === 'es' ? 'año' : 'year'}
+                          </span>
+                        </p>
+                      )}
+                      {listing.energyEmissions && (
+                        <p className="flex justify-between text-charcoal/70 dark:text-warm-white/70">
+                          <span>{t('property.energyEmissions')}</span>
+                          <span className="font-medium text-charcoal dark:text-warm-white">
+                            {listing.energyEmissions} kg CO₂/m² {lang === 'es' ? 'año' : 'year'}
+                          </span>
+                        </p>
+                      )}
                     </div>
-                    <div>
-                      <label className="text-sm text-charcoal/60 block mb-1">
-                        {t('property.interestRate')} (%)
-                      </label>
-                      <input
-                        type="number"
-                        step={0.1}
-                        min={0}
-                        max={15}
-                        value={interestRate}
-                        onChange={(e) => setInterestRate(Number(e.target.value))}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm text-charcoal/60 block mb-1">
-                        {t('property.loanTerm')} ({lang === 'es' ? 'años' : 'years'})
-                      </label>
-                      <input
-                        type="range"
-                        min={5}
-                        max={40}
-                        value={loanTerm}
-                        onChange={(e) => setLoanTerm(Number(e.target.value))}
-                        className="w-full accent-gold"
-                      />
-                      <p className="text-sm font-medium mt-1">{loanTerm} {lang === 'es' ? 'años' : 'years'}</p>
-                    </div>
-                    <div className="pt-4 border-t border-charcoal/10">
-                      <p className="text-sm text-charcoal/60">{t('property.monthlyPayment')}</p>
-                      <p className="font-serif text-2xl text-gold">
-                        {formatPrice(monthlyPayment, currency, lang)}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              <ScrollReveal>
-                <div className="p-6 bg-cream rounded-xl">
-                  <h3 className="font-serif text-xl text-charcoal mb-4">
-                    {t('property.contactAgent')}
-                  </h3>
-                  {contactSent ? (
-                    <p className="text-sm text-green-700">{t('contact.form.success')}</p>
-                  ) : (
-                    <form onSubmit={contactForm.handleSubmit(onContactSubmit)} className="space-y-3">
-                      <input
-                        placeholder={t('contact.form.name')}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...contactForm.register('name', { required: true })}
-                      />
-                      <input
-                        type="email"
-                        placeholder={t('contact.form.email')}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...contactForm.register('email', { required: true })}
-                      />
-                      <input
-                        placeholder={t('contact.form.phone')}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...contactForm.register('phone', { required: true })}
-                      />
-                      <textarea
-                        placeholder={t('contact.form.message')}
-                        rows={3}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm resize-none"
-                        {...contactForm.register('message', { required: true })}
-                      />
-                      <Button type="submit" variant="primary" size="md" className="w-full">
-                        {t('contact.form.submit')}
-                      </Button>
-                    </form>
-                  )}
-                </div>
-              </ScrollReveal>
-
-              <ScrollReveal>
-                <div className="p-6 border border-charcoal/10 rounded-xl">
-                  <h3 className="font-serif text-xl text-charcoal mb-4 flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-gold" />
-                    {t('property.scheduleVisit')}
-                  </h3>
-                  {visitSent ? (
-                    <p className="text-sm text-green-700">{t('contact.form.success')}</p>
-                  ) : (
-                    <form onSubmit={visitForm.handleSubmit(onVisitSubmit)} className="space-y-3">
-                      <input
-                        placeholder={t('contact.form.name')}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...visitForm.register('name', { required: true })}
-                      />
-                      <input
-                        type="email"
-                        placeholder={t('contact.form.email')}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...visitForm.register('email', { required: true })}
-                      />
-                      <input
-                        placeholder={t('contact.form.phone')}
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...visitForm.register('phone', { required: true })}
-                      />
-                      <input
-                        type="date"
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...visitForm.register('date', { required: true })}
-                      />
-                      <input
-                        type="time"
-                        className="w-full px-3 py-2 border border-charcoal/10 rounded text-sm"
-                        {...visitForm.register('time', { required: true })}
-                      />
-                      <Button type="submit" variant="dark" size="md" className="w-full">
-                        {t('property.scheduleVisit')}
-                      </Button>
-                    </form>
                   )}
                 </div>
               </ScrollReveal>
@@ -672,9 +520,9 @@ export function PropertyDetailPage() {
       </section>
 
       {relatedProperties.length > 0 && (
-        <section className="py-16 lg:py-24 bg-cream">
+        <section className="py-16 lg:py-24 bg-cream dark:bg-graphite">
           <Container>
-            <h2 className="font-serif text-3xl text-charcoal mb-10 text-center">
+            <h2 className="font-serif text-3xl text-charcoal dark:text-warm-white mb-10 text-center">
               {t('property.related')}
             </h2>
             <PropertyGrid properties={relatedProperties} />

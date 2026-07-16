@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import {
@@ -11,7 +11,6 @@ import {
   Award,
   Users,
   MapPin,
-  Star,
   ArrowRight,
   Camera,
 } from 'lucide-react'
@@ -22,11 +21,10 @@ import { Button } from '@/components/ui/Button'
 import { SearchBar } from '@/components/search/SearchBar'
 import { PropertyGrid } from '@/components/property/PropertyGrid'
 import { PropertyCard } from '@/components/property/PropertyCard'
-import { AnimatedCounter } from '@/components/ui/AnimatedCounter'
+import { PropertiesMap } from '@/components/property/PropertiesMap'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 import { getFeaturedProperties, getLatestProperties, getAllProperties } from '@/services/propertyService'
-import { TESTIMONIALS } from '@/data/testimonials'
 import { COMPANY, PARTNERS, SOCIAL } from '@/utils/constants'
 import { getLocalizedText } from '@/utils/format'
 import { useFilterStore } from '@/stores/useFilterStore'
@@ -58,11 +56,12 @@ export function HomePage() {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language.split('-')[0] || 'es') as Language
   const scrollY = useScrollPosition()
+  const shouldReduceMotion = useReducedMotion()
   const setFilter = useFilterStore((state) => state.setFilter)
 
   const featured = getFeaturedProperties()
   const latest = getLatestProperties(6)
-  const mapProperties = getAllProperties().slice(0, 8)
+  const mapProperties = getAllProperties()
 
   const parallaxOffset = scrollY * 0.3
 
@@ -76,20 +75,26 @@ export function HomePage() {
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80"
-            className="w-full h-full object-cover"
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div
+            className="absolute -inset-[15%] will-change-transform"
+            initial={{ scale: 1 }}
+            animate={{ scale: shouldReduceMotion ? 1 : 1.14 }}
+            transition={{
+              duration: shouldReduceMotion ? 0 : 11,
+              ease: [0.22, 1, 0.36, 1],
+              repeat: shouldReduceMotion ? 0 : Infinity,
+              repeatType: 'reverse',
+            }}
           >
-            <source
-              src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-luxury-house-with-a-pool-4490-large.mp4"
-              type="video/mp4"
+            <img
+              src="/blanes-background.png"
+              alt=""
+              className="h-full w-full object-cover object-center"
+              loading="eager"
+              decoding="async"
             />
-          </video>
+          </motion.div>
           <div className="absolute inset-0 image-overlay" />
         </div>
 
@@ -152,11 +157,13 @@ export function HomePage() {
             navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
+            nested
+            touchStartPreventDefault={false}
             className="featured-swiper !pb-12"
           >
             {featured.map((property, index) => (
-              <SwiperSlide key={property.id}>
-                <PropertyCard property={property} index={index} />
+              <SwiperSlide key={property.id} className="!h-auto">
+                <PropertyCard property={property} index={index} scrollableImages />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -164,7 +171,7 @@ export function HomePage() {
       </section>
 
       {/* Categories */}
-      <section className="py-20 lg:py-28 bg-cream">
+      <section className="py-20 lg:py-28 bg-cream dark:bg-graphite">
         <Container>
           <ScrollReveal>
             <SectionHeading title={t('home.categoriesTitle')} />
@@ -175,12 +182,12 @@ export function HomePage() {
                 <Link
                   to={`/${lang}/properties`}
                   onClick={() => setFilter('type', type)}
-                  className="group block text-center p-10 bg-warm-white rounded-xl border border-charcoal/5 hover:border-gold/30 hover:shadow-lg transition-all duration-500"
+                  className="group block text-center p-10 bg-warm-white dark:bg-charcoal rounded-xl border border-charcoal/5 dark:border-white/10 hover:border-gold/30 hover:shadow-lg transition-all duration-500"
                 >
                   <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
                     <Icon className="w-7 h-7 text-gold" />
                   </div>
-                  <h3 className="font-serif text-xl text-charcoal group-hover:text-gold transition-colors capitalize">
+                  <h3 className="font-serif text-xl text-charcoal dark:text-warm-white group-hover:text-gold transition-colors capitalize">
                     {labelKey === 'villa' && (lang === 'es' ? 'Villas' : lang === 'ca' ? 'Viles' : lang === 'en' ? 'Villas' : 'Villas')}
                     {labelKey === 'apartment' && (lang === 'es' ? 'Apartamentos' : lang === 'ca' ? 'Apartaments' : lang === 'en' ? 'Apartments' : 'Appartements')}
                     {labelKey === 'penthouse' && (lang === 'es' ? 'Áticos' : lang === 'ca' ? 'Àtics' : lang === 'en' ? 'Penthouses' : 'Penthouses')}
@@ -207,10 +214,10 @@ export function HomePage() {
                     <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
                       <Icon className="w-6 h-6 text-gold" />
                     </div>
-                    <h3 className="font-serif text-lg text-charcoal mb-3">
+                    <h3 className="font-serif text-lg text-charcoal dark:text-warm-white mb-3">
                       {t(`home.whyChoose.${key}.title`)}
                     </h3>
-                    <p className="text-charcoal/60 text-sm leading-relaxed">
+                    <p className="text-charcoal/60 dark:text-warm-white/60 text-sm leading-relaxed">
                       {t(`home.whyChoose.${key}.description`)}
                     </p>
                   </div>
@@ -246,8 +253,8 @@ export function HomePage() {
         </Container>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="py-20 lg:py-28 bg-cream">
+      {/* Properties Map */}
+      <section className="py-20 lg:py-28 bg-cream dark:bg-graphite">
         <Container>
           <ScrollReveal>
             <SectionHeading
@@ -273,47 +280,20 @@ export function HomePage() {
           </ScrollReveal>
 
           <ScrollReveal>
-            <div className="relative h-[450px] lg:h-[550px] rounded-xl overflow-hidden bg-gradient-to-br from-charcoal/5 to-gold/10 border border-charcoal/10">
-              <div
-                className="absolute inset-0 opacity-30"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a962' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                }}
-              />
-              {mapProperties.map((property, index) => {
-                const positions = [
-                  { top: '20%', left: '25%' },
-                  { top: '35%', left: '55%' },
-                  { top: '50%', left: '30%' },
-                  { top: '25%', left: '70%' },
-                  { top: '60%', left: '65%' },
-                  { top: '45%', left: '45%' },
-                  { top: '70%', left: '40%' },
-                  { top: '30%', left: '85%' },
-                ]
-                const pos = positions[index % positions.length]
-                return (
-                  <Link
-                    key={property.id}
-                    to={`/${lang}/properties`}
-                    className="absolute group"
-                    style={{ top: pos.top, left: pos.left }}
-                  >
-                    <div className="relative">
-                      <MapPin className="w-8 h-8 text-gold drop-shadow-lg group-hover:scale-125 transition-transform" />
-                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-charcoal text-warm-white text-xs rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                        {getLocalizedText(property.title, lang)}
-                      </div>
-                    </div>
-                  </Link>
-                )
-              })}
-              <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
-                <p className="text-sm text-charcoal/50">
+            <div className="relative">
+              <PropertiesMap properties={mapProperties} lang={lang} />
+              <div className="pointer-events-none absolute bottom-4 left-4 right-4 z-[1000] flex items-end justify-between gap-4">
+                <p className="pointer-events-none rounded-md bg-warm-white/90 dark:bg-graphite/90 px-3 py-1.5 text-sm text-charcoal/70 dark:text-warm-white/70 shadow-sm backdrop-blur-sm">
                   {mapProperties.length}{' '}
-                  {lang === 'es' ? 'propiedades' : lang === 'ca' ? 'propietats' : lang === 'en' ? 'properties' : 'propriétés'}
+                  {lang === 'es'
+                    ? 'propiedades'
+                    : lang === 'ca'
+                      ? 'propietats'
+                      : lang === 'en'
+                        ? 'properties'
+                        : 'propriétés'}
                 </p>
-                <Link to={`/${lang}/properties`}>
+                <Link to={`/${lang}/properties`} className="pointer-events-auto">
                   <Button variant="dark" size="sm">
                     {t('common.viewAll')}
                     <ArrowRight className="w-4 h-4" />
@@ -331,7 +311,7 @@ export function HomePage() {
           <ScrollReveal>
             <SectionHeading title={t('home.latestTitle')} />
           </ScrollReveal>
-          <PropertyGrid properties={latest} />
+          <PropertyGrid properties={latest} scrollableImages />
           <div className="text-center mt-12">
             <Link to={`/${lang}/properties`}>
               <Button variant="secondary" size="lg">
@@ -339,82 +319,6 @@ export function HomePage() {
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
-          </div>
-        </Container>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 lg:py-28 bg-charcoal text-warm-white">
-        <Container>
-          <ScrollReveal>
-            <SectionHeading
-              title={t('home.testimonialsTitle')}
-              className="[&_h2]:text-warm-white"
-            />
-          </ScrollReveal>
-
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={32}
-            slidesPerView={1}
-            breakpoints={{ 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 6000 }}
-            className="!pb-12"
-          >
-            {TESTIMONIALS.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
-                <div className="p-8 bg-graphite/50 rounded-xl h-full">
-                  <div className="flex gap-1 mb-4">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-gold fill-gold" />
-                    ))}
-                  </div>
-                  <p className="text-warm-white/80 leading-relaxed mb-6 italic">
-                    &ldquo;{getLocalizedText(testimonial.text, lang)}&rdquo;
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <p className="font-medium">{testimonial.name}</p>
-                      <p className="text-sm text-warm-white/50">
-                        {getLocalizedText(testimonial.location, lang)}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Container>
-      </section>
-
-      {/* Statistics */}
-      <section className="py-20 lg:py-28">
-        <Container>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            {[
-              { value: 150, suffix: '+', label: t('home.stats.propertiesSold') },
-              { value: 15, suffix: '', label: t('home.stats.yearsExperience') },
-              { value: 500, suffix: '+', label: t('home.stats.satisfiedClients') },
-              { value: 500, suffix: 'M+', prefix: '€', label: t('home.stats.totalValue') },
-            ].map((stat, index) => (
-              <ScrollReveal key={stat.label} delay={index * 0.1}>
-                <div className="text-center">
-                  <AnimatedCounter
-                    value={stat.value}
-                    suffix={stat.suffix}
-                    prefix={stat.prefix}
-                  />
-                  <p className="text-charcoal/60 text-sm mt-3">{stat.label}</p>
-                </div>
-              </ScrollReveal>
-            ))}
           </div>
         </Container>
       </section>
@@ -442,10 +346,10 @@ export function HomePage() {
       </section>
 
       {/* Partners */}
-      <section className="py-16 lg:py-20 border-t border-charcoal/5">
+      <section className="py-16 lg:py-20 border-t border-charcoal/5 dark:border-white/10">
         <Container>
           <ScrollReveal>
-            <p className="text-center text-xs uppercase tracking-[0.25em] text-charcoal/40 mb-10">
+            <p className="text-center text-xs uppercase tracking-[0.25em] text-charcoal/40 dark:text-warm-white/40 mb-10">
               {t('home.partnersTitle')}
             </p>
           </ScrollReveal>
@@ -472,7 +376,7 @@ export function HomePage() {
       </section>
 
       {/* Instagram */}
-      <section className="py-20 lg:py-28 bg-cream">
+      <section className="py-20 lg:py-28 bg-cream dark:bg-graphite">
         <Container>
           <ScrollReveal>
             <SectionHeading
@@ -516,9 +420,9 @@ export function HomePage() {
       <section className="py-20 lg:py-28">
         <Container>
           <ScrollReveal>
-            <div className="grid lg:grid-cols-2 gap-12 items-center p-10 lg:p-16 bg-cream rounded-2xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-center p-10 lg:p-16 bg-cream dark:bg-graphite rounded-2xl">
               <div>
-                <h2 className="font-serif text-3xl text-charcoal mb-4">
+                <h2 className="font-serif text-3xl text-charcoal dark:text-warm-white mb-4">
                   {lang === 'es'
                     ? 'Visite nuestra oficina en Lloret de Mar'
                     : lang === 'ca'
@@ -527,10 +431,10 @@ export function HomePage() {
                         ? 'Visit our office in Lloret de Mar'
                         : 'Visitez notre bureau à Lloret de Mar'}
                 </h2>
-                <p className="text-charcoal/60 leading-relaxed mb-6">
+                <p className="text-charcoal/60 dark:text-warm-white/60 leading-relaxed mb-6">
                   {COMPANY.address}
                 </p>
-                <p className="text-charcoal/60">
+                <p className="text-charcoal/60 dark:text-warm-white/60">
                   {COMPANY.phone} · {COMPANY.email}
                 </p>
               </div>

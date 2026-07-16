@@ -131,13 +131,13 @@ export function ContactPage() {
                   )}
 
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-charcoal dark:text-warm-white mb-2">
                       {t('contact.form.name')}
                     </label>
                     <input
                       id="name"
                       type="text"
-                      className="w-full px-4 py-3 border border-charcoal/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 bg-white"
+                      className="field-input"
                       {...register('name', { required: true, minLength: 2 })}
                     />
                     {errors.name && (
@@ -147,13 +147,13 @@ export function ContactPage() {
 
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-charcoal dark:text-warm-white mb-2">
                         {t('contact.form.email')}
                       </label>
                       <input
                         id="email"
                         type="email"
-                        className="w-full px-4 py-3 border border-charcoal/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 bg-white"
+                        className="field-input"
                         {...register('email', {
                           required: true,
                           pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
@@ -164,13 +164,13 @@ export function ContactPage() {
                       )}
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-charcoal mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-charcoal dark:text-warm-white mb-2">
                         {t('contact.form.phone')}
                       </label>
                       <input
                         id="phone"
                         type="tel"
-                        className="w-full px-4 py-3 border border-charcoal/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 bg-white"
+                        className="field-input"
                         {...register('phone', { required: true, minLength: 6 })}
                       />
                       {errors.phone && (
@@ -180,13 +180,13 @@ export function ContactPage() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-charcoal mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-charcoal dark:text-warm-white mb-2">
                       {t('contact.form.message')}
                     </label>
                     <textarea
                       id="message"
                       rows={5}
-                      className="w-full px-4 py-3 border border-charcoal/15 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 bg-white resize-none"
+                      className="field-input resize-none"
                       {...register('message', { required: true, minLength: 10 })}
                     />
                     {errors.message && (
@@ -203,8 +203,8 @@ export function ContactPage() {
 
             <ScrollReveal delay={0.2} className="lg:col-span-2">
               <div className="space-y-8">
-                <div className="p-8 bg-cream rounded-xl">
-                  <h3 className="font-serif text-xl text-charcoal mb-6">
+                <div className="p-8 bg-cream dark:bg-graphite rounded-xl">
+                  <h3 className="font-serif text-xl text-charcoal dark:text-warm-white mb-6">
                     {lang === 'es'
                       ? 'Información de contacto'
                       : lang === 'ca'
@@ -217,17 +217,17 @@ export function ContactPage() {
                     <li className="flex gap-4">
                       <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-sm text-charcoal/60">{t('contact.address')}</p>
-                        <p className="text-charcoal">{COMPANY.address}</p>
+                        <p className="text-sm text-charcoal/60 dark:text-warm-white/60">{t('contact.address')}</p>
+                        <p className="text-charcoal dark:text-warm-white">{COMPANY.address}</p>
                       </div>
                     </li>
                     <li className="flex gap-4">
                       <Phone className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-sm text-charcoal/60">{t('contact.phone')}</p>
+                        <p className="text-sm text-charcoal/60 dark:text-warm-white/60">{t('contact.phone')}</p>
                         <a
                           href={`tel:${COMPANY.phone.replace(/\s/g, '')}`}
-                          className="text-charcoal hover:text-gold transition-colors"
+                          className="text-charcoal dark:text-warm-white hover:text-gold transition-colors"
                         >
                           {COMPANY.phone}
                         </a>
@@ -236,10 +236,10 @@ export function ContactPage() {
                     <li className="flex gap-4">
                       <Mail className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-sm text-charcoal/60">{t('contact.email')}</p>
+                        <p className="text-sm text-charcoal/60 dark:text-warm-white/60">{t('contact.email')}</p>
                         <a
                           href={`mailto:${COMPANY.email}`}
-                          className="text-charcoal hover:text-gold transition-colors"
+                          className="text-charcoal dark:text-warm-white hover:text-gold transition-colors"
                         >
                           {COMPANY.email}
                         </a>
@@ -248,8 +248,8 @@ export function ContactPage() {
                     <li className="flex gap-4">
                       <Clock className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-sm text-charcoal/60">{t('contact.hours')}</p>
-                        <p className="text-charcoal">
+                        <p className="text-sm text-charcoal/60 dark:text-warm-white/60">{t('contact.hours')}</p>
+                        <p className="text-charcoal dark:text-warm-white">
                           {getLocalizedText(COMPANY.openingHours, lang)}
                         </p>
                       </div>

@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="apple-touch-icon" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="theme-color" content="#faf8f5" />
     <meta name="author" content="Golden Home Lloret" />
     <meta name="geo.region" content="ES-CT" />
     <meta name="geo.placename" content="Lloret de Mar" />
@@ -17,6 +17,19 @@
       rel="stylesheet"
     />
     <title>Golden Home Inmobiliaria | Lloret de Mar · Costa Brava</title>
+    <script>
+      try {
+        document.documentElement.classList.remove('dark');
+        var stored = localStorage.getItem('golden-home-app');
+        if (stored) {
+          var parsed = JSON.parse(stored);
+          if (parsed.state && parsed.state.darkMode === true) {
+            document.documentElement.classList.add('dark');
+            document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#1a1a1a');
+          }
+        }
+      } catch (e) {}
+    </script>
     <meta
       name="description"
       content="Tu hogar ideal, a un clic de distancia. Golden Home Inmobiliaria: venta y asesoría inmobiliaria con servicio personalizado en Lloret de Mar y la Costa Brava."

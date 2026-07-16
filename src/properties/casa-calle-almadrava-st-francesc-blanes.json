@@ -1,0 +1,179 @@
+{
+  "id": "casa-calle-almadrava-st-francesc-blanes",
+  "reference": "GH-BLANES-ALM-001",
+  "slug": "casa-calle-almadrava-st-francesc-blanes",
+  "title": {
+    "es": "Exclusiva villa en la urbanización St. Francesc – Blanes",
+    "ca": "Vila exclusiva a la urbanització St. Francesc – Blanes",
+    "en": "Exclusive villa in St. Francesc urbanisation – Blanes",
+    "fr": "Villa exclusive dans l'urbanisation St. Francesc – Blanes"
+  },
+  "price": 1250000,
+  "location": {
+    "es": "Calle Almadrava, Cala Sant Francesc - Santa Cristina, Blanes",
+    "ca": "Carrer Almadrava, Cala Sant Francesc - Santa Cristina, Blanes",
+    "en": "Calle Almadrava, Cala Sant Francesc - Santa Cristina, Blanes",
+    "fr": "Calle Almadrava, Cala Sant Francesc - Santa Cristina, Blanes"
+  },
+  "province": "Girona",
+  "city": "Blanes",
+  "coordinates": { "lat": 41.6678, "lng": 2.7789 },
+  "type": "villa",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "builtArea": 412,
+  "plotArea": 1018,
+  "description": {
+    "es": "Situada en una de las zonas más prestigiosas de la Costa Brava, entre Blanes y Lloret de Mar, esta magnífica propiedad de dos plantas se encuentra sobre una parcela de más de 1.000 m², a solo 5 minutos caminando de la playa de St. Francesc.\n\nLa planta principal dispone de un amplio salón-comedor con mucha luz natural, cocina independiente con despensa, un aseo y salida directa a una gran terraza con zona chill out y piscina privada, ideal para disfrutar del buen clima todo el año.\n\nLa planta superior, a la que se accede por ascensor o escaleras, ofrece una suite, dos dormitorios dobles, dos baños completos, lavadero y una amplia terraza con acceso directo al jardín.\n\nAdemás, cuenta con un apartamento de invitados con una habitación y un baño con entrada independiente desde el jardín o la zona de piscina.\n\nBlanes es una ciudad con gran atractivo turístico, conocida por sus playas, jardines botánicos y festivales. Su excelente ubicación, a solo una hora de Barcelona y 40 minutos del aeropuerto de Girona, la convierte en un enclave ideal para residir o disfrutar de las vacaciones.",
+    "ca": "Situada en una de les zones més prestigioses de la Costa Brava, entre Blanes i Lloret de Mar, aquesta magnífica propietat de dues plantes es troba sobre una parcel·la de més de 1.000 m², a només 5 minuts caminant de la platja de St. Francesc.\n\nLa planta principal disposa d'un ampli saló-menjador amb molta llum natural, cuina independent amb rebost, un lavabo i sortida directa a una gran terrassa amb zona chill out i piscina privada, ideal per gaudir del bon clima tot l'any.\n\nLa planta superior, a la qual s'accedeix per ascensor o escales, ofereix una suite, dos dormitoris dobles, dos banys complets, safareig i una àmplia terrassa amb accés directe al jardí.\n\nA més, compta amb un apartament d'invitats amb una habitació i un bany amb entrada independent des del jardí o la zona de piscina.\n\nBlanes és una ciutat amb gran atractiu turístic, coneguda per les seves platges, jardins botànics i festivals. La seva excel·lent ubicació, a només una hora de Barcelona i 40 minuts de l'aeroport de Girona, la converteix en un enclavament ideal per residir o gaudir de les vacances.",
+    "en": "Located in one of the most prestigious areas of the Costa Brava, between Blanes and Lloret de Mar, this magnificent two-storey property sits on a plot of more than 1,000 m², just a 5-minute walk from St. Francesc beach.\n\nThe main floor features a spacious living-dining room with abundant natural light, a separate kitchen with pantry, a guest WC and direct access to a large terrace with chill-out area and private pool, ideal for enjoying the mild climate all year round.\n\nThe upper floor, accessible by elevator or stairs, offers a master suite, two double bedrooms, two full bathrooms, a laundry room and a large terrace with direct access to the garden.\n\nIt also includes a guest apartment with one bedroom and one bathroom, with independent access from the garden or pool area.\n\nBlanes is a city with great tourist appeal, known for its beaches, botanical gardens and festivals. Its excellent location, just one hour from Barcelona and 40 minutes from Girona airport, makes it an ideal place to live or enjoy holidays.",
+    "fr": "Située dans l'un des quartiers les plus prestigieux de la Costa Brava, entre Blanes et Lloret de Mar, cette magnifique propriété de deux étages se trouve sur un terrain de plus de 1 000 m², à seulement 5 minutes à pied de la plage de St. Francesc.\n\nLe rez-de-chaussée comprend un vaste salon-salle à manger très lumineux, une cuisine indépendante avec cellier, un WC et un accès direct à une grande terrasse avec coin chill-out et piscine privée, idéal pour profiter du climat toute l'année.\n\nL'étage supérieur, accessible par ascenseur ou escaliers, offre une suite, deux chambres doubles, deux salles de bain complètes, une buanderie et une grande terrasse avec accès direct au jardin.\n\nElle dispose également d'un appartement invités avec une chambre et une salle de bain, avec entrée indépendante depuis le jardin ou la piscine.\n\nBlanes est une ville au fort attrait touristique, connue pour ses plages, jardins botaniques et festivals. Son excellent emplacement, à seulement une heure de Barcelone et 40 minutes de l'aéroport de Girona, en fait un lieu idéal pour résider ou profiter des vacances."
+  },
+  "features": [
+    { "es": "Casa o chalet independiente", "ca": "Casa o xalet independent", "en": "Detached house or chalet", "fr": "Maison ou chalet individuel" },
+    { "es": "2 plantas", "ca": "2 plantes", "en": "2 floors", "fr": "2 étages" },
+    { "es": "Terraza", "ca": "Terrassa", "en": "Terrace", "fr": "Terrasse" },
+    { "es": "Plaza de garaje incluida en el precio", "ca": "Plaça d'aparcament inclosa en el preu", "en": "Garage space included in price", "fr": "Place de garage incluse dans le prix" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Trastero", "ca": "Traster", "en": "Storage room", "fr": "Débarras" },
+    { "es": "Calefacción central", "ca": "Calefacció central", "en": "Central heating", "fr": "Chauffage central" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Piscina privada", "ca": "Piscina privada", "en": "Private pool", "fr": "Piscine privée" },
+    { "es": "Jardín", "ca": "Jardí", "en": "Garden", "fr": "Jardin" },
+    { "es": "Apartamento de invitados", "ca": "Apartament d'invitats", "en": "Guest apartment", "fr": "Appartement invités" },
+    { "es": "Ascensor", "ca": "Ascensor", "en": "Elevator", "fr": "Ascenseur" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Cala Sant Francesc - Santa Cristina",
+      "ca": "Cala Sant Francesc - Santa Cristina",
+      "en": "Cala Sant Francesc - Santa Cristina",
+      "fr": "Cala Sant Francesc - Santa Cristina"
+    },
+    "floor": {
+      "es": "2 plantas",
+      "ca": "2 plantes",
+      "en": "2 floors",
+      "fr": "2 étages"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Calefacción central",
+      "ca": "Calefacció central",
+      "en": "Central heating",
+      "fr": "Chauffage central"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de St. Francesc",
+        "ca": "Platja de St. Francesc",
+        "en": "St. Francesc Beach",
+        "fr": "Plage de St. Francesc"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Cala Treumal",
+        "ca": "Cala Treumal",
+        "en": "Cala Treumal",
+        "fr": "Cala Treumal"
+      },
+      "distance": "1.5 km"
+    },
+    {
+      "name": {
+        "es": "Centro de Blanes",
+        "ca": "Centre de Blanes",
+        "en": "Blanes town centre",
+        "fr": "Centre de Blanes"
+      },
+      "distance": "2 km"
+    },
+    {
+      "name": {
+        "es": "Jardín Botánico Marimurtra",
+        "ca": "Jardí Botànic Marimurtra",
+        "en": "Marimurtra Botanical Garden",
+        "fr": "Jardin botanique Marimurtra"
+      },
+      "distance": "3 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "40 km"
+    }
+  ],
+  "images": [
+    "/properties/casa-calle-almadrava-st-francesc-blanes/01.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/02.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/03.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/04.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/05.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/06.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/07.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/08.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/09.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/10.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/11.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/12.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/13.png",
+    "/properties/casa-calle-almadrava-st-francesc-blanes/14.png"
+  ],
+  "energyCertificate": "E",
+  "featured": true,
+  "exclusive": true,
+  "luxury": true,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": false,
+  "garden": true,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-16",
+  "seo": {
+    "title": {
+      "es": "Villa exclusiva 4 hab. St. Francesc, Blanes | 1.250.000 € | Golden Home",
+      "ca": "Vila exclusiva 4 hab. St. Francesc, Blanes | 1.250.000 € | Golden Home",
+      "en": "Exclusive 4-bed villa St. Francesc, Blanes | €1,250,000 | Golden Home",
+      "fr": "Villa exclusive 4 ch. St. Francesc, Blanes | 1 250 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Casa independiente de 412 m² con 4 habitaciones, piscina y jardín en Calle Almadrava, St. Francesc, Blanes. Parcela 1.018 m². Garaje incluido. 1.250.000 €. Golden Home.",
+      "ca": "Casa independent de 412 m² amb 4 habitacions, piscina i jardí al Carrer Almadrava, St. Francesc, Blanes. Parcel·la 1.018 m². Aparcament inclòs. 1.250.000 €. Golden Home.",
+      "en": "412 m² detached villa with 4 bedrooms, pool and garden on Calle Almadrava, St. Francesc, Blanes. 1,018 m² plot. Garage included. €1,250,000. Golden Home.",
+      "fr": "Maison individuelle de 412 m² avec 4 chambres, piscine et jardin au Calle Almadrava, St. Francesc, Blanes. Terrain 1 018 m². Garage inclus. 1 250 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "villa blanes venta, casa st francesc blanes, chalet almadrava blanes, inmobiliaria blanes, golden home blanes",
+      "ca": "vila blanes venda, casa st francesc blanes, xalet almadrava blanes, immobiliària blanes, golden home blanes",
+      "en": "villa blanes sale, st francesc house blanes, almadrava chalet blanes, real estate blanes, golden home blanes",
+      "fr": "villa blanes vente, maison st francesc blanes, chalet almadrava blanes, immobilier blanes, golden home blanes"
+    }
+  }
+}

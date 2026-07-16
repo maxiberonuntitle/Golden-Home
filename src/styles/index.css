@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-gold: #c9a962;
   --color-gold-light: #d4bc7e;
@@ -35,6 +37,10 @@
   ::selection {
     @apply bg-gold/30 text-charcoal;
   }
+
+  html.dark ::selection {
+    @apply bg-gold/40 text-warm-white;
+  }
 }
 
 @layer utilities {
@@ -43,7 +49,7 @@
   }
 
   .glass {
-    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 dark:bg-graphite/80 dark:border-white/10;
   }
 
   .glass-dark {
@@ -76,11 +82,11 @@
   }
 
   .field-select {
-    @apply w-full appearance-none rounded-lg border border-charcoal/10 bg-white/50 py-3 pr-10 text-sm font-medium text-charcoal shadow-sm shadow-charcoal/[0.04] backdrop-blur-md transition-all duration-200 hover:border-gold/35 hover:bg-white/65 focus:border-gold/50 focus:bg-white/70 focus:outline-none focus:ring-2 focus:ring-gold/15;
+    @apply w-full appearance-none rounded-lg border border-charcoal/10 bg-white/50 py-3 pr-10 text-sm font-medium text-charcoal shadow-sm shadow-charcoal/[0.04] backdrop-blur-md transition-all duration-200 hover:border-gold/35 hover:bg-white/65 focus:border-gold/50 focus:bg-white/70 focus:outline-none focus:ring-2 focus:ring-gold/15 dark:border-white/10 dark:bg-white/5 dark:text-warm-white dark:shadow-none dark:hover:border-gold/40 dark:hover:bg-white/10 dark:focus:border-gold/50 dark:focus:bg-white/10;
   }
 
   .field-input {
-    @apply w-full rounded-lg border border-charcoal/10 bg-white/50 px-4 py-3 text-sm text-charcoal shadow-sm shadow-charcoal/[0.04] backdrop-blur-md transition-all duration-200 placeholder:text-charcoal/40 hover:border-gold/35 hover:bg-white/65 focus:border-gold/50 focus:bg-white/70 focus:outline-none focus:ring-2 focus:ring-gold/15;
+    @apply w-full rounded-lg border border-charcoal/10 bg-white/50 px-4 py-3 text-sm text-charcoal shadow-sm shadow-charcoal/[0.04] backdrop-blur-md transition-all duration-200 placeholder:text-charcoal/40 hover:border-gold/35 hover:bg-white/65 focus:border-gold/50 focus:bg-white/70 focus:outline-none focus:ring-2 focus:ring-gold/15 dark:border-white/10 dark:bg-white/5 dark:text-warm-white dark:placeholder:text-warm-white/40 dark:shadow-none dark:hover:border-gold/40 dark:hover:bg-white/10 dark:focus:border-gold/50 dark:focus:bg-white/10;
   }
 
   :root {
@@ -98,5 +104,264 @@
     :root {
       --header-nav-h: 6rem;
     }
+  }
+}
+
+@layer components {
+  .property-detail-gallery-root {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .property-detail-gallery {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+    max-height: min(52vw, 220px);
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .property-detail-gallery {
+      max-height: min(48vw, 260px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .property-detail-gallery {
+      aspect-ratio: auto;
+      height: 320px;
+      max-height: none;
+    }
+  }
+
+  .property-detail-gallery-track {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .property-detail-gallery-slide {
+    max-width: 100%;
+  }
+
+  .property-gallery-main {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .property-gallery-main .swiper-wrapper,
+  .property-gallery-main .swiper-slide {
+    height: 100%;
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .property-gallery-slide {
+    position: relative;
+    height: 100%;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .property-gallery-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .property-gallery-thumbs {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .property-gallery-thumb {
+    width: 4.25rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+  }
+
+  .property-gallery-thumb-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media (min-width: 1024px) {
+    .property-gallery-thumb {
+      width: 5.5rem;
+      height: 3.75rem;
+    }
+  }
+
+  .property-card-gallery {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .property-card-gallery-slide {
+    max-width: 100%;
+  }
+
+  .property-card-gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .properties-map .leaflet-container {
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-sans);
+    background: #f5f0e8;
+  }
+
+  html.dark .properties-map .leaflet-container {
+    background: #2d2d2d;
+  }
+
+  .property-map-pin {
+    background: transparent;
+    border: none;
+  }
+
+  .property-map-pin__marker {
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(26, 26, 26, 0.35));
+    transition: transform 0.2s ease;
+  }
+
+  .property-map-pin:hover .property-map-pin__marker {
+    transform: scale(1.12);
+  }
+
+  .property-map-popup .leaflet-popup-content-wrapper {
+    padding: 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(26, 26, 26, 0.18);
+    border: 1px solid rgba(26, 26, 26, 0.08);
+  }
+
+  .property-map-popup .leaflet-popup-content {
+    margin: 0;
+    width: 240px !important;
+  }
+
+  .property-map-popup .leaflet-popup-tip {
+    background: #faf8f5;
+  }
+
+  html.dark .property-map-popup .leaflet-popup-content-wrapper {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  }
+
+  html.dark .property-map-popup .leaflet-popup-tip {
+    background: #242424;
+  }
+
+  html.dark .property-map-popup__body {
+    background: #242424;
+  }
+
+  html.dark .property-map-popup__title {
+    color: #faf8f5;
+  }
+
+  html.dark .property-map-popup__location {
+    color: rgba(250, 248, 245, 0.55);
+  }
+
+  html.dark .property-map-popup__meta {
+    color: rgba(250, 248, 245, 0.65);
+  }
+
+  .property-map-popup__card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .property-map-popup__image {
+    display: block;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .property-map-popup__body {
+    padding: 0.75rem 0.875rem 0.875rem;
+    background: #faf8f5;
+  }
+
+  .property-map-popup__price {
+    margin: 0 0 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #c9a962;
+  }
+
+  .property-map-popup__title {
+    margin: 0 0 0.25rem;
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    line-height: 1.3;
+    color: #1a1a1a;
+  }
+
+  .property-map-popup__location {
+    margin: 0 0 0.5rem;
+    font-size: 0.7rem;
+    line-height: 1.35;
+    color: rgba(26, 26, 26, 0.55);
+  }
+
+  .property-map-popup__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    font-size: 0.7rem;
+    color: rgba(26, 26, 26, 0.65);
+  }
+
+  .property-map-popup__meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  html.dark .swiper-pagination-bullet {
+    background: rgba(250, 248, 245, 0.35);
+  }
+
+  html.dark .swiper-pagination-bullet-active {
+    background: #c9a962;
+  }
+
+  html.dark .swiper-button-prev,
+  html.dark .swiper-button-next {
+    color: #faf8f5;
   }
 }

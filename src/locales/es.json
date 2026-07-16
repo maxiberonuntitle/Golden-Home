@@ -77,7 +77,18 @@
     "interestRate": "Tipo de interés",
     "loanTerm": "Plazo del préstamo",
     "nearbyPlaces": "Lugares de interés cercanos",
-    "reference": "Referencia"
+    "reference": "Referencia",
+    "forSale": "Piso en venta",
+    "forRent": "Piso en alquiler",
+    "viewMap": "Ver mapa",
+    "basicFeatures": "Características básicas",
+    "building": "Edificio",
+    "energyConsumption": "Consumo",
+    "energyEmissions": "Emisiones",
+    "advertiserComment": "Comentario del anunciante",
+    "builtIn": "Construido en {{year}}",
+    "habShort": "hab.",
+    "calculateMortgage": "Calcular hipoteca"
   },
   "home": {
     "featuredTitle": "Propiedades destacadas",

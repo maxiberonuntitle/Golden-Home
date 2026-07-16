@@ -107,7 +107,7 @@ export function AboutPage() {
         <Container>
           <ScrollReveal>
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <p className="text-charcoal/70 text-lg leading-relaxed">
+              <p className="text-charcoal/70 dark:text-warm-white/70 text-lg leading-relaxed">
                 {lang === 'es' &&
                   'Desde 2010, Golden Home Lloret ha sido el punto de referencia para compradores y vendedores exigentes que buscan propiedades excepcionales en la Costa Brava. Nuestra sede en el corazón de Lloret de Mar nos permite ofrecer un conocimiento profundo del mercado local combinado con una red internacional de clientes e inversores.'}
                 {lang === 'ca' &&
@@ -137,9 +137,9 @@ export function AboutPage() {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
-              <div className="p-8 lg:p-10 bg-cream rounded-xl h-full">
+              <div className="p-8 lg:p-10 bg-cream dark:bg-graphite rounded-xl h-full">
                 <Eye className="w-8 h-8 text-gold mb-6" />
-                <h3 className="font-serif text-2xl text-charcoal mb-4">
+                <h3 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-4">
                   {lang === 'es'
                     ? 'Visión'
                     : lang === 'ca'
@@ -148,14 +148,14 @@ export function AboutPage() {
                         ? 'Vision'
                         : 'Vision'}
                 </h3>
-                <p className="text-charcoal/70 leading-relaxed">{t('about.vision')}</p>
+                <p className="text-charcoal/70 dark:text-warm-white/70 leading-relaxed">{t('about.vision')}</p>
               </div>
             </ScrollReveal>
           </div>
         </Container>
       </section>
 
-      <section className="py-16 lg:py-24 bg-cream">
+      <section className="py-16 lg:py-24 bg-cream dark:bg-graphite">
         <Container>
           <ScrollReveal>
             <SectionHeading
@@ -179,10 +179,10 @@ export function AboutPage() {
                     <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
                       <Icon className="w-6 h-6 text-gold" />
                     </div>
-                    <h3 className="font-serif text-xl text-charcoal mb-3">
+                    <h3 className="font-serif text-xl text-charcoal dark:text-warm-white mb-3">
                       {t(`about.values.${key}.title`)}
                     </h3>
-                    <p className="text-charcoal/60 text-sm leading-relaxed">
+                    <p className="text-charcoal/60 dark:text-warm-white/60 text-sm leading-relaxed">
                       {t(`about.values.${key}.description`)}
                     </p>
                   </div>
@@ -209,11 +209,11 @@ export function AboutPage() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <h3 className="font-serif text-xl text-charcoal">{member.name}</h3>
+                  <h3 className="font-serif text-xl text-charcoal dark:text-warm-white">{member.name}</h3>
                   <p className="text-gold text-sm mt-1 mb-3">
                     {getLocalizedText(member.role, lang)}
                   </p>
-                  <p className="text-charcoal/60 text-sm leading-relaxed">
+                  <p className="text-charcoal/60 dark:text-warm-white/60 text-sm leading-relaxed">
                     {getLocalizedText(member.bio, lang)}
                   </p>
                 </article>
@@ -264,10 +264,10 @@ export function AboutPage() {
                 <div className="p-8 border border-charcoal/10 rounded-xl hover:border-gold/30 transition-colors">
                   <Award className="w-8 h-8 text-gold mb-4" />
                   <p className="text-gold text-sm font-medium mb-2">{award.year}</p>
-                  <h3 className="font-serif text-lg text-charcoal mb-2">
+                  <h3 className="font-serif text-lg text-charcoal dark:text-warm-white mb-2">
                     {getLocalizedText(award.title, lang)}
                   </h3>
-                  <p className="text-charcoal/50 text-sm">
+                  <p className="text-charcoal/50 dark:text-warm-white/50 text-sm">
                     {getLocalizedText(award.org, lang)}
                   </p>
                 </div>

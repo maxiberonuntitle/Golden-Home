@@ -78,8 +78,8 @@ export function FavoritesPage() {
               <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
                 <Heart className="w-8 h-8 text-gold" />
               </div>
-              <h2 className="font-serif text-2xl text-charcoal mb-3">{empty.title}</h2>
-              <p className="text-charcoal/60 max-w-md mx-auto mb-8">{empty.description}</p>
+              <h2 className="font-serif text-2xl text-charcoal dark:text-warm-white mb-3">{empty.title}</h2>
+              <p className="text-charcoal/60 dark:text-warm-white/60 max-w-md mx-auto mb-8">{empty.description}</p>
               <Link to={`/${lang}/properties`}>
                 <Button variant="primary" size="lg">
                   {t('nav.properties')}

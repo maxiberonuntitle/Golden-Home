@@ -20,7 +20,7 @@ export function SortSelect({ className = '' }: SortSelectProps) {
 
   return (
     <div className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 ${className}`}>
-      <span className="text-xs font-medium uppercase tracking-[0.18em] text-charcoal/45 shrink-0">
+      <span className="text-xs font-medium uppercase tracking-[0.18em] text-charcoal/45 dark:text-warm-white/45 shrink-0">
         {t('search.sortBy')}
       </span>
       <Select

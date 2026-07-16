@@ -45,14 +45,14 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
         <button
           type="button"
           onClick={resetFilters}
-          className="text-xs text-charcoal/50 hover:text-gold transition-colors"
+          className="text-xs text-charcoal/50 hover:text-gold dark:text-warm-white/50 dark:hover:text-gold transition-colors"
         >
           {t('search.clearFilters')}
         </button>
       </div>
 
       <div className="space-y-3">
-        <label className="block text-sm font-medium text-charcoal">{t('search.reference')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('search.reference')}</label>
         <input
           type="text"
           value={filters.reference}
@@ -74,7 +74,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
       />
 
       <div className="space-y-4">
-        <label className="block text-sm font-medium text-charcoal">{t('search.price')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('search.price')}</label>
         <div className="space-y-3">
           <input
             type="range"
@@ -94,7 +94,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
             onChange={(e) => setFilter('priceMax', Number(e.target.value))}
             className="w-full accent-gold"
           />
-          <div className="flex justify-between text-xs text-charcoal/50">
+          <div className="flex justify-between text-xs text-charcoal/50 dark:text-warm-white/50">
             <span>€{filters.priceMin.toLocaleString('es-ES')}</span>
             <span>€{filters.priceMax.toLocaleString('es-ES')}</span>
           </div>
@@ -102,7 +102,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
       </div>
 
       <div className="space-y-3">
-        <label className="block text-sm font-medium text-charcoal">{t('search.bedrooms')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('search.bedrooms')}</label>
         <div className="flex flex-wrap gap-2">
           {bedroomOptions.map((n) => (
             <button
@@ -112,7 +112,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
               className={`px-3 py-1.5 text-xs font-medium border transition-colors ${
                 filters.bedrooms === n
                   ? 'bg-gold text-charcoal border-gold'
-                  : 'bg-transparent text-charcoal/60 border-charcoal/10 hover:border-gold/30'
+                  : 'bg-transparent text-charcoal/60 border-charcoal/10 hover:border-gold/30 dark:text-warm-white/60 dark:border-white/10 dark:hover:border-gold/40'
               }`}
             >
               {n === null ? '—' : `${n}+`}
@@ -122,7 +122,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
       </div>
 
       <div className="space-y-3">
-        <label className="block text-sm font-medium text-charcoal">{t('search.bathrooms')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('search.bathrooms')}</label>
         <div className="flex flex-wrap gap-2">
           {bathroomOptions.map((n) => (
             <button
@@ -132,7 +132,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
               className={`px-3 py-1.5 text-xs font-medium border transition-colors ${
                 filters.bathrooms === n
                   ? 'bg-gold text-charcoal border-gold'
-                  : 'bg-transparent text-charcoal/60 border-charcoal/10 hover:border-gold/30'
+                  : 'bg-transparent text-charcoal/60 border-charcoal/10 hover:border-gold/30 dark:text-warm-white/60 dark:border-white/10 dark:hover:border-gold/40'
               }`}
             >
               {n === null ? '—' : `${n}+`}
@@ -142,7 +142,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
       </div>
 
       <div className="space-y-4">
-        <label className="block text-sm font-medium text-charcoal">{t('property.builtArea')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('property.builtArea')}</label>
         <div className="space-y-3">
           <input
             type="range"
@@ -162,7 +162,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
             onChange={(e) => setFilter('areaMax', Number(e.target.value))}
             className="w-full accent-gold"
           />
-          <div className="flex justify-between text-xs text-charcoal/50">
+          <div className="flex justify-between text-xs text-charcoal/50 dark:text-warm-white/50">
             <span>{filters.areaMin} m²</span>
             <span>{filters.areaMax} m²</span>
           </div>
@@ -170,7 +170,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
       </div>
 
       <div className="space-y-3">
-        <label className="block text-sm font-medium text-charcoal">{t('search.province')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('search.province')}</label>
         <input
           type="text"
           value={filters.province}
@@ -180,7 +180,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
       </div>
 
       <div className="space-y-3">
-        <label className="block text-sm font-medium text-charcoal">{t('search.city')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('search.city')}</label>
         <input
           type="text"
           value={filters.city}
@@ -190,7 +190,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
       </div>
 
       <div className="space-y-3">
-        <label className="block text-sm font-medium text-charcoal">{t('search.features')}</label>
+        <label className="block text-sm font-medium text-charcoal dark:text-warm-white">{t('search.features')}</label>
         <div className="space-y-2">
           {featureFilters.map((feature) => (
             <label
@@ -203,7 +203,7 @@ export function FilterPanel({ className = '' }: FilterPanelProps) {
                 onChange={(e) => setFilter(feature.key, e.target.checked)}
                 className="w-4 h-4 accent-gold border-charcoal/20"
               />
-              <span className="text-sm text-charcoal/70 group-hover:text-charcoal transition-colors">
+              <span className="text-sm text-charcoal/70 group-hover:text-charcoal dark:text-warm-white/70 dark:group-hover:text-warm-white transition-colors">
                 {feature.label}
               </span>
             </label>

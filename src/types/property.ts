@@ -20,6 +20,23 @@ export interface PropertyCoordinates {
   lng: number
 }
 
+export interface PropertyListingDetails {
+  zone?: LocalizedString
+  floor?: LocalizedString
+  condition?: LocalizedString
+  yearBuilt?: number
+  heating?: LocalizedString
+  orientation?: LocalizedString
+  energyConsumption?: number
+  energyEmissions?: number
+  advertiserNote?: LocalizedString
+}
+
+export interface NearbyPlace {
+  name: LocalizedString
+  distance: string
+}
+
 export interface Property {
   id: string
   reference: string
@@ -58,6 +75,8 @@ export interface Property {
   views: number
   createdAt: string
   seo: PropertySEO
+  listingDetails?: PropertyListingDetails
+  nearbyPlaces?: NearbyPlace[]
 }
 
 export interface PropertyFilters {
@@ -109,14 +128,5 @@ export interface TeamMember {
   name: string
   role: LocalizedString
   bio: LocalizedString
-  image: string
-}
-
-export interface Testimonial {
-  id: string
-  name: string
-  location: LocalizedString
-  text: LocalizedString
-  rating: number
   image: string
 }

@@ -15,6 +15,7 @@ export const COMPANY = {
   email: 'info@goldenhomelloret.es',
   website: 'https://goldenhomelloret.es',
   logo: '/logo.png',
+  logoLight: '/logo-light.png',
   coordinates: { lat: 41.6994, lng: 2.8451 },
   openingHours: {
     es: 'Lunes a Viernes: 9:30–19:00 | Sábados: 10:00–14:00',

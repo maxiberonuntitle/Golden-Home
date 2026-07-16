@@ -15,9 +15,10 @@ const variantStyles: Record<ButtonVariant, string> = {
   primary:
     'bg-gold text-charcoal hover:bg-gold-light border border-gold shadow-sm hover:shadow-md',
   secondary:
-    'bg-transparent text-charcoal border border-charcoal/20 hover:border-gold hover:text-gold',
-  ghost: 'bg-transparent text-charcoal hover:bg-charcoal/5 border border-transparent',
-  dark: 'bg-charcoal text-warm-white hover:bg-graphite border border-charcoal',
+    'bg-transparent text-charcoal border border-charcoal/20 hover:border-gold hover:text-gold dark:text-warm-white dark:border-white/20 dark:hover:border-gold dark:hover:text-gold',
+  ghost:
+    'bg-transparent text-charcoal hover:bg-charcoal/5 border border-transparent dark:text-warm-white dark:hover:bg-white/10',
+  dark: 'bg-charcoal text-warm-white hover:bg-graphite border border-charcoal dark:bg-graphite dark:border-white/10 dark:hover:bg-charcoal',
 }
 
 const sizeStyles: Record<ButtonSize, string> = {

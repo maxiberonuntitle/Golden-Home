@@ -35,7 +35,7 @@ export function Select({
   return (
     <div className={cn('space-y-2', className)}>
       {label && (
-        <label htmlFor={id} className="block text-sm font-medium text-charcoal">
+        <label htmlFor={id} className="block text-sm font-medium text-charcoal dark:text-warm-white">
           {label}
         </label>
       )}
@@ -65,7 +65,7 @@ export function Select({
             </option>
           ))}
         </select>
-        <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-charcoal/35 transition-colors group-hover:text-gold/70 group-focus-within:text-gold" />
+        <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-charcoal/35 dark:text-warm-white/35 transition-colors group-hover:text-gold/70 group-focus-within:text-gold" />
       </div>
     </div>
   )

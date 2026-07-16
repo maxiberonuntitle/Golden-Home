@@ -25,7 +25,7 @@ export function CurrencySelector() {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-charcoal/70 hover:text-gold transition-colors"
+        className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-charcoal/70 hover:text-gold dark:text-warm-white/70 dark:hover:text-gold transition-colors"
         aria-label="Select currency"
         aria-expanded={open}
       >
@@ -34,7 +34,7 @@ export function CurrencySelector() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-1 py-1 min-w-[5rem] bg-warm-white border border-charcoal/10 shadow-lg z-50">
+        <div className="absolute right-0 top-full mt-1 py-1 min-w-[5rem] bg-warm-white dark:bg-graphite border border-charcoal/10 dark:border-white/10 shadow-lg z-50">
           {currencies.map((c) => (
             <button
               key={c}
@@ -46,7 +46,7 @@ export function CurrencySelector() {
               className={`w-full px-4 py-2 text-left text-xs font-medium transition-colors ${
                 currency === c
                   ? 'text-gold bg-gold/5'
-                  : 'text-charcoal/70 hover:text-gold hover:bg-charcoal/5'
+                  : 'text-charcoal/70 hover:text-gold hover:bg-charcoal/5 dark:text-warm-white/70 dark:hover:text-gold dark:hover:bg-white/10'
               }`}
             >
               {c}

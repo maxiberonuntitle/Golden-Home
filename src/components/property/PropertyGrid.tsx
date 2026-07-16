@@ -6,9 +6,15 @@ interface PropertyGridProps {
   properties: Property[]
   loading?: boolean
   className?: string
+  scrollableImages?: boolean
 }
 
-export function PropertyGrid({ properties, loading = false, className = '' }: PropertyGridProps) {
+export function PropertyGrid({
+  properties,
+  loading = false,
+  className = '',
+  scrollableImages = false,
+}: PropertyGridProps) {
   if (loading) {
     return (
       <div
@@ -26,7 +32,7 @@ export function PropertyGrid({ properties, loading = false, className = '' }: Pr
       className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 ${className}`}
     >
       {properties.map((property, index) => (
-        <PropertyCard key={property.id} property={property} index={index} />
+        <PropertyCard key={property.id} property={property} index={index} scrollableImages={scrollableImages} />
       ))}
     </div>
   )
