@@ -17,6 +17,9 @@ export const COMPANY = {
   domain: 'goldenhomelloret.es',
   logo: '/logo.png',
   logoLight: '/logo-light.png',
+  ogImage: '/miniatura.png',
+  ogImageWidth: 634,
+  ogImageHeight: 532,
   coordinates: { lat: 41.6994, lng: 2.8451 },
   openingHours: {
     es: 'Lunes a Viernes: 9:30–19:00 | Sábados: 10:00–14:00',
@@ -139,10 +142,7 @@ export const SORT_OPTIONS: { value: SortOption; label: LocalizedString }[] = [
 
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/goldenhomelloret/',
-  facebook: 'https://www.facebook.com/goldenhomelloret',
-  linkedin: 'https://www.linkedin.com/company/golden-home-lloret',
-  youtube: 'https://www.youtube.com/@goldenhomelloret',
-  pinterest: 'https://www.pinterest.com/goldenhomelloret',
+  facebook: 'https://www.facebook.com/p/Golden-Home-Lloret-61574461142349/',
 } as const
 
 export interface Partner {

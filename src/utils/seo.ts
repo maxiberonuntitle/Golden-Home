@@ -65,7 +65,7 @@ export function getOgLocale(lang: string): string {
 }
 
 export function toAbsoluteImageUrl(image?: string): string {
-  if (!image) return `${SITE_ORIGIN}${COMPANY.logo}`
+  if (!image) return `${SITE_ORIGIN}${COMPANY.ogImage}`
   if (/^https?:\/\//i.test(image)) return image
   return `${SITE_ORIGIN}${image.startsWith('/') ? image : `/${image}`}`
 }
@@ -79,7 +79,7 @@ export function buildOrganizationJsonLd(): Record<string, unknown> {
     legalName: COMPANY.legalName,
     url: SITE_ORIGIN,
     logo: `${SITE_ORIGIN}${COMPANY.logo}`,
-    image: `${SITE_ORIGIN}${COMPANY.logo}`,
+    image: `${SITE_ORIGIN}${COMPANY.ogImage}`,
     telephone: COMPANY.phone,
     email: COMPANY.email,
     address: {
@@ -98,9 +98,7 @@ export function buildOrganizationJsonLd(): Record<string, unknown> {
     areaServed: ['Lloret de Mar', 'Blanes', 'Tossa de Mar', "Platja d'Aro", 'Costa Brava'],
     sameAs: [
       'https://www.instagram.com/goldenhomelloret/',
-      'https://www.facebook.com/goldenhomelloret',
-      'https://www.linkedin.com/company/golden-home-lloret',
-      'https://www.youtube.com/@goldenhomelloret',
+      'https://www.facebook.com/p/Golden-Home-Lloret-61574461142349/',
     ],
   }
 }

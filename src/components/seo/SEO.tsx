@@ -71,6 +71,9 @@ export function SEO({
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDescription} />
       <meta property="og:image" content={absoluteImage} />
+      <meta property="og:image:width" content={String(COMPANY.ogImageWidth)} />
+      <meta property="og:image:height" content={String(COMPANY.ogImageHeight)} />
+      <meta property="og:image:alt" content={siteTitle} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content={type} />
       <meta property="og:site_name" content={COMPANY.name} />
@@ -85,6 +88,7 @@ export function SEO({
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDescription} />
       <meta name="twitter:image" content={absoluteImage} />
+      <meta name="twitter:image:alt" content={siteTitle} />
 
       <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
     </Helmet>

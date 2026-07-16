@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { FloatingButtons } from '@/components/layout/FloatingButtons'
+import { LegalModal } from '@/components/legal/LegalModal'
+import { CookieConsent } from '@/components/legal/CookieConsent'
 
 export function MainLayout() {
   const location = useLocation()
@@ -25,6 +27,8 @@ export function MainLayout() {
       </main>
       <Footer />
       <FloatingButtons />
+      <LegalModal />
+      <CookieConsent />
     </div>
   )
 }

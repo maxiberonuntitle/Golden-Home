@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import {
@@ -13,16 +13,19 @@ import {
   MapPin,
   ArrowRight,
   Camera,
+  ChevronDown,
 } from 'lucide-react'
 import { SEO } from '@/components/seo/SEO'
 import { Container } from '@/components/ui/Container'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Button } from '@/components/ui/Button'
+import { Logo } from '@/components/ui/Logo'
 import { SearchBar } from '@/components/search/SearchBar'
 import { PropertyGrid } from '@/components/property/PropertyGrid'
 import { PropertyCard } from '@/components/property/PropertyCard'
 import { PropertiesMap } from '@/components/property/PropertiesMap'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
+import { HeroBackgroundSlideshow } from '@/components/home/HeroBackgroundSlideshow'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 import { getFeaturedProperties, getLatestProperties, getAllProperties } from '@/services/propertyService'
 import { COMPANY, PARTNERS, SOCIAL } from '@/utils/constants'
@@ -56,7 +59,6 @@ export function HomePage() {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language.split('-')[0] || 'es') as Language
   const scrollY = useScrollPosition()
-  const shouldReduceMotion = useReducedMotion()
   const setFilter = useFilterStore((state) => state.setFilter)
 
   const featured = getFeaturedProperties()
@@ -72,31 +74,12 @@ export function HomePage() {
         description={t('seo.defaultDescription')}
         keywords={t('seo.defaultKeywords')}
         url={`${COMPANY.website}/${lang}`}
-        image={`${COMPANY.website}${COMPANY.logo}`}
       />
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            className="absolute -inset-[15%] will-change-transform"
-            initial={{ scale: 1 }}
-            animate={{ scale: shouldReduceMotion ? 1 : 1.14 }}
-            transition={{
-              duration: shouldReduceMotion ? 0 : 11,
-              ease: [0.22, 1, 0.36, 1],
-              repeat: shouldReduceMotion ? 0 : Infinity,
-              repeatType: 'reverse',
-            }}
-          >
-            <img
-              src="/blanes-background.png"
-              alt=""
-              className="h-full w-full object-cover object-center"
-              loading="eager"
-              decoding="async"
-            />
-          </motion.div>
+          <HeroBackgroundSlideshow />
           <div className="absolute inset-0 image-overlay" />
         </div>
 
@@ -114,9 +97,10 @@ export function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-warm-white leading-tight max-w-4xl mx-auto mb-6"
+              className="flex justify-center mb-6"
             >
-              {t('hero.title')}
+              <Logo variant="hero" showLink={false} />
+              <span className="sr-only">{t('hero.title')}</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -134,6 +118,25 @@ export function HomePage() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <SearchBar />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.85 }}
+            className="flex justify-center mt-10"
+          >
+            <Link
+              to={`/${lang}/properties`}
+              className="group inline-flex flex-col items-center gap-3 text-warm-white/75 hover:text-gold transition-colors duration-300"
+            >
+              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] font-medium">
+                {t('hero.viewProperties')}
+              </span>
+              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-warm-white/25 bg-warm-white/5 backdrop-blur-sm transition-all duration-300 group-hover:border-gold/40 group-hover:bg-gold/10">
+                <ChevronDown className="h-5 w-5 opacity-80 group-hover:opacity-100 transition-opacity" />
+              </span>
+            </Link>
           </motion.div>
         </Container>
       </section>

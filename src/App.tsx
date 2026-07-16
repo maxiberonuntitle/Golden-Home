@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { MainLayout } from '@/components/layout/MainLayout'
+import { InitialLoader } from '@/components/ui/InitialLoader'
 import { languages, defaultLanguage } from '@/i18n'
 import type { Language } from '@/types'
 
@@ -46,6 +47,7 @@ function SuspenseWrap({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <BrowserRouter>
+      <InitialLoader />
       <Routes>
         <Route path="/" element={<LangRedirect />} />
         <Route path="/:lang" element={<MainLayout />}>

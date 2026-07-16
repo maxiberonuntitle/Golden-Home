@@ -13,6 +13,7 @@
     "title": "Golden Home Immobiliària",
     "subtitle": "La teva llar ideal, a un clic de distància. Venda i assessorament immobiliari amb servei personalitzat a Lloret de Mar i la Costa Brava.",
     "cta": "Explorar propietats",
+    "viewProperties": "Veure propietats",
     "searchPlaceholder": "Cercar per zona, referència, ciutat..."
   },
   "search": {
@@ -201,7 +202,8 @@
     "legal": "Avís legal",
     "privacy": "Política de privacitat",
     "cookies": "Política de galetes",
-    "rights": "© {{year}} Golden Home Lloret. Tots els drets reservats."
+    "rights": "© {{year}} Golden Home Lloret. Tots els drets reservats.",
+    "siteBy": "Site by Maxisoluciones"
   },
   "common": {
     "loading": "Carregant...",
@@ -242,6 +244,15 @@
     "phone": "Trucar",
     "contact": "Contacte",
     "backToTop": "Amunt"
+  },
+  "legal": {
+    "cookieBanner": {
+      "title": "Utilitzem galetes",
+      "description": "Utilitzem galetes tècniques i emmagatzematge local per al funcionament del lloc, preferències i favorits. Pot acceptar, rebutjar o consultar la nostra política de galetes.",
+      "accept": "Acceptar",
+      "reject": "Rebutjar",
+      "configure": "Veure política"
+    }
   },
   "seo": {
     "defaultTitle": "Golden Home Immobiliària | Venda de pisos i cases a Lloret de Mar",
