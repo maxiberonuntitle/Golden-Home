@@ -19,7 +19,6 @@ import { SEO } from '@/components/seo/SEO'
 import { Container } from '@/components/ui/Container'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Button } from '@/components/ui/Button'
-import { Logo } from '@/components/ui/Logo'
 import { SearchBar } from '@/components/search/SearchBar'
 import { PropertyGrid } from '@/components/property/PropertyGrid'
 import { PropertyCard } from '@/components/property/PropertyCard'
@@ -28,7 +27,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { HeroBackgroundSlideshow } from '@/components/home/HeroBackgroundSlideshow'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 import { getFeaturedProperties, getLatestProperties, getAllProperties } from '@/services/propertyService'
-import { COMPANY, PARTNERS, SOCIAL } from '@/utils/constants'
+import { COMPANY, SOCIAL } from '@/utils/constants'
 import { getLocalizedText } from '@/utils/format'
 import { useFilterStore } from '@/stores/useFilterStore'
 import type { Language, PropertyType } from '@/types'
@@ -77,36 +76,35 @@ export function HomePage() {
       />
 
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-screen flex-col justify-start overflow-hidden pt-[16vh] sm:pt-[18vh] lg:pt-[20vh]">
         <div className="absolute inset-0 overflow-hidden">
           <HeroBackgroundSlideshow />
           <div className="absolute inset-0 image-overlay" />
         </div>
 
-        <Container className="relative z-10 pt-8 pb-20">
-          <div className="text-center mb-12">
+        <Container className="relative z-10 pb-20">
+          <div className="mx-auto mb-9 max-w-2xl text-center sm:mb-10">
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-gold text-sm uppercase tracking-[0.3em] mb-6"
+              className="mb-4 text-xs font-medium uppercase tracking-[0.28em] text-gold/85 sm:text-sm"
             >
               {getLocalizedText(COMPANY.tagline, lang)}
             </motion.p>
             <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center mb-6"
-            >
-              <Logo variant="hero" showLink={false} />
-              <span className="sr-only">{t('hero.title')}</span>
-            </motion.h1>
-            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-warm-white/80 text-lg max-w-2xl mx-auto leading-relaxed"
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="mx-auto mb-4 font-serif text-2xl uppercase leading-tight tracking-[0.1em] text-warm-white/70 sm:text-3xl md:text-4xl lg:text-5xl"
+            >
+              {t('hero.title')}
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="mx-auto max-w-xl text-sm leading-relaxed text-warm-white/60 sm:text-base md:max-w-2xl md:text-lg"
             >
               {t('hero.subtitle')}
             </motion.p>
@@ -181,26 +179,27 @@ export function HomePage() {
           <ScrollReveal>
             <SectionHeading title={t('home.categoriesTitle')} />
           </ScrollReveal>
-          <div className="grid sm:grid-cols-3 gap-8">
-            {CATEGORY_TYPES.map(({ type, icon: Icon, labelKey }, index) => (
-              <ScrollReveal key={type} delay={index * 0.1}>
+          <ScrollReveal delay={0.05}>
+            <div className="grid grid-cols-3 gap-3 sm:gap-8">
+              {CATEGORY_TYPES.map(({ type, icon: Icon, labelKey }) => (
                 <Link
+                  key={type}
                   to={`/${lang}/properties`}
                   onClick={() => setFilter('type', type)}
-                  className="group block text-center p-10 bg-warm-white dark:bg-charcoal rounded-xl border border-charcoal/5 dark:border-white/10 hover:border-gold/30 hover:shadow-lg transition-all duration-500"
+                  className="group block text-center p-4 sm:p-10 bg-warm-white dark:bg-charcoal rounded-xl border border-charcoal/5 dark:border-white/10 hover:border-gold/30 hover:shadow-lg transition-all duration-500"
                 >
-                  <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
-                    <Icon className="w-7 h-7 text-gold" />
+                  <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-3 sm:mb-6 group-hover:bg-gold/20 transition-colors">
+                    <Icon className="w-5 h-5 sm:w-7 sm:h-7 text-gold" />
                   </div>
-                  <h3 className="font-serif text-xl text-charcoal dark:text-warm-white group-hover:text-gold transition-colors capitalize">
+                  <h3 className="font-serif text-sm sm:text-xl text-charcoal dark:text-warm-white group-hover:text-gold transition-colors capitalize leading-snug">
                     {labelKey === 'villa' && (lang === 'es' ? 'Villas' : lang === 'ca' ? 'Viles' : lang === 'en' ? 'Villas' : 'Villas')}
                     {labelKey === 'apartment' && (lang === 'es' ? 'Apartamentos' : lang === 'ca' ? 'Apartaments' : lang === 'en' ? 'Apartments' : 'Appartements')}
                     {labelKey === 'penthouse' && (lang === 'es' ? 'Áticos' : lang === 'ca' ? 'Àtics' : lang === 'en' ? 'Penthouses' : 'Penthouses')}
                   </h3>
                 </Link>
-              </ScrollReveal>
-            ))}
-          </div>
+              ))}
+            </div>
+          </ScrollReveal>
         </Container>
       </section>
 
@@ -210,26 +209,26 @@ export function HomePage() {
           <ScrollReveal>
             <SectionHeading title={t('home.whyChooseTitle')} />
           </ScrollReveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {WHY_CHOOSE_KEYS.map((key, index) => {
-              const Icon = WHY_ICONS[index]
-              return (
-                <ScrollReveal key={key} delay={index * 0.1}>
-                  <div className="text-center p-6">
-                    <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5">
-                      <Icon className="w-6 h-6 text-gold" />
+          <ScrollReveal delay={0.05}>
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-8">
+              {WHY_CHOOSE_KEYS.map((key, index) => {
+                const Icon = WHY_ICONS[index]
+                return (
+                  <div key={key} className="text-center p-4 sm:p-6">
+                    <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-3 sm:mb-5">
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
                     </div>
-                    <h3 className="font-serif text-lg text-charcoal dark:text-warm-white mb-3">
+                    <h3 className="font-serif text-base sm:text-lg text-charcoal dark:text-warm-white mb-2 sm:mb-3 leading-snug">
                       {t(`home.whyChoose.${key}.title`)}
                     </h3>
-                    <p className="text-charcoal/60 dark:text-warm-white/60 text-sm leading-relaxed">
+                    <p className="text-charcoal/60 dark:text-warm-white/60 text-xs sm:text-sm leading-relaxed">
                       {t(`home.whyChoose.${key}.description`)}
                     </p>
                   </div>
-                </ScrollReveal>
-              )
-            })}
-          </div>
+                )
+              })}
+            </div>
+          </ScrollReveal>
         </Container>
       </section>
 
@@ -347,36 +346,6 @@ export function HomePage() {
               </Link>
             </div>
           </ScrollReveal>
-        </Container>
-      </section>
-
-      {/* Partners */}
-      <section className="py-16 lg:py-20 border-t border-charcoal/5 dark:border-white/10">
-        <Container>
-          <ScrollReveal>
-            <p className="text-center text-xs uppercase tracking-[0.25em] text-charcoal/40 dark:text-warm-white/40 mb-10">
-              {t('home.partnersTitle')}
-            </p>
-          </ScrollReveal>
-          <div className="flex flex-wrap items-center justify-center gap-10 lg:gap-16">
-            {PARTNERS.map((partner, index) => (
-              <ScrollReveal key={partner.id} delay={index * 0.05}>
-                <a
-                  href={partner.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-50 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
-                  title={partner.name}
-                >
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="h-10 lg:h-12 w-auto object-contain"
-                  />
-                </a>
-              </ScrollReveal>
-            ))}
-          </div>
         </Container>
       </section>
 
