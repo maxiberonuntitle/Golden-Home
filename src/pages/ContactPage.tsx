@@ -49,28 +49,17 @@ export function ContactPage() {
   return (
     <>
       <SEO
-        title={`${t('contact.title')} | ${COMPANY.name}`}
-        description={t('contact.subtitle')}
+        title={t('seo.contactTitle')}
+        description={t('seo.contactDescription')}
+        keywords={t('seo.defaultKeywords')}
         url={`${COMPANY.website}/${lang}/contact`}
         jsonLd={{
           '@context': 'https://schema.org',
-          '@type': 'RealEstateAgent',
-          name: COMPANY.name,
-          telephone: COMPANY.phone,
-          email: COMPANY.email,
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: 'Av. Pau Casals 38',
-            addressLocality: 'Lloret de Mar',
-            addressRegion: 'Girona',
-            postalCode: '17310',
-            addressCountry: 'ES',
-          },
-          geo: {
-            '@type': 'GeoCoordinates',
-            latitude: COMPANY.coordinates.lat,
-            longitude: COMPANY.coordinates.lng,
-          },
+          '@type': 'ContactPage',
+          name: t('seo.contactTitle'),
+          url: `${COMPANY.website}/${lang}/contact`,
+          description: t('seo.contactDescription'),
+          mainEntity: { '@id': `${COMPANY.website}/#organization` },
         }}
       />
 

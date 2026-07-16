@@ -69,8 +69,9 @@ export function PropertiesPage() {
   return (
     <>
       <SEO
-        title={`${t('nav.properties')} | ${COMPANY.name}`}
-        description={t('seo.defaultDescription')}
+        title={t('seo.propertiesTitle')}
+        description={t('seo.propertiesDescription')}
+        keywords={t('seo.defaultKeywords')}
         url={`${COMPANY.website}/${lang}/properties`}
       />
 

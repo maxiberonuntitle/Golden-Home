@@ -156,6 +156,7 @@ export function PropertyDetailPage() {
             '@type': 'Offer',
             price: property.price,
             priceCurrency: 'EUR',
+            url: shareUrl,
           },
           address: {
             '@type': 'PostalAddress',

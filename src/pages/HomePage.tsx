@@ -70,7 +70,9 @@ export function HomePage() {
       <SEO
         title={t('seo.defaultTitle')}
         description={t('seo.defaultDescription')}
+        keywords={t('seo.defaultKeywords')}
         url={`${COMPANY.website}/${lang}`}
+        image={`${COMPANY.website}${COMPANY.logo}`}
       />
 
       {/* Hero */}

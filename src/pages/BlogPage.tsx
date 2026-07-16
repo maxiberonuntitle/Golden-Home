@@ -30,8 +30,9 @@ export function BlogPage() {
   return (
     <>
       <SEO
-        title={`${t('blog.title')} | ${COMPANY.name}`}
-        description={t('blog.subtitle')}
+        title={t('seo.blogTitle')}
+        description={t('seo.blogDescription')}
+        keywords={t('seo.defaultKeywords')}
         url={`${COMPANY.website}/${lang}/blog`}
       />
 

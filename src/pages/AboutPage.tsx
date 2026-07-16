@@ -70,8 +70,9 @@ export function AboutPage() {
   return (
     <>
       <SEO
-        title={`${t('about.title')} | ${COMPANY.name}`}
-        description={t('about.subtitle')}
+        title={t('seo.aboutTitle')}
+        description={t('seo.aboutDescription')}
+        keywords={t('seo.defaultKeywords')}
         url={`${COMPANY.website}/${lang}/about`}
       />
 
