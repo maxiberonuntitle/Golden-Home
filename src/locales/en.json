@@ -132,35 +132,37 @@
   },
   "about": {
     "title": "About Golden Home",
-    "subtitle": "Leaders in luxury real estate in Lloret de Mar since 2010",
-    "mission": "Our mission is to connect discerning buyers with exceptional properties on the Costa Brava, delivering the highest standards of service, transparency and personal dedication in every transaction.",
-    "vision": "To be the reference luxury real estate agency on the Costa Brava, recognised for our excellence, integrity and ability to anticipate the needs of an increasingly sophisticated international market.",
+    "subtitle": "Real estate agency in Lloret de Mar with personalised service on the Costa Brava",
+    "intro": "Golden Home Lloret is a real estate agency in Lloret de Mar, specialising in property sales and advisory across the Costa Brava. From our office on Av. Pau Casals, we support buyers and sellers with a close, transparent and professional approach.",
+    "missionTitle": "Mission",
+    "visionTitle": "Vision",
+    "mission": "To connect each client with the right property in Lloret de Mar and the Costa Brava, offering a clear, honest and personalised service at every stage of the process.",
+    "vision": "To be a trusted local agency, recognised for our market knowledge, the quality of our advice and the direct relationship we build with every client.",
+    "valuesTitle": "Our values",
     "values": {
       "excellence": {
         "title": "Excellence",
-        "description": "Every property in our portfolio meets the highest standards of quality, location and design. We never compromise on excellence in anything we do."
+        "description": "We select and present properties with care, focusing on the quality of each opportunity and the detail in every viewing."
       },
       "integrity": {
         "title": "Integrity",
-        "description": "Absolute transparency in every transaction. Our clients trust us because we always act with honesty, ethics and professionalism."
+        "description": "We work transparently at every step, providing clear information and avoiding promises we cannot keep."
       },
       "innovation": {
         "title": "Innovation",
-        "description": "Cutting-edge technology, 360° virtual tours, international digital marketing and analytical tools to deliver the best possible experience."
+        "description": "We use digital tools to make searching easier, share property information efficiently and keep communication agile."
       },
       "dedication": {
         "title": "Dedication",
-        "description": "Every client receives personalised attention and genuine commitment. Your satisfaction and the success of your investment are our top priorities."
+        "description": "We listen to each client's needs and provide close follow-up before, during and after the sale."
       }
     },
-    "teamTitle": "Our team",
     "timelineTitle": "Our journey",
-    "awardsTitle": "Awards & recognition",
     "timeline": {
-      "2010": "Golden Home founded in Lloret de Mar with the ambition to redefine luxury real estate on the Costa Brava.",
-      "2015": "Portfolio expansion across the province of Girona and partnerships established with prestigious architecture and design studios.",
-      "2020": "Established as an international reference with clients from over 30 countries, embracing digital innovation with virtual tours and e-signatures.",
-      "2026": "Market leadership in Lloret de Mar's premium segment with over 200 high-value transactions and an unparalleled property portfolio."
+      "origins": "Golden Home was established in Lloret de Mar to offer close, professional real estate service on the Costa Brava.",
+      "localPresence": "We work with properties in Lloret de Mar, Blanes and the surrounding area, with direct knowledge of the local market.",
+      "digitalTools": "We added digital resources to make searching easier, share property details and follow each transaction more efficiently.",
+      "commitment": "We continue to support buyers and sellers with personalised guidance at every stage of the property process."
     }
   },
   "contact": {

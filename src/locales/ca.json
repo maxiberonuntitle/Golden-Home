@@ -132,35 +132,37 @@
   },
   "about": {
     "title": "Sobre Golden Home",
-    "subtitle": "Referents en immobiliària de luxe a Lloret de Mar des de 2010",
-    "mission": "La nostra missió és connectar compradors exigents amb propietats excepcionals a la Costa Brava, oferint un servei immobiliari de màxima qualitat, transparència i dedicació personal en cada operació.",
-    "vision": "Ser l'agència immobiliària de referència en el segment de luxe de la Costa Brava, reconeguda per la nostra excel·lència, integritat i capacitat d'anticipar les necessitats d'un mercat internacional cada cop més sofisticat.",
+    "subtitle": "Immobiliària a Lloret de Mar amb servei personalitzat a la Costa Brava",
+    "intro": "Golden Home Lloret és una agència immobiliària a Lloret de Mar, especialitzada en la venda i l'assessorament d'habitatges a la Costa Brava. Des de la nostra oficina a l'Av. Pau Casals, acompanyem compradors i venedors amb un tracte proper, transparent i professional.",
+    "missionTitle": "Missió",
+    "visionTitle": "Visió",
+    "mission": "Connectar cada client amb la propietat adequada a Lloret de Mar i la Costa Brava, oferint un servei immobiliari clar, honest i personalitzat en cada operació.",
+    "vision": "Ser una agència de confiança a la zona, reconeguda pel nostre coneixement local, la qualitat del nostre assessorament i el tracte directe amb cada persona que confia en nosaltres.",
+    "valuesTitle": "Els nostres valors",
     "values": {
       "excellence": {
         "title": "Excel·lència",
-        "description": "Cada propietat de la nostra cartera compleix els més alts estàndards de qualitat, ubicació i disseny. No comprometem l'excel·lència en res del que fem."
+        "description": "Seleccionem i presentem propietats amb criteri, cuidant la qualitat de cada proposta i el detall en cada visita."
       },
       "integrity": {
         "title": "Integritat",
-        "description": "Transparència absoluta en cada transacció. Els nostres clients confien en nosaltres perquè actuem sempre amb honestedat, ètica i professionalitat."
+        "description": "Actuem amb transparència en cada pas del procés, informant amb claredat i sense promeses que no puguem complir."
       },
       "innovation": {
         "title": "Innovació",
-        "description": "Tecnologia d'avantguarda, visites virtuals 360°, màrqueting digital internacional i eines d'anàlisi per oferir la millor experiència possible."
+        "description": "Utilitzem eines digitals per facilitar la cerca, compartir informació i mantenir una comunicació àgil amb els nostres clients."
       },
       "dedication": {
         "title": "Dedicació",
-        "description": "Cada client rep atenció personalitzada i un compromís genuí. La seva satisfacció i l'èxit de la seva inversió són la nostra màxima prioritat."
+        "description": "Escoltem les necessitats de cada client i acompanyem l'operació amb seguiment proper, abans, durant i després de la venda."
       }
     },
-    "teamTitle": "El nostre equip",
     "timelineTitle": "La nostra trajectòria",
-    "awardsTitle": "Reconeixements",
     "timeline": {
-      "2010": "Fundació de Golden Home a Lloret de Mar, amb l'objectiu de redefinir el sector immobiliari de luxe a la Costa Brava.",
-      "2015": "Expansió de la cartera a tota la província de Girona i establiment d'aliançes amb estudis d'arquitectura i disseny de prestigi.",
-      "2020": "Consolidació com a referent internacional amb clients de més de 30 països i adaptació digital amb visites virtuals i signatura electrònica.",
-      "2026": "Lideratge en el segment premium de Lloret de Mar amb més de 200 operacions d'alt valor i una cartera de propietats sense precedents."
+      "origins": "Golden Home neix a Lloret de Mar amb l'objectiu d'oferir un servei immobiliari proper i professional a la Costa Brava.",
+      "localPresence": "Treballem propietats a Lloret de Mar, Blanes i rodalia, amb coneixement directe del mercat i de cada zona.",
+      "digitalTools": "Incorporem recursos digitals per facilitar la cerca, la informació de cada immoble i el seguiment de cada operació.",
+      "commitment": "Continuem acompanyant compradors i venedors amb assessorament personalitzat en cada etapa del procés immobiliari."
     }
   },
   "contact": {
