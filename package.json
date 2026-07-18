@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "sync:property-images": "node scripts/generatePropertyImageManifest.mjs",
+    "dev": "npm run sync:property-images && vite",
+    "build": "npm run sync:property-images && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },

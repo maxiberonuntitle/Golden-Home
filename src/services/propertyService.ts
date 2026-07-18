@@ -1,8 +1,8 @@
 import Fuse from 'fuse.js'
 import type { Language, Property, PropertyFilters, SortOption } from '@/types'
-import { resolvePropertyImageCount, resolvePropertyImages } from '@/utils/propertyImages'
+import { resolvePropertyImages } from '@/utils/propertyImages'
 
-type PropertyRecord = Omit<Property, 'images'> & {
+type PropertyRecord = Omit<Property, 'images' | 'imageCount'> & {
   images?: string[]
   imageCount?: number
 }
@@ -12,13 +12,13 @@ const propertyModules = import.meta.glob<PropertyRecord>('../properties/*.json',
 })
 
 function normalizeProperty(record: PropertyRecord): Property {
-  const imageCount = resolvePropertyImageCount(record.slug, record.imageCount, record.images)
+  const images = resolvePropertyImages(record.slug)
   const { images: _legacyImages, imageCount: _imageCount, ...rest } = record
 
   return {
     ...rest,
-    imageCount,
-    images: resolvePropertyImages(record.slug, imageCount, record.images),
+    imageCount: images.length,
+    images,
   }
 }
 
@@ -56,8 +56,18 @@ export function getRelatedProperties(slug: string, limit = 3): Property[] {
 
 export function getLatestProperties(limit = 6): Property[] {
   return [...allProperties]
-    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .sort((a, b) => compareByRecency(a, b))
     .slice(0, limit)
+}
+
+export function getLatestProperty(): Property | undefined {
+  return [...allProperties].sort((a, b) => compareByRecency(a, b))[0]
+}
+
+function compareByRecency(a: Property, b: Property): number {
+  const dateDiff = new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  if (dateDiff !== 0) return dateDiff
+  return b.reference.localeCompare(a.reference)
 }
 
 export function getUniqueCities(): string[] {

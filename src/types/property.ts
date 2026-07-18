@@ -55,9 +55,9 @@ export interface Property {
   plotArea: number
   description: LocalizedString
   features: LocalizedString[]
-  /** Resolved image slots (01.png …). Populated at load time from imageCount. */
+  /** Resolved image paths scanned from /public/properties/{slug}/ at build time. */
   images: string[]
-  /** Number of image slots under /public/properties/{slug}/ (max 20). */
+  /** Number of images detected for this property (read-only, derived from files). */
   imageCount?: number
   energyCertificate: EnergyRating
   virtualTour?: string

@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { Images } from 'lucide-react'
 
 interface PropertyCardGalleryProps {
   images: string[]
@@ -48,6 +49,18 @@ export function PropertyCardGallery({
 
   const stopTouchPropagation = (event: React.TouchEvent) => {
     event.stopPropagation()
+  }
+
+  if (images.length === 0) {
+    return (
+      <Link
+        to={detailUrl}
+        className="flex h-full w-full items-center justify-center bg-charcoal/8 dark:bg-white/5"
+      >
+        <Images className="h-10 w-10 text-charcoal/25 dark:text-warm-white/25" aria-hidden />
+        <span className="sr-only">{title}</span>
+      </Link>
+    )
   }
 
   if (!scrollable || images.length <= 1) {

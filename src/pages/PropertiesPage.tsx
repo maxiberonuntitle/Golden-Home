@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom'
 import { SlidersHorizontal } from 'lucide-react'
 import { SEO } from '@/components/seo/SEO'
 import { Container } from '@/components/ui/Container'
-import { SectionHeading } from '@/components/ui/SectionHeading'
 import { PropertyGrid } from '@/components/property/PropertyGrid'
 import { FilterPanel } from '@/components/search/FilterPanel'
 import { SortSelect } from '@/components/search/SortSelect'
@@ -13,11 +12,19 @@ import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { useProperties } from '@/hooks/useProperties'
 import { useFilterStore } from '@/stores/useFilterStore'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { getLatestProperty } from '@/services/propertyService'
 import { COMPANY } from '@/utils/constants'
 import { openFiltersPanel } from '@/utils/filtersNavigation'
 import type { Language } from '@/types'
 
 const PAGE_SIZE = 6
+
+const PAGE_DESCRIPTION: Record<Language, string> = {
+  es: 'Explore nuestra cartera de villas, apartamentos y fincas en Lloret de Mar y la Costa Brava.',
+  ca: 'Explori la nostra cartera de viles, apartaments i masies a Lloret de Mar i la Costa Brava.',
+  en: 'Explore our portfolio of villas, apartments and estates in Lloret de Mar and the Costa Brava.',
+  fr: 'Explorez notre portefeuille de villas, appartements et domaines à Lloret de Mar et sur la Costa Brava.',
+}
 
 export function PropertiesPage() {
   const { t, i18n } = useTranslation()
@@ -29,6 +36,7 @@ export function PropertiesPage() {
 
   const filters = useFilterStore((state) => state.filters)
   const allFiltered = useProperties(lang)
+  const heroImage = useMemo(() => getLatestProperty()?.images[0], [])
 
   const visibleProperties = useMemo(
     () => allFiltered.slice(0, visibleCount),
@@ -75,28 +83,38 @@ export function PropertiesPage() {
         url={`${COMPANY.website}/${lang}/properties`}
       />
 
-      <section className="py-12 lg:py-16 border-b border-charcoal/5 dark:border-white/10">
-        <Container>
-          <ScrollReveal>
-            <SectionHeading
-              title={t('nav.properties')}
-              description={
-                lang === 'es'
-                  ? 'Explore nuestra cartera de villas, apartamentos y fincas en Lloret de Mar y la Costa Brava.'
-                  : lang === 'ca'
-                    ? 'Explori la nostra cartera de viles, apartaments i masies a Lloret de Mar i la Costa Brava.'
-                    : lang === 'en'
-                      ? 'Explore our portfolio of villas, apartments and estates in Lloret de Mar and the Costa Brava.'
-                      : 'Explorez notre portefeuille de villas, appartements et domaines à Lloret de Mar et sur la Costa Brava.'
-              }
+      <section className="relative overflow-hidden border-b border-charcoal/5 dark:border-white/10">
+        <div className="absolute inset-0">
+          {heroImage ? (
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${heroImage})` }}
+              role="presentation"
             />
+          ) : (
+            <div className="absolute inset-0 bg-charcoal dark:bg-graphite" />
+          )}
+          <div className="absolute inset-0 bg-charcoal/55 dark:bg-graphite/70" />
+          <div className="absolute inset-0 image-overlay" />
+        </div>
+
+        <Container className="relative z-10 py-8 sm:py-10 lg:py-11">
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl text-center">
+              <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-warm-white leading-tight text-balance">
+                {t('nav.properties')}
+              </h1>
+              <p className="mt-3 sm:mt-4 text-warm-white/75 text-base sm:text-lg leading-relaxed text-balance">
+                {PAGE_DESCRIPTION[lang]}
+              </p>
+            </div>
           </ScrollReveal>
         </Container>
       </section>
 
-      <section className="py-12 lg:py-16">
+      <section className="pt-5 pb-10 sm:pt-6 lg:pb-14">
         <Container>
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
             {isDesktop ? (
               <div
                 id="property-filters"
@@ -146,7 +164,7 @@ export function PropertiesPage() {
             )}
 
             <div className="flex-1 min-w-0">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 lg:mb-8">
                 <p className="text-charcoal/60 dark:text-warm-white/60 text-sm">
                   {allFiltered.length > 0
                     ? t('search.results', { count: allFiltered.length })
@@ -161,7 +179,7 @@ export function PropertiesPage() {
                   {hasMore && <div ref={sentinelRef} className="h-10 mt-8" aria-hidden />}
                 </>
               ) : (
-                <div className="text-center py-20">
+                <div className="text-center py-16">
                   <p className="text-charcoal/60 dark:text-warm-white/60 max-w-md mx-auto">{t('search.noResults')}</p>
                 </div>
               )}

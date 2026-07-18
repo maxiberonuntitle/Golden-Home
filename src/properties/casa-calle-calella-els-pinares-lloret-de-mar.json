@@ -1,0 +1,164 @@
+{
+  "id": "casa-calle-calella-els-pinares-lloret-de-mar",
+  "reference": "GH-LLORET-CAL-001",
+  "slug": "casa-calle-calella-els-pinares-lloret-de-mar",
+  "title": {
+    "es": "Casa independiente en venta a 75 km de Barcelona",
+    "ca": "Casa independent en venda a 75 km de Barcelona",
+    "en": "Detached house for sale 75 km from Barcelona",
+    "fr": "Maison individuelle à vendre à 75 km de Barcelone"
+  },
+  "price": 440000,
+  "location": {
+    "es": "Calle Calella de Palafrugell, Els Pinars, Lloret de Mar",
+    "ca": "Carrer Calella de Palafrugell, Els Pinars, Lloret de Mar",
+    "en": "Calle Calella de Palafrugell, Els Pinars, Lloret de Mar",
+    "fr": "Calle Calella de Palafrugell, Els Pinars, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.7052, "lng": 2.8518 },
+  "type": "villa",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "builtArea": 250,
+  "plotArea": 953,
+  "description": {
+    "es": "Descubre esta impresionante casa independiente, situada a solo 75 kilómetros de Barcelona y a 20 minutos de Girona. Construida en 2004, esta propiedad se erige sobre una amplia parcela de 953 m², ofreciendo un espacio ideal para disfrutar de la tranquilidad y la naturaleza. Con 4 dormitorios y 3 baños, es perfecta para familias que buscan comodidad y estilo.\n\nEn la planta principal, un acogedor salón invita a relajarse, mientras que la cocina, moderna y funcional, se convierte en el corazón del hogar. Además, cuenta con un vestidor que añade un toque de lujo a la habitación principal. Las dos terrazas ofrecen impresionantes vistas al mar y a la montaña, convirtiéndose en el lugar perfecto para disfrutar de atardeceres inolvidables. La piscina en una de las terrazas miradores es ideal para refrescarse en los días calurosos.\n\nLa casa ha sido sometida a una renovación cosmética completa, incluyendo la pintura de la fachada, lo que la hace lucir como nueva. Con un garaje independiente de 55 m², hay espacio suficiente para tres coches. No dejes pasar la oportunidad de vivir en este maravilloso hogar en un entorno natural privilegiado. ¡Contáctanos para más información y ven a visitarla!",
+    "ca": "Descobreix aquesta impressionant casa independent, situada a només 75 quilòmetres de Barcelona i a 20 minuts de Girona. Construïda el 2004, aquesta propietat s'ergeix sobre una àmplia parcel·la de 953 m², oferint un espai ideal per gaudir de la tranquil·litat i la natura. Amb 4 dormitoris i 3 banys, és perfecta per a famílies que busquen comoditat i estil.\n\nA la planta principal, un acollidor saló convida a relaxar-se, mentre que la cuina, moderna i funcional, es converteix en el cor de la llar. A més, compta amb un vestidor que afegeix un toc de luxe a l'habitació principal. Les dues terrasses ofereixen impressionants vistes al mar i a la muntanya, convertint-se en el lloc perfecte per gaudir de postes de sol inoblidables. La piscina en una de les terrasses mirador és ideal per refrescar-se en els dies calorosos.\n\nLa casa ha estat sotmesa a una renovació cosmètica completa, incloent la pintura de la façana, cosa que la fa lucir com a nova. Amb un garatge independent de 55 m², hi ha espai suficient per a tres cotxes. No deixis passar l'oportunitat de viure en aquesta meravellosa llar en un entorn natural privilegiat. Contacta'ns per a més informació i vine a visitar-la!",
+    "en": "Discover this impressive detached house, located just 75 kilometres from Barcelona and 20 minutes from Girona. Built in 2004, this property stands on a spacious 953 m² plot, offering an ideal space to enjoy tranquillity and nature. With 4 bedrooms and 3 bathrooms, it is perfect for families seeking comfort and style.\n\nOn the main floor, a welcoming living room invites you to relax, while the modern and functional kitchen becomes the heart of the home. It also features a walk-in wardrobe that adds a touch of luxury to the master bedroom. The two terraces offer impressive sea and mountain views, making them the perfect place to enjoy unforgettable sunsets. The pool on one of the lookout terraces is ideal for cooling off on hot days.\n\nThe house has undergone a complete cosmetic renovation, including facade painting, making it look like new. With an independent 55 m² garage, there is enough space for three cars. Don't miss the opportunity to live in this wonderful home in a privileged natural setting. Contact us for more information and come and visit!",
+    "fr": "Découvrez cette impressionnante maison individuelle, située à seulement 75 kilomètres de Barcelone et à 20 minutes de Girona. Construite en 2004, cette propriété s'élève sur un vaste terrain de 953 m², offrant un espace idéal pour profiter de la tranquillité et de la nature. Avec 4 chambres et 3 salles de bain, elle est parfaite pour les familles recherchant confort et style.\n\nAu rez-de-chaussée, un salon accueillant invite à se détendre, tandis que la cuisine, moderne et fonctionnelle, devient le cœur de la maison. Elle dispose également d'un dressing qui ajoute une touche de luxe à la chambre principale. Les deux terrasses offrent des vues imprenables sur la mer et la montagne, devenant l'endroit parfait pour profiter de couchers de soleil inoubliables. La piscine sur l'une des terrasses panoramiques est idéale pour se rafraîchir les jours chauds.\n\nLa maison a fait l'objet d'une rénovation cosmétique complète, y compris la peinture de la façade, ce qui lui donne l'aspect d'une maison neuve. Avec un garage indépendant de 55 m², il y a suffisamment d'espace pour trois voitures. Ne manquez pas l'opportunité de vivre dans cette merveilleuse maison dans un cadre naturel privilégié. Contactez-nous pour plus d'informations et venez la visiter !"
+  },
+  "features": [
+    { "es": "Casa o chalet independiente", "ca": "Casa o xalet independent", "en": "Detached house or chalet", "fr": "Maison ou chalet individuel" },
+    { "es": "2 plantas", "ca": "2 plantes", "en": "2 floors", "fr": "2 étages" },
+    { "es": "Construida en 2004", "ca": "Construïda el 2004", "en": "Built in 2004", "fr": "Construite en 2004" },
+    { "es": "Vistas al mar y a la montaña", "ca": "Vistes al mar i a la muntanya", "en": "Sea and mountain views", "fr": "Vue sur la mer et la montagne" },
+    { "es": "Terraza y balcón", "ca": "Terrassa i balcó", "en": "Terrace and balcony", "fr": "Terrasse et balcon" },
+    { "es": "Vestidor en habitación principal", "ca": "Vestidor a l'habitació principal", "en": "Walk-in wardrobe in master bedroom", "fr": "Dressing dans la chambre principale" },
+    { "es": "Plaza de garaje incluida en el precio", "ca": "Plaça d'aparcament inclosa en el preu", "en": "Garage space included in price", "fr": "Place de garage incluse dans le prix" },
+    { "es": "Garaje independiente 55 m² (3 coches)", "ca": "Garatge independent 55 m² (3 cotxes)", "en": "Independent 55 m² garage (3 cars)", "fr": "Garage indépendant 55 m² (3 voitures)" },
+    { "es": "Trastero", "ca": "Traster", "en": "Storage room", "fr": "Débarras" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Piscina", "ca": "Piscina", "en": "Pool", "fr": "Piscine" },
+    { "es": "Jardín", "ca": "Jardí", "en": "Garden", "fr": "Jardin" },
+    { "es": "Renovación cosmética completa", "ca": "Renovació cosmètica completa", "en": "Complete cosmetic renovation", "fr": "Rénovation cosmétique complète" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Els Pinars",
+      "ca": "Els Pinars",
+      "en": "Els Pinars",
+      "fr": "Els Pinars"
+    },
+    "floor": {
+      "es": "2 plantas",
+      "ca": "2 plantes",
+      "en": "2 floors",
+      "fr": "2 étages"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Aire acondicionado",
+      "ca": "Aire condicionat",
+      "en": "Air conditioning",
+      "fr": "Climatisation"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Lloret de Mar",
+        "ca": "Platja de Lloret de Mar",
+        "en": "Lloret de Mar Beach",
+        "fr": "Plage de Lloret de Mar"
+      },
+      "distance": "1.5 km"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "2 km"
+    },
+    {
+      "name": {
+        "es": "Girona",
+        "ca": "Girona",
+        "en": "Girona",
+        "fr": "Girona"
+      },
+      "distance": "20 min"
+    },
+    {
+      "name": {
+        "es": "Barcelona",
+        "ca": "Barcelona",
+        "en": "Barcelona",
+        "fr": "Barcelone"
+      },
+      "distance": "75 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "D",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": true,
+  "garden": true,
+  "parking": true,
+  "elevator": false,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": true,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-18",
+  "seo": {
+    "title": {
+      "es": "Casa independiente 4 hab. Els Pinars, Lloret | 440.000 € | Golden Home",
+      "ca": "Casa independent 4 hab. Els Pinars, Lloret | 440.000 € | Golden Home",
+      "en": "4-bed detached house Els Pinars, Lloret | €440,000 | Golden Home",
+      "fr": "Maison individuelle 4 ch. Els Pinars, Lloret | 440 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Casa independiente de 250 m² con 4 habitaciones, piscina y jardín en Calle Calella de Palafrugell, Els Pinars, Lloret de Mar. Parcela 953 m². Garaje incluido. 440.000 €. Golden Home.",
+      "ca": "Casa independent de 250 m² amb 4 habitacions, piscina i jardí al Carrer Calella de Palafrugell, Els Pinars, Lloret de Mar. Parcel·la 953 m². Aparcament inclòs. 440.000 €. Golden Home.",
+      "en": "250 m² detached house with 4 bedrooms, pool and garden on Calle Calella de Palafrugell, Els Pinars, Lloret de Mar. 953 m² plot. Garage included. €440,000. Golden Home.",
+      "fr": "Maison individuelle de 250 m² avec 4 chambres, piscine et jardin au Calle Calella de Palafrugell, Els Pinars, Lloret de Mar. Terrain 953 m². Garage inclus. 440 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "casa lloret venta, chalet els pinars lloret, casa independiente lloret de mar, inmobiliaria lloret, golden home lloret",
+      "ca": "casa lloret venda, xalet els pinars lloret, casa independent lloret de mar, immobiliaria lloret, golden home lloret",
+      "en": "house lloret sale, els pinars chalet lloret, detached house lloret de mar, real estate lloret, golden home lloret",
+      "fr": "maison lloret vente, chalet els pinars lloret, maison individuelle lloret de mar, immobilier lloret, golden home lloret"
+    }
+  }
+}
