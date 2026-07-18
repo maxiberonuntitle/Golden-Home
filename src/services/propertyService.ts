@@ -1,11 +1,28 @@
 import Fuse from 'fuse.js'
 import type { Language, Property, PropertyFilters, SortOption } from '@/types'
+import { resolvePropertyImageCount, resolvePropertyImages } from '@/utils/propertyImages'
 
-const propertyModules = import.meta.glob<Property>('../properties/*.json', {
+type PropertyRecord = Omit<Property, 'images'> & {
+  images?: string[]
+  imageCount?: number
+}
+
+const propertyModules = import.meta.glob<PropertyRecord>('../properties/*.json', {
   eager: true,
 })
 
-const allProperties: Property[] = Object.values(propertyModules)
+function normalizeProperty(record: PropertyRecord): Property {
+  const imageCount = resolvePropertyImageCount(record.slug, record.imageCount, record.images)
+  const { images: _legacyImages, imageCount: _imageCount, ...rest } = record
+
+  return {
+    ...rest,
+    imageCount,
+    images: resolvePropertyImages(record.slug, imageCount, record.images),
+  }
+}
+
+const allProperties: Property[] = Object.values(propertyModules).map(normalizeProperty)
 
 export function getAllProperties(): Property[] {
   return allProperties

@@ -1,0 +1,158 @@
+{
+  "id": "piso-avenida-joan-llaverias-lloret-de-mar",
+  "reference": "GH-LLORET-JLL-001",
+  "slug": "piso-avenida-joan-llaverias-lloret-de-mar",
+  "title": {
+    "es": "Espectacular piso de 4 habitaciones con vistas al mar",
+    "ca": "Espectacular pis de 4 habitacions amb vistes al mar",
+    "en": "Spectacular 4-bedroom flat with sea views",
+    "fr": "Spectaculaire appartement 4 chambres avec vue mer"
+  },
+  "price": 399000,
+  "location": {
+    "es": "Avenida de Joan Llaverias, Casc Antic, Lloret de Mar",
+    "ca": "Avinguda de Joan Llaverias, Casc Antic, Lloret de Mar",
+    "en": "Avenida de Joan Llaverias, Casc Antic, Lloret de Mar",
+    "fr": "Avenida de Joan Llaverias, Casc Antic, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6994, "lng": 2.8448 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "builtArea": 156,
+  "plotArea": 0,
+  "description": {
+    "es": "Descubre este amplio y luminoso piso, ideal para familias o como inversión en una ubicación privilegiada.\n\nLa vivienda cuenta con:\n\n4 habitaciones espaciosas, perfectas como dormitorios, despacho o zona de invitados.\n2 baños completos, funcionales y bien distribuidos.\nModerna cocina americana, integrada en un amplio salón-comedor que aporta amplitud y un ambiente acogedor.\nImpresionantes vistas al mar, que proporcionan luz natural y una sensación única de tranquilidad.\n\nSu excelente distribución y generosos metros cuadrados ofrecen múltiples posibilidades de decoración y personalización. Ideal para quienes buscan comodidad, amplitud y un entorno privilegiado cerca del mar.\n\nNo pierdas la oportunidad de vivir con vistas al Mediterráneo. ¡Contacta para más información o para concertar una visita!",
+    "ca": "Descobreix aquest ampli i lluminós pis, ideal per a famílies o com a inversió en una ubicació privilegiada.\n\nLa vivenda compta amb:\n\n4 habitacions espaioses, perfectes com a dormitoris, despatx o zona d'invitats.\n2 banys complets, funcionals i ben distribuïts.\nModerna cuina americana, integrada en un ampli saló-menjador que aporta amplitud i un ambient acollidor.\nImpressionants vistes al mar, que proporcionen llum natural i una sensació única de tranquil·litat.\n\nLa seva excel·lent distribució i generosos metres quadrats ofereixen múltiples possibilitats de decoració i personalització. Ideal per a qui busca comoditat, amplitud i un entorn privilegiat a prop del mar.\n\nNo perdis l'oportunitat de viure amb vistes al Mediterrani. Contacta per a més informació o per concertar una visita!",
+    "en": "Discover this spacious and bright flat, ideal for families or as an investment in a privileged location.\n\nThe property includes:\n\n4 spacious bedrooms, perfect as sleeping quarters, office or guest area.\n2 full bathrooms, functional and well distributed.\nModern open-plan kitchen integrated into a large living-dining room that adds space and a welcoming atmosphere.\nImpressive sea views that provide natural light and a unique sense of tranquillity.\n\nIts excellent layout and generous square metres offer multiple decoration and personalisation options. Ideal for those seeking comfort, space and a privileged setting near the sea.\n\nDon't miss the opportunity to live with Mediterranean views. Contact us for more information or to arrange a viewing!",
+    "fr": "Découvrez cet appartement spacieux et lumineux, idéal pour les familles ou comme investissement dans un emplacement privilégié.\n\nLe logement comprend :\n\n4 chambres spacieuses, parfaites comme chambres, bureau ou espace invités.\n2 salles de bain complètes, fonctionnelles et bien distribuées.\nCuisine américaine moderne intégrée dans un vaste salon-salle à manger qui apporte de l'espace et une atmosphère chaleureuse.\nVue imprenable sur la mer, offrant une lumière naturelle et une sensation unique de tranquillité.\n\nSon excellente distribution et ses généreux mètres carrés offrent de multiples possibilités de décoration et de personnalisation. Idéal pour ceux qui recherchent confort, espace et un cadre privilégié près de la mer.\n\nNe manquez pas l'opportunité de vivre avec vue sur la Méditerranée. Contactez-nous pour plus d'informations ou pour organiser une visite !"
+  },
+  "features": [
+    { "es": "Vistas al mar", "ca": "Vistes al mar", "en": "Sea views", "fr": "Vue sur la mer" },
+    { "es": "Balcón", "ca": "Balcó", "en": "Balcony", "fr": "Balcon" },
+    { "es": "Cocina americana", "ca": "Cuina americana", "en": "Open-plan kitchen", "fr": "Cuisine américaine ouverte" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Calefacción individual: Gas natural", "ca": "Calefacció individual: Gas natural", "en": "Individual heating: Natural gas", "fr": "Chauffage individuel : Gaz naturel" },
+    { "es": "6ª planta exterior con ascensor", "ca": "6a planta exterior amb ascensor", "en": "6th floor exterior with elevator", "fr": "6e étage extérieur avec ascenseur" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Casc Antic",
+      "ca": "Casc Antic",
+      "en": "Casc Antic",
+      "fr": "Casc Antic"
+    },
+    "floor": {
+      "es": "6ª planta exterior",
+      "ca": "6a planta exterior",
+      "en": "6th floor exterior",
+      "fr": "6e étage extérieur"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Calefacción individual: Gas natural",
+      "ca": "Calefacció individual: Gas natural",
+      "en": "Individual heating: Natural gas",
+      "fr": "Chauffage individuel : Gaz naturel"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Lloret de Mar",
+        "ca": "Platja de Lloret de Mar",
+        "en": "Lloret de Mar Beach",
+        "fr": "Plage de Lloret de Mar"
+      },
+      "distance": "400 m"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "300 m"
+    },
+    {
+      "name": {
+        "es": "Castillo de Sant Joan",
+        "ca": "Castell de Sant Joan",
+        "en": "Sant Joan Castle",
+        "fr": "Château de Sant Joan"
+      },
+      "distance": "1 km"
+    },
+    {
+      "name": {
+        "es": "Blanes",
+        "ca": "Blanes",
+        "en": "Blanes",
+        "fr": "Blanes"
+      },
+      "distance": "6 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "imageCount": 11,
+  "energyCertificate": "E",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": true,
+  "garden": false,
+  "parking": false,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-18",
+  "seo": {
+    "title": {
+      "es": "Piso 4 hab. con vistas al mar en Lloret | 399.000 € | Golden Home",
+      "ca": "Pis 4 hab. amb vistes al mar a Lloret | 399.000 € | Golden Home",
+      "en": "4-bed sea-view flat in Lloret de Mar | €399,000 | Golden Home",
+      "fr": "Appartement 4 ch. vue mer à Lloret | 399 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso de 156 m² con 4 habitaciones y vistas al mar en Avenida de Joan Llaverias, Lloret de Mar. 6ª planta con ascensor. 399.000 €. Golden Home.",
+      "ca": "Pis de 156 m² amb 4 habitacions i vistes al mar a l'Avinguda de Joan Llaverias, Lloret de Mar. 6a planta amb ascensor. 399.000 €. Golden Home.",
+      "en": "156 m² 4-bedroom flat with sea views on Avenida de Joan Llaverias, Lloret de Mar. 6th floor with elevator. €399,000. Golden Home.",
+      "fr": "Appartement de 156 m² avec 4 chambres et vue mer à l'Avenida de Joan Llaverias, Lloret de Mar. 6e étage avec ascenseur. 399 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso lloret venta, piso 4 habitaciones lloret vistas mar, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "pis lloret venda, pis 4 habitacions lloret vistes mar, immobiliaria lloret de mar, golden home lloret",
+      "en": "apartment lloret sale, 4 bedroom flat lloret sea views, real estate lloret de mar, golden home lloret",
+      "fr": "appartement lloret vente, appartement 4 chambres lloret vue mer, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

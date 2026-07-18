@@ -124,22 +124,7 @@
       "distance": "40 km"
     }
   ],
-  "images": [
-    "/properties/casa-calle-almadrava-st-francesc-blanes/01.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/02.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/03.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/04.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/05.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/06.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/07.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/08.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/09.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/10.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/11.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/12.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/13.png",
-    "/properties/casa-calle-almadrava-st-francesc-blanes/14.png"
-  ],
+  "imageCount": 14,
   "energyCertificate": "E",
   "featured": true,
   "exclusive": true,

@@ -55,7 +55,10 @@ export interface Property {
   plotArea: number
   description: LocalizedString
   features: LocalizedString[]
+  /** Resolved image slots (01.png …). Populated at load time from imageCount. */
   images: string[]
+  /** Number of image slots under /public/properties/{slug}/ (max 20). */
+  imageCount?: number
   energyCertificate: EnergyRating
   virtualTour?: string
   youtube?: string

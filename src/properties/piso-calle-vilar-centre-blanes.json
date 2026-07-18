@@ -1,0 +1,158 @@
+{
+  "id": "piso-calle-vilar-centre-blanes",
+  "reference": "GH-BLANES-VIL-001",
+  "slug": "piso-calle-vilar-centre-blanes",
+  "title": {
+    "es": "Amplio piso de 1 dormitorio en pleno centro de Blanes",
+    "ca": "Ampli pis d'1 dormitori al centre de Blanes",
+    "en": "Spacious 1-bedroom flat in the heart of Blanes",
+    "fr": "Grand appartement 1 chambre en plein centre de Blanes"
+  },
+  "price": 172000,
+  "location": {
+    "es": "Calle Vilar, Centre, Blanes",
+    "ca": "Carrer Vilar, Centre, Blanes",
+    "en": "Calle Vilar, Centre, Blanes",
+    "fr": "Calle Vilar, Centre, Blanes"
+  },
+  "province": "Girona",
+  "city": "Blanes",
+  "coordinates": { "lat": 41.6746, "lng": 2.7912 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 1,
+  "bathrooms": 1,
+  "builtArea": 60,
+  "plotArea": 0,
+  "description": {
+    "es": "Se vende fantástico piso situado en pleno centro de Blanes, a tan solo 5 minutos andando de la playa. Ubicado cerca de la calle principal, con todos los servicios, comercios y restaurantes al alcance, pero al mismo tiempo en una zona tranquila y alejada del ruido y el bullicio.\n\nLa vivienda cuenta con 60 m² muy bien distribuidos, destacando por su amplitud poco habitual en pisos de 1 habitación. Dispone de un dormitorio doble, cocina independiente, baño completo con ducha y una amplia entrada con un gran armario ideal para almacenaje.\n\nEl luminoso salón-comedor ofrece un espacio cómodo y acogedor, perfecto para disfrutar del día a día. Gracias a su distribución y tamaño, el piso transmite una gran sensación de amplitud y confort.\n\nUna excelente oportunidad tanto como vivienda habitual, segunda residencia o inversión, en una de las zonas más demandadas de la Costa Brava.",
+    "ca": "Es ven un fantàstic pis situat al centre de Blanes, a només 5 minuts caminant de la platja. Ubicat a prop de la via principal, amb tots els serveis, comerços i restaurants a l'abast, però alhora en una zona tranquil·la i allunyada del soroll i l'enrenou.\n\nLa vivenda compta amb 60 m² molt ben distribuïts, destacant per la seva amplitud poc habitual en pisos d'1 habitació. Disposa d'un dormitori doble, cuina independent, bany complet amb dutxa i una àmplia entrada amb un gran armari ideal per a emmagatzematge.\n\nEl lluminós saló-menjador ofereix un espai còmode i acollidor, perfecte per gaudir del dia a dia. Gràcies a la seva distribució i mida, el pis transmet una gran sensació d'amplitud i confort.\n\nUna excel·lent oportunitat tant com a vivenda habitual, segona residència o inversió, en una de les zones més demandades de la Costa Brava.",
+    "en": "For sale: a fantastic apartment located in the heart of Blanes, just a 5-minute walk from the beach. Situated near the main street, with all services, shops and restaurants within reach, yet in a quiet area away from noise and bustle.\n\nThe property has 60 m² very well laid out, standing out for its spaciousness unusual in 1-bedroom flats. It includes a double bedroom, separate kitchen, full bathroom with shower and a large entrance hall with a big wardrobe ideal for storage.\n\nThe bright living-dining room offers a comfortable and welcoming space, perfect for everyday living. Thanks to its layout and size, the flat conveys a great sense of space and comfort.\n\nAn excellent opportunity as a main home, second residence or investment in one of the most sought-after areas of the Costa Brava.",
+    "fr": "À vendre : un superbe appartement situé en plein centre de Blanes, à seulement 5 minutes à pied de la plage. Proche de la rue principale, avec tous les services, commerces et restaurants à portée de main, tout en étant dans un quartier calme, loin du bruit et de l'agitation.\n\nLe logement comprend 60 m² très bien distribués, remarquables par leur surface inhabituelle pour un appartement d'1 chambre. Il dispose d'une chambre double, d'une cuisine indépendante, d'une salle de bain complète avec douche et d'une grande entrée avec un grand placard idéal pour le rangement.\n\nLe lumineux salon-salle à manger offre un espace confortable et accueillant, parfait pour le quotidien. Grâce à sa distribution et sa taille, l'appartement transmet un grand sentiment d'espace et de confort.\n\nUne excellente opportunité comme résidence principale, résidence secondaire ou investissement dans l'un des quartiers les plus recherchés de la Costa Brava."
+  },
+  "features": [
+    { "es": "Balcón", "ca": "Balcó", "en": "Balcony", "fr": "Balcon" },
+    { "es": "Cocina independiente", "ca": "Cuina independent", "en": "Separate kitchen", "fr": "Cuisine indépendante" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Gran armario en entrada", "ca": "Gran armari a l'entrada", "en": "Large entrance wardrobe", "fr": "Grand placard dans l'entrée" },
+    { "es": "Calefacción individual: Bomba de frío/calor", "ca": "Calefacció individual: Bomba de fred/calor", "en": "Individual heating: Heat pump", "fr": "Chauffage individuel : Pompe à chaleur" },
+    { "es": "2ª planta exterior con ascensor", "ca": "2a planta exterior amb ascensor", "en": "2nd floor exterior with elevator", "fr": "2e étage extérieur avec ascenseur" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Centre",
+      "ca": "Centre",
+      "en": "Centre",
+      "fr": "Centre"
+    },
+    "floor": {
+      "es": "2ª planta exterior",
+      "ca": "2a planta exterior",
+      "en": "2nd floor exterior",
+      "fr": "2e étage extérieur"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Calefacción individual: Bomba de frío/calor",
+      "ca": "Calefacció individual: Bomba de fred/calor",
+      "en": "Individual heating: Heat pump",
+      "fr": "Chauffage individuel : Pompe à chaleur"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Blanes",
+        "ca": "Platja de Blanes",
+        "en": "Blanes Beach",
+        "fr": "Plage de Blanes"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Blanes",
+        "ca": "Centre de Blanes",
+        "en": "Blanes town centre",
+        "fr": "Centre de Blanes"
+      },
+      "distance": "200 m"
+    },
+    {
+      "name": {
+        "es": "Jardín Botánico Marimurtra",
+        "ca": "Jardí Botànic Marimurtra",
+        "en": "Marimurtra Botanical Garden",
+        "fr": "Jardin botanique Marimurtra"
+      },
+      "distance": "2 km"
+    },
+    {
+      "name": {
+        "es": "Lloret de Mar",
+        "ca": "Lloret de Mar",
+        "en": "Lloret de Mar",
+        "fr": "Lloret de Mar"
+      },
+      "distance": "5 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "40 km"
+    }
+  ],
+  "imageCount": 8,
+  "energyCertificate": "E",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": false,
+  "garden": false,
+  "parking": false,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-18",
+  "seo": {
+    "title": {
+      "es": "Piso 1 hab. en centro de Blanes | 172.000 € | Golden Home",
+      "ca": "Pis 1 hab. al centre de Blanes | 172.000 € | Golden Home",
+      "en": "1-bed flat in Blanes town centre | €172,000 | Golden Home",
+      "fr": "Appartement 1 ch. centre Blanes | 172 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso de 60 m² con 1 habitación y balcón en Calle Vilar, centro de Blanes. Segunda planta con ascensor. A 5 min de la playa. 172.000 €. Golden Home.",
+      "ca": "Pis de 60 m² amb 1 habitació i balcó al Carrer Vilar, centre de Blanes. Segona planta amb ascensor. A 5 min de la platja. 172.000 €. Golden Home.",
+      "en": "60 m² 1-bedroom flat with balcony on Calle Vilar, Blanes town centre. Second floor with elevator. 5 min from beach. €172,000. Golden Home.",
+      "fr": "Appartement de 60 m² avec 1 chambre et balcon au Calle Vilar, centre de Blanes. 2e étage avec ascenseur. 5 min de la plage. 172 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso blanes venta, piso 1 habitacion blanes centro, inmobiliaria blanes, golden home blanes",
+      "ca": "pis blanes venda, pis 1 habitacio blanes centre, immobiliaria blanes, golden home blanes",
+      "en": "apartment blanes sale, 1 bedroom flat blanes centre, real estate blanes, golden home blanes",
+      "fr": "appartement blanes vente, appartement 1 chambre blanes centre, immobilier blanes, golden home blanes"
+    }
+  }
+}

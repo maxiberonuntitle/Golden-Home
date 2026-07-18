@@ -1,0 +1,170 @@
+{
+  "id": "duplex-calle-selva-els-pavos-blanes",
+  "reference": "GH-BLANES-SEL-001",
+  "slug": "duplex-calle-selva-els-pavos-blanes",
+  "title": {
+    "es": "Ático dúplex con vistas al mar en Els Pavos – Blanes",
+    "ca": "Àtic dúplex amb vistes al mar a Els Pavos – Blanes",
+    "en": "Sea-view duplex penthouse in Els Pavos – Blanes",
+    "fr": "Duplex penthouse avec vue mer à Els Pavos – Blanes"
+  },
+  "price": 500000,
+  "location": {
+    "es": "Calle de la Selva, Els Pavos, Blanes",
+    "ca": "Carrer de la Selva, Els Pavos, Blanes",
+    "en": "Calle de la Selva, Els Pavos, Blanes",
+    "fr": "Calle de la Selva, Els Pavos, Blanes"
+  },
+  "province": "Girona",
+  "city": "Blanes",
+  "coordinates": { "lat": 41.6734, "lng": 2.7888 },
+  "type": "penthouse",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "builtArea": 145,
+  "plotArea": 0,
+  "description": {
+    "es": "Te presentamos este magnífico ático dúplex donde confort y diseño se combinan a la perfección. Ubicado en una zona privilegiada, ofrece unas impresionantes vistas al mar que crean un entorno único.\n\nEn la planta principal se distribuyen dos dormitorios, un baño completo y un espacioso salón-comedor integrado con una moderna cocina americana. Desde esta zona se accede a una agradable terraza ideal para disfrutar del aire libre.\n\nEn la planta superior encontrarás dos dormitorios adicionales junto a otro baño completo, perfectos para invitados o familia. Además, cuenta con una segunda terraza con vistas al mar, un espacio perfecto para relajarse y desconectar.\n\nLa vivienda dispone de acabados de calidad, incluyendo chimenea, calefacción y aire acondicionado, garantizando confort durante todo el año.\n\nEl inmueble incluye acceso directo en ascensor a una plaza de parking, aportando mayor comodidad. Destaca por su luminosidad y funcionalidad. Su orientación sur asegura luz natural durante todo el día.\n\nUna oportunidad ideal para quienes buscan un hogar especial junto al mar. ¡No dejes pasar la ocasión de visitarlo!",
+    "ca": "Et presentem aquest magnífic àtic dúplex on confort i disseny es combinen a la perfecció. Ubicat en una zona privilegiada, ofereix unes impressionants vistes al mar que creen un entorn únic.\n\nA la planta principal s'hi distribueixen dos dormitoris, un bany complet i un espaiós saló-menjador integrat amb una moderna cuina americana. Des d'aquesta zona s'accedeix a una agradable terrassa ideal per gaudir de l'aire lliure.\n\nA la planta superior trobaràs dos dormitoris addicionals juntament amb un altre bany complet, perfectes per a convidats o família. A més, compta amb una segona terrassa amb vistes al mar, un espai perfecte per relaxar-se i desconnectar.\n\nLa vivenda disposa d'acabats de qualitat, incloent xemeneia, calefacció i aire condicionat, garantint confort durant tot l'any.\n\nL'immoble inclou accés directe en ascensor a una plaça d'aparcament, aportant major comoditat. Destaca per la seva lluminositat i funcionalitat. La seva orientació sud assegura llum natural durant tot el dia.\n\nUna oportunitat ideal per a qui busca un habitatge especial al costat del mar. No deixis passar l'ocasió de visitar-lo!",
+    "en": "We present this magnificent duplex penthouse where comfort and design combine perfectly. Located in a privileged area, it offers impressive sea views that create a unique setting.\n\nThe main floor includes two bedrooms, a full bathroom and a spacious open-plan living-dining area with a modern American kitchen. From this area there is access to a pleasant terrace ideal for enjoying the outdoors.\n\nOn the upper floor you will find two additional bedrooms along with another full bathroom, perfect for guests or family. It also has a second terrace with sea views, a perfect space to relax and unwind.\n\nThe property features quality finishes, including a fireplace, heating and air conditioning, ensuring comfort all year round.\n\nThe property includes direct elevator access to a parking space, adding greater convenience. It stands out for its brightness and functionality. Its south-facing orientation ensures natural light throughout the day.\n\nAn ideal opportunity for those seeking a special home by the sea. Don't miss the chance to visit it!",
+    "fr": "Nous vous présentons ce magnifique duplex penthouse où confort et design se combinent à la perfection. Situé dans un quartier privilégié, il offre une vue imprenable sur la mer qui crée un cadre unique.\n\nLe rez-de-chaussée comprend deux chambres, une salle de bain complète et un spacieux salon-salle à manger intégré avec une cuisine américaine moderne. Depuis cet espace, on accède à une agréable terrasse idéale pour profiter de l'extérieur.\n\nÀ l'étage supérieur, vous trouverez deux chambres supplémentaires avec une autre salle de bain complète, parfaites pour les invités ou la famille. Il dispose également d'une seconde terrasse avec vue sur la mer, un espace parfait pour se détendre.\n\nLe logement offre des finitions de qualité, notamment une cheminée, le chauffage et la climatisation, garantissant le confort toute l'année.\n\nLe bien inclut un accès direct par ascenseur à une place de parking, pour plus de commodité. Il se distingue par sa luminosité et sa fonctionnalité. Son orientation sud assure une lumière naturelle tout au long de la journée.\n\nUne opportunité idéale pour ceux qui recherchent un logement exceptionnel au bord de la mer. Ne manquez pas l'occasion de le visiter !"
+  },
+  "features": [
+    { "es": "Dúplex", "ca": "Dúplex", "en": "Duplex", "fr": "Duplex" },
+    { "es": "Vistas al mar", "ca": "Vistes al mar", "en": "Sea views", "fr": "Vue sur la mer" },
+    { "es": "Terraza", "ca": "Terrassa", "en": "Terrace", "fr": "Terrasse" },
+    { "es": "Segunda terraza con vistas al mar", "ca": "Segona terrassa amb vistes al mar", "en": "Second terrace with sea views", "fr": "Seconde terrasse avec vue mer" },
+    { "es": "Plaza de garaje incluida en el precio", "ca": "Plaça d'aparcament inclosa en el preu", "en": "Garage space included in price", "fr": "Place de garage incluse dans le prix" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Orientación sur", "ca": "Orientació sud", "en": "South-facing", "fr": "Orientation sud" },
+    { "es": "Calefacción individual: Gas natural", "ca": "Calefacció individual: Gas natural", "en": "Individual heating: Natural gas", "fr": "Chauffage individuel : Gaz naturel" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Chimenea", "ca": "Xemeneia", "en": "Fireplace", "fr": "Cheminée" },
+    { "es": "Cocina americana", "ca": "Cuina americana", "en": "Open American kitchen", "fr": "Cuisine américaine ouverte" },
+    { "es": "2ª planta exterior con ascensor", "ca": "2a planta exterior amb ascensor", "en": "2nd floor exterior with elevator", "fr": "2e étage extérieur avec ascenseur" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Els Pavos",
+      "ca": "Els Pavos",
+      "en": "Els Pavos",
+      "fr": "Els Pavos"
+    },
+    "floor": {
+      "es": "2ª planta exterior",
+      "ca": "2a planta exterior",
+      "en": "2nd floor exterior",
+      "fr": "2e étage extérieur"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Calefacción individual: Gas natural",
+      "ca": "Calefacció individual: Gas natural",
+      "en": "Individual heating: Natural gas",
+      "fr": "Chauffage individuel : Gaz naturel"
+    },
+    "orientation": {
+      "es": "Orientación sur",
+      "ca": "Orientació sud",
+      "en": "South-facing",
+      "fr": "Orientation sud"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Blanes",
+        "ca": "Platja de Blanes",
+        "en": "Blanes Beach",
+        "fr": "Plage de Blanes"
+      },
+      "distance": "800 m"
+    },
+    {
+      "name": {
+        "es": "Centro de Blanes",
+        "ca": "Centre de Blanes",
+        "en": "Blanes town centre",
+        "fr": "Centre de Blanes"
+      },
+      "distance": "1.2 km"
+    },
+    {
+      "name": {
+        "es": "Jardín Botánico Marimurtra",
+        "ca": "Jardí Botànic Marimurtra",
+        "en": "Marimurtra Botanical Garden",
+        "fr": "Jardin botanique Marimurtra"
+      },
+      "distance": "2 km"
+    },
+    {
+      "name": {
+        "es": "Lloret de Mar",
+        "ca": "Lloret de Mar",
+        "en": "Lloret de Mar",
+        "fr": "Lloret de Mar"
+      },
+      "distance": "5 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "40 km"
+    }
+  ],
+  "imageCount": 11,
+  "energyCertificate": "E",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": true,
+  "garden": false,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-18",
+  "seo": {
+    "title": {
+      "es": "Dúplex 4 hab. con vistas al mar en Blanes | 500.000 € | Golden Home",
+      "ca": "Dúplex 4 hab. amb vistes al mar a Blanes | 500.000 € | Golden Home",
+      "en": "4-bed sea-view duplex in Blanes | €500,000 | Golden Home",
+      "fr": "Duplex 4 ch. vue mer à Blanes | 500 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Ático dúplex de 145 m² con 4 habitaciones, terraza y vistas al mar en Calle de la Selva, Els Pavos, Blanes. Garaje incluido. 500.000 €. Golden Home.",
+      "ca": "Àtic dúplex de 145 m² amb 4 habitacions, terrassa i vistes al mar al Carrer de la Selva, Els Pavos, Blanes. Aparcament inclòs. 500.000 €. Golden Home.",
+      "en": "145 m² duplex penthouse with 4 bedrooms, terrace and sea views on Calle de la Selva, Els Pavos, Blanes. Garage included. €500,000. Golden Home.",
+      "fr": "Duplex penthouse de 145 m² avec 4 chambres, terrasse et vue mer au Calle de la Selva, Els Pavos, Blanes. Garage inclus. 500 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "duplex blanes venta, atico blanes vistas mar, piso els pavos blanes, inmobiliaria blanes, golden home blanes",
+      "ca": "dúplex blanes venda, àtic blanes vistes mar, pis els pavos blanes, immobiliària blanes, golden home blanes",
+      "en": "duplex blanes sale, penthouse blanes sea views, els pavos apartment blanes, real estate blanes, golden home blanes",
+      "fr": "duplex blanes vente, penthouse blanes vue mer, appartement els pavos blanes, immobilier blanes, golden home blanes"
+    }
+  }
+}

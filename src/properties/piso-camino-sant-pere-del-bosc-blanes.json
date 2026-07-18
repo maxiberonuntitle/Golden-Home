@@ -128,16 +128,7 @@
       "distance": "40 km"
     }
   ],
-  "images": [
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/01.png",
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/02.png",
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/03.png",
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/04.png",
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/05.png",
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/06.png",
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/07.png",
-    "/properties/piso-camino-sant-pere-del-bosc-blanes/08.png"
-  ],
+  "imageCount": 8,
   "energyCertificate": "A",
   "featured": true,
   "exclusive": true,
