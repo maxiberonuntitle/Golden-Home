@@ -1,0 +1,163 @@
+{
+  "id": "piso-avenida-vila-de-blanes-fenals-lloret-de-mar",
+  "reference": "GH-LLORET-VBL-001",
+  "slug": "piso-avenida-vila-de-blanes-fenals-lloret-de-mar",
+  "title": {
+    "es": "Maravilloso piso de 3 habitaciones a solo 5 minutos de la playa de Fenals",
+    "ca": "Meravellós pis de 3 habitacions a només 5 minuts de la platja de Fenals",
+    "en": "Wonderful 3-bedroom flat just 5 minutes from Fenals beach",
+    "fr": "Merveilleux appartement 3 chambres à seulement 5 minutes de la plage de Fenals"
+  },
+  "price": 240000,
+  "location": {
+    "es": "Avenida Vila de Blanes, Fenals, Lloret de Mar",
+    "ca": "Avinguda Vila de Blanes, Fenals, Lloret de Mar",
+    "en": "Avenida Vila de Blanes, Fenals, Lloret de Mar",
+    "fr": "Avenida Vila de Blanes, Fenals, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6955, "lng": 2.858 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 3,
+  "bathrooms": 1,
+  "builtArea": 90,
+  "plotArea": 0,
+  "description": {
+    "es": "Se vende fantástico piso ubicado en una excelente zona, a tan solo 5 minutos caminando de la playa de Fenals, rodeado de todos los servicios necesarios como supermercados, gasolinera, tiendas y más.\n\nLa vivienda cuenta con 3 habitaciones, un baño completo con plato de ducha, y una cocina independiente con salida directa a una enorme y preciosa terraza, ideal para disfrutar del aire libre, comidas en familia o momentos de relax.\n\nEl amplio salón-comedor, muy luminoso, tiene acceso a una segunda terraza más pequeña con agradables vistas a la piscina, aportando un ambiente tranquilo y acogedor.\n\nUna oportunidad única tanto como vivienda habitual, segunda residencia o inversión.\n\nAdemás, existe la opción de alquilar una plaza de parking justo al lado del piso.",
+    "ca": "Es ven fantàstic pis ubicat en una excel·lent zona, a només 5 minuts caminant de la platja de Fenals, envoltat de tots els serveis necessaris com supermercats, benzinera, botigues i més.\n\nLa vivenda compta amb 3 habitacions, un bany complet amb plat de dutxa, i una cuina independent amb sortida directa a una enorme i preciosa terrassa, ideal per gaudir de l'aire lliure, àpats en família o moments de relax.\n\nL'ample saló-menjador, molt lluminós, té accés a una segona terrassa més petita amb agradables vistes a la piscina, aportant un ambient tranquil i acollidor.\n\nUna oportunitat única tant com a vivenda habitual, segona residència o inversió.\n\nA més, existeix l'opció de llogar una plaça d'aparcament just al costat del pis.",
+    "en": "For sale, a fantastic flat in an excellent area, just a 5-minute walk from Fenals beach, surrounded by all essential services including supermarkets, petrol station, shops and more.\n\nThe property has 3 bedrooms, a full bathroom with shower tray, and a separate kitchen with direct access to a large and beautiful terrace, ideal for enjoying the outdoors, family meals or relaxing moments.\n\nThe spacious, very bright living-dining room opens onto a second, smaller terrace with pleasant views of the pool, creating a calm and welcoming atmosphere.\n\nA unique opportunity as a main home, second residence or investment.\n\nThere is also the option to rent a parking space right next to the flat.",
+    "fr": "À vendre, un fantastique appartement situé dans un excellent quartier, à seulement 5 minutes à pied de la plage de Fenals, entouré de tous les services nécessaires : supermarchés, station-service, commerces et plus encore.\n\nLe logement comprend 3 chambres, une salle de bain complète avec receveur de douche, et une cuisine indépendante avec accès direct à une immense et belle terrasse, idéale pour profiter du plein air, des repas en famille ou des moments de détente.\n\nLe vaste salon-salle à manger, très lumineux, donne accès à une seconde terrasse plus petite avec une agréable vue sur la piscine, offrant une atmosphère calme et chaleureuse.\n\nUne opportunité unique comme résidence principale, résidence secondaire ou investissement.\n\nIl est également possible de louer une place de parking juste à côté de l'appartement."
+  },
+  "features": [
+    { "es": "3 habitaciones", "ca": "3 habitacions", "en": "3 bedrooms", "fr": "3 chambres" },
+    { "es": "Cocina independiente con terraza", "ca": "Cuina independent amb terrassa", "en": "Separate kitchen with terrace", "fr": "Cuisine indépendante avec terrasse" },
+    { "es": "Dos terrazas exteriores", "ca": "Dues terrasses exteriors", "en": "Two outdoor terraces", "fr": "Deux terrasses extérieures" },
+    { "es": "Vistas a la piscina comunitaria", "ca": "Vistes a la piscina comunitària", "en": "Views of communal pool", "fr": "Vue sur la piscine commune" },
+    { "es": "Orientación sur", "ca": "Orientació sud", "en": "South-facing", "fr": "Orientation sud" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "1ª planta exterior con ascensor", "ca": "1a planta exterior amb ascensor", "en": "1st floor exterior with elevator", "fr": "1er étage extérieur avec ascenseur" },
+    { "es": "Calefacción individual: Eléctrica", "ca": "Calefacció individual: Elèctrica", "en": "Individual heating: Electric", "fr": "Chauffage individuel : Électrique" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Piscina comunitaria", "ca": "Piscina comunitària", "en": "Communal pool", "fr": "Piscine commune" },
+    { "es": "Jardín comunitario", "ca": "Jardí comunitari", "en": "Communal garden", "fr": "Jardin commun" },
+    { "es": "Opción de alquilar plaza de parking", "ca": "Opció de llogar plaça d'aparcament", "en": "Option to rent parking space", "fr": "Option de location de place de parking" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Fenals",
+      "ca": "Fenals",
+      "en": "Fenals",
+      "fr": "Fenals"
+    },
+    "floor": {
+      "es": "1ª planta exterior",
+      "ca": "1a planta exterior",
+      "en": "1st floor exterior",
+      "fr": "1er étage extérieur"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Calefacción individual: Eléctrica",
+      "ca": "Calefacció individual: Elèctrica",
+      "en": "Individual heating: Electric",
+      "fr": "Chauffage individuel : Électrique"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Fenals",
+        "ca": "Platja de Fenals",
+        "en": "Fenals Beach",
+        "fr": "Plage de Fenals"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "10 min"
+    },
+    {
+      "name": {
+        "es": "Supermercados y comercios",
+        "ca": "Supermercats i comerços",
+        "en": "Supermarkets and shops",
+        "fr": "Supermarchés et commerces"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Blanes",
+        "ca": "Blanes",
+        "en": "Blanes",
+        "fr": "Blanes"
+      },
+      "distance": "6 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "E",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": false,
+  "garden": true,
+  "parking": false,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Piso 3 hab. en Fenals, Lloret de Mar | 240.000 € | Golden Home",
+      "ca": "Pis 3 hab. a Fenals, Lloret de Mar | 240.000 € | Golden Home",
+      "en": "3-bed flat in Fenals, Lloret de Mar | €240,000 | Golden Home",
+      "fr": "Appartement 3 ch. à Fenals, Lloret de Mar | 240 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso de 90 m² con 3 habitaciones y terrazas en Avenida Vila de Blanes, Fenals, Lloret de Mar. A 5 min de la playa. Piscina comunitaria. 240.000 €. Golden Home.",
+      "ca": "Pis de 90 m² amb 3 habitacions i terrasses a l'Avinguda Vila de Blanes, Fenals, Lloret de Mar. A 5 min de la platja. Piscina comunitària. 240.000 €. Golden Home.",
+      "en": "90 m² 3-bedroom flat with terraces on Avenida Vila de Blanes, Fenals, Lloret de Mar. 5 min from beach. Communal pool. €240,000. Golden Home.",
+      "fr": "Appartement de 90 m² avec 3 chambres et terrasses à l'Avenida Vila de Blanes, Fenals, Lloret de Mar. À 5 min de la plage. Piscine commune. 240 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso lloret venta, piso fenals lloret, piso 3 habitaciones fenals, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "pis lloret venda, pis fenals lloret, pis 3 habitacions fenals, immobiliaria lloret de mar, golden home lloret",
+      "en": "apartment lloret sale, fenals flat lloret, 3 bedroom flat fenals, real estate lloret de mar, golden home lloret",
+      "fr": "appartement lloret vente, appartement fenals lloret, appartement 3 chambres fenals, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

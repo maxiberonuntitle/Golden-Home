@@ -1,0 +1,161 @@
+{
+  "id": "piso-calle-riu-de-la-plata-fenals-lloret-de-mar",
+  "reference": "GH-LLORET-RDP-001",
+  "slug": "piso-calle-riu-de-la-plata-fenals-lloret-de-mar",
+  "title": {
+    "es": "Fantástico piso reformado en Fenals, a solo 2 minutos de la playa",
+    "ca": "Fantàstic pis reformat a Fenals, a només 2 minuts de la platja",
+    "en": "Fantastic renovated flat in Fenals, just 2 minutes from the beach",
+    "fr": "Fantastique appartement rénové à Fenals, à seulement 2 minutes de la plage"
+  },
+  "price": 260000,
+  "location": {
+    "es": "Calle de Riu de la Plata, Fenals, Lloret de Mar",
+    "ca": "Carrer de Riu de la Plata, Fenals, Lloret de Mar",
+    "en": "Calle de Riu de la Plata, Fenals, Lloret de Mar",
+    "fr": "Calle de Riu de la Plata, Fenals, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6962, "lng": 2.8595 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "builtArea": 78,
+  "plotArea": 0,
+  "description": {
+    "es": "Se vende precioso piso totalmente reformado en la zona de Fenals, ubicado a tan solo 2 minutos andando de la playa.\n\nLa vivienda dispone de 2 amplias habitaciones dobles, ambas con armarios empotrados, y 1 baño completo con ducha. Al entrar encontramos un espacioso recibidor que da paso a una cocina semiabierta, moderna y funcional, conectada con un luminoso salón-comedor, creando un ambiente cómodo y acogedor.\n\nDesde el salón se accede a una bonita terraza con toldo, ideal para disfrutar del buen clima durante todo el año.\n\nAdemás, el precio incluye una plaza de parking, un gran valor añadido en la zona.\n\nUna excelente oportunidad para disfrutar de una vivienda lista para entrar a vivir, en una de las zonas más demandadas de Fenals, cerca de todos los servicios y a un paso del mar.",
+    "ca": "Es ven preciós pis totalment reformat a la zona de Fenals, ubicat a només 2 minuts caminant de la platja.\n\nLa vivenda disposa de 2 àmplies habitacions dobles, ambdues amb armaris encastats, i 1 bany complet amb dutxa. En entrar trobem un espaiós rebedor que dóna pas a una cuina semioberta, moderna i funcional, connectada amb un lluminós saló-menjador, creant un ambient còmode i acollidor.\n\nDes del saló s'accedeix a una bonica terrassa amb tendal, ideal per gaudir del bon clima durant tot l'any.\n\nA més, el preu inclou una plaça d'aparcament, un gran valor afegit a la zona.\n\nUna excel·lent oportunitat per gaudir d'una vivenda a punt per entrar a viure, en una de les zones més demandades de Fenals, a prop de tots els serveis i a un pas del mar.",
+    "en": "For sale, a beautiful fully renovated flat in the Fenals area, located just a 2-minute walk from the beach.\n\nThe property has 2 spacious double bedrooms, both with fitted wardrobes, and 1 full bathroom with shower. On entering, a generous hallway leads to a modern, functional semi-open kitchen connected to a bright living-dining room, creating a comfortable and welcoming atmosphere.\n\nFrom the living room there is access to a lovely terrace with awning, ideal for enjoying the fine weather all year round.\n\nThe price also includes a parking space, a significant added value in the area.\n\nAn excellent opportunity to enjoy a move-in-ready home in one of the most sought-after areas of Fenals, close to all services and steps from the sea.",
+    "fr": "À vendre, un bel appartement entièrement rénové dans le quartier de Fenals, situé à seulement 2 minutes à pied de la plage.\n\nLe logement comprend 2 chambres doubles spacieuses, toutes deux avec placards intégrés, et 1 salle de bain complète avec douche. À l'entrée, un hall généreux mène à une cuisine semi-ouverte, moderne et fonctionnelle, reliée à un salon-salle à manger lumineux, créant une atmosphère confortable et chaleureuse.\n\nDepuis le salon, accès à une jolie terrasse avec store, idéale pour profiter du beau temps toute l'année.\n\nLe prix inclut également une place de parking, un atout majeur dans le quartier.\n\nUne excellente opportunité pour profiter d'un logement prêt à emménager, dans l'un des quartiers les plus recherchés de Fenals, proche de tous les services et à deux pas de la mer."
+  },
+  "features": [
+    { "es": "Totalmente reformado", "ca": "Totalment reformat", "en": "Fully renovated", "fr": "Entièrement rénové" },
+    { "es": "2 habitaciones dobles con armarios empotrados", "ca": "2 habitacions dobles amb armaris encastats", "en": "2 double bedrooms with fitted wardrobes", "fr": "2 chambres doubles avec placards intégrés" },
+    { "es": "Cocina semiabierta", "ca": "Cuina semioberta", "en": "Semi-open kitchen", "fr": "Cuisine semi-ouverte" },
+    { "es": "Terraza con toldo", "ca": "Terrassa amb tendal", "en": "Terrace with awning", "fr": "Terrasse avec store" },
+    { "es": "Plaza de garaje incluida en el precio", "ca": "Plaça d'aparcament inclosa en el preu", "en": "Garage space included in price", "fr": "Place de garage incluse dans le prix" },
+    { "es": "Orientación sur, este", "ca": "Orientació sud, est", "en": "South-east facing", "fr": "Orientation sud-est" },
+    { "es": "2ª planta exterior con ascensor", "ca": "2a planta exterior amb ascensor", "en": "2nd floor exterior with elevator", "fr": "2e étage extérieur avec ascenseur" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Piscina comunitaria", "ca": "Piscina comunitària", "en": "Communal pool", "fr": "Piscine commune" },
+    { "es": "Listo para entrar a vivir", "ca": "A punt per entrar a viure", "en": "Ready to move in", "fr": "Prêt à emménager" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Fenals",
+      "ca": "Fenals",
+      "en": "Fenals",
+      "fr": "Fenals"
+    },
+    "floor": {
+      "es": "2ª planta exterior",
+      "ca": "2a planta exterior",
+      "en": "2nd floor exterior",
+      "fr": "2e étage extérieur"
+    },
+    "condition": {
+      "es": "Reformado / buen estado",
+      "ca": "Reformat / bon estat",
+      "en": "Renovated / good condition",
+      "fr": "Rénové / bon état"
+    },
+    "heating": {
+      "es": "Aire acondicionado",
+      "ca": "Aire condicionat",
+      "en": "Air conditioning",
+      "fr": "Climatisation"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Fenals",
+        "ca": "Platja de Fenals",
+        "en": "Fenals Beach",
+        "fr": "Plage de Fenals"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "10 min"
+    },
+    {
+      "name": {
+        "es": "Supermercados y comercios",
+        "ca": "Supermercats i comerços",
+        "en": "Supermarkets and shops",
+        "fr": "Supermarchés et commerces"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Blanes",
+        "ca": "Blanes",
+        "en": "Blanes",
+        "fr": "Blanes"
+      },
+      "distance": "6 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "E",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": false,
+  "garden": false,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Piso reformado 2 hab. en Fenals, Lloret | 260.000 € | Golden Home",
+      "ca": "Pis reformat 2 hab. a Fenals, Lloret | 260.000 € | Golden Home",
+      "en": "Renovated 2-bed flat in Fenals, Lloret | €260,000 | Golden Home",
+      "fr": "Appartement rénové 2 ch. à Fenals, Lloret | 260 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso reformado de 78 m² con 2 habitaciones, terraza y garaje en Calle de Riu de la Plata, Fenals, Lloret de Mar. A 2 min de la playa. 260.000 €. Golden Home.",
+      "ca": "Pis reformat de 78 m² amb 2 habitacions, terrassa i garatge al Carrer de Riu de la Plata, Fenals, Lloret de Mar. A 2 min de la platja. 260.000 €. Golden Home.",
+      "en": "Renovated 78 m² flat with 2 bedrooms, terrace and garage on Calle de Riu de la Plata, Fenals, Lloret de Mar. 2 min from beach. €260,000. Golden Home.",
+      "fr": "Appartement rénové de 78 m² avec 2 chambres, terrasse et garage au Calle de Riu de la Plata, Fenals, Lloret de Mar. À 2 min de la plage. 260 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso lloret venta, piso reformado fenals, piso 2 habitaciones fenals garaje, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "pis lloret venda, pis reformat fenals, pis 2 habitacions fenals garatge, immobiliaria lloret de mar, golden home lloret",
+      "en": "apartment lloret sale, renovated flat fenals, 2 bedroom flat fenals garage, real estate lloret de mar, golden home lloret",
+      "fr": "appartement lloret vente, appartement rénové fenals, appartement 2 chambres fenals garage, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

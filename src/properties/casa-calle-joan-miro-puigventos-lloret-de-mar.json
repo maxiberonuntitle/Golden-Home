@@ -1,0 +1,165 @@
+{
+  "id": "casa-calle-joan-miro-puigventos-lloret-de-mar",
+  "reference": "GH-LLORET-JMI-001",
+  "slug": "casa-calle-joan-miro-puigventos-lloret-de-mar",
+  "title": {
+    "es": "Casa independiente con vistas espectaculares a la montaña – 4 habitaciones y gran jardín",
+    "ca": "Casa independent amb vistes espectaculars a la muntanya – 4 habitacions i gran jardí",
+    "en": "Detached house with spectacular mountain views – 4 bedrooms and large garden",
+    "fr": "Maison individuelle avec vue spectaculaire sur la montagne – 4 chambres et grand jardin"
+  },
+  "price": 540000,
+  "location": {
+    "es": "Calle Joan Miró, Comtat de Jaruco - Puigventós, Lloret de Mar",
+    "ca": "Carrer Joan Miró, Comtat de Jaruco - Puigventós, Lloret de Mar",
+    "en": "Calle Joan Miró, Comtat de Jaruco - Puigventós, Lloret de Mar",
+    "fr": "Calle Joan Miró, Comtat de Jaruco - Puigventós, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6921, "lng": 2.8348 },
+  "type": "villa",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "builtArea": 260,
+  "plotArea": 750,
+  "description": {
+    "es": "En venta preciosa vivienda unifamiliar situada en una zona tranquila y privilegiada, muy cerca del centro del pueblo y a pocos minutos de la playa.\n\nDistribuida en dos plantas, esta propiedad ofrece:\n\n4 dormitorios (uno en suite)\n3 baños completos\nLuminoso salón-comedor con chimenea\nCocina independiente\nJardín y varias terrazas exteriores\nZona de barbacoa\nCalefacción por gasoil y ventanas de doble cristal\n\nUna casa perfecta para familias que buscan espacio, confort y entorno natural, sin renunciar a la cercanía de servicios y zonas de ocio.\n\n¡No dejes pasar esta oportunidad! Contáctanos y agenda tu visita.",
+    "ca": "En venda preciosa vivenda unifamiliar situada en una zona tranquil·la i privilegiada, molt a prop del centre del poble i a pocs minuts de la platja.\n\nDistribuïda en dues plantes, aquesta propietat ofereix:\n\n4 dormitoris (un en suite)\n3 banys complets\nLluminós saló-menjador amb llar de foc\nCuina independent\nJardí i diverses terrasses exteriors\nZona de barbacoa\nCalefacció per gasoil i finestres de doble vidre\n\nUna casa perfecta per a famílies que busquen espai, confort i entorn natural, sense renunciar a la proximitat de serveis i zones d'oci.\n\nNo deixis passar aquesta oportunitat! Contacta'ns i agenda la teva visita.",
+    "en": "For sale, a beautiful detached home in a quiet and privileged area, very close to the town centre and just minutes from the beach.\n\nArranged over two floors, this property offers:\n\n4 bedrooms (one en suite)\n3 full bathrooms\nBright living-dining room with fireplace\nSeparate kitchen\nGarden and several outdoor terraces\nBarbecue area\nOil heating and double-glazed windows\n\nA perfect home for families seeking space, comfort and a natural setting without giving up proximity to services and leisure areas.\n\nDon't miss this opportunity! Contact us and book your viewing.",
+    "fr": "À vendre, une belle maison individuelle située dans un quartier calme et privilégié, très proche du centre-ville et à quelques minutes de la plage.\n\nRépartie sur deux étages, cette propriété comprend :\n\n4 chambres (dont une suite)\n3 salles de bain complètes\nSalon-salle à manger lumineux avec cheminée\nCuisine indépendante\nJardin et plusieurs terrasses extérieures\nEspace barbecue\nChauffage au fioul et fenêtres double vitrage\n\nUne maison parfaite pour les familles recherchant espace, confort et cadre naturel, sans renoncer à la proximité des services et des zones de loisirs.\n\nNe manquez pas cette opportunité ! Contactez-nous et planifiez votre visite."
+  },
+  "features": [
+    { "es": "Casa o chalet independiente", "ca": "Casa o xalet independent", "en": "Detached house or chalet", "fr": "Maison ou chalet individuel" },
+    { "es": "2 plantas", "ca": "2 plantes", "en": "2 floors", "fr": "2 étages" },
+    { "es": "Vistas espectaculares a la montaña", "ca": "Vistes espectaculars a la muntanya", "en": "Spectacular mountain views", "fr": "Vue spectaculaire sur la montagne" },
+    { "es": "4 dormitorios (uno en suite)", "ca": "4 dormitoris (un en suite)", "en": "4 bedrooms (one en suite)", "fr": "4 chambres (dont une suite)" },
+    { "es": "Salón-comedor con chimenea", "ca": "Saló-menjador amb llar de foc", "en": "Living-dining room with fireplace", "fr": "Salon-salle à manger avec cheminée" },
+    { "es": "Cocina independiente", "ca": "Cuina independent", "en": "Separate kitchen", "fr": "Cuisine indépendante" },
+    { "es": "Jardín y varias terrazas exteriores", "ca": "Jardí i diverses terrasses exteriors", "en": "Garden and several outdoor terraces", "fr": "Jardin et plusieurs terrasses extérieures" },
+    { "es": "Zona de barbacoa", "ca": "Zona de barbacoa", "en": "Barbecue area", "fr": "Espace barbecue" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Trastero", "ca": "Traster", "en": "Storage room", "fr": "Débarras" },
+    { "es": "Ventanas de doble cristal", "ca": "Finestres de doble vidre", "en": "Double-glazed windows", "fr": "Fenêtres double vitrage" },
+    { "es": "Calefacción central: Gasoil", "ca": "Calefacció central: Gasoil", "en": "Central heating: Heating oil", "fr": "Chauffage central : Fioul" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Jardín", "ca": "Jardí", "en": "Garden", "fr": "Jardin" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Comtat de Jaruco - Puigventós",
+      "ca": "Comtat de Jaruco - Puigventós",
+      "en": "Comtat de Jaruco - Puigventós",
+      "fr": "Comtat de Jaruco - Puigventós"
+    },
+    "floor": {
+      "es": "2 plantas",
+      "ca": "2 plantes",
+      "en": "2 floors",
+      "fr": "2 étages"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Calefacción central: Gasoil",
+      "ca": "Calefacció central: Gasoil",
+      "en": "Central heating: Heating oil",
+      "fr": "Chauffage central : Fioul"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Playa de Lloret de Mar",
+        "ca": "Platja de Lloret de Mar",
+        "en": "Lloret de Mar Beach",
+        "fr": "Plage de Lloret de Mar"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Girona",
+        "ca": "Girona",
+        "en": "Girona",
+        "fr": "Girona"
+      },
+      "distance": "30 min"
+    },
+    {
+      "name": {
+        "es": "Barcelona",
+        "ca": "Barcelona",
+        "en": "Barcelona",
+        "fr": "Barcelone"
+      },
+      "distance": "75 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "D",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": false,
+  "garden": true,
+  "parking": false,
+  "elevator": false,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": true,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Casa 4 hab. con jardín en Puigventós, Lloret | 540.000 € | Golden Home",
+      "ca": "Casa 4 hab. amb jardí a Puigventós, Lloret | 540.000 € | Golden Home",
+      "en": "4-bed house with garden in Puigventós, Lloret | €540,000 | Golden Home",
+      "fr": "Maison 4 ch. avec jardin à Puigventós, Lloret | 540 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Casa independiente de 260 m² con 4 habitaciones y jardín en Calle Joan Miró, Puigventós, Lloret de Mar. Parcela 750 m². Vistas a la montaña. 540.000 €. Golden Home.",
+      "ca": "Casa independent de 260 m² amb 4 habitacions i jardí al Carrer Joan Miró, Puigventós, Lloret de Mar. Parcel·la 750 m². Vistes a la muntanya. 540.000 €. Golden Home.",
+      "en": "260 m² detached house with 4 bedrooms and garden on Calle Joan Miró, Puigventós, Lloret de Mar. 750 m² plot. Mountain views. €540,000. Golden Home.",
+      "fr": "Maison individuelle de 260 m² avec 4 chambres et jardin au Calle Joan Miró, Puigventós, Lloret de Mar. Terrain 750 m². Vue montagne. 540 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "casa lloret venta, chalet puigventos lloret, casa 4 habitaciones lloret jardin, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "casa lloret venda, xalet puigventos lloret, casa 4 habitacions lloret jardi, immobiliaria lloret de mar, golden home lloret",
+      "en": "house lloret sale, puigventos chalet lloret, 4 bedroom house lloret garden, real estate lloret de mar, golden home lloret",
+      "fr": "maison lloret vente, chalet puigventos lloret, maison 4 chambres lloret jardin, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

@@ -30,6 +30,22 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/casa-calle-calella-els-pinares-lloret-de-mar/11.png",
     "/properties/casa-calle-calella-els-pinares-lloret-de-mar/12.png"
   ],
+  "casa-calle-joan-miro-puigventos-lloret-de-mar": [
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/01.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/02.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/03.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/04.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/05.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/06.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/07.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/08.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/09.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/10.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/11.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/12.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/13.png",
+    "/properties/casa-calle-joan-miro-puigventos-lloret-de-mar/14.png"
+  ],
   "casa-calle-nicaragua-lloret-residencial-lloret-de-mar": [
     "/properties/casa-calle-nicaragua-lloret-residencial-lloret-de-mar/01.png",
     "/properties/casa-calle-nicaragua-lloret-residencial-lloret-de-mar/02.png",
@@ -72,6 +88,19 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/09.png",
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/10.png",
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/11.png"
+  ],
+  "piso-avenida-vila-de-blanes-fenals-lloret-de-mar": [
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/01.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/02.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/03.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/04.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/05.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/06.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/07.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/08.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/09.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/10.png",
+    "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/11.png"
   ],
   "piso-calle-vilar-centre-blanes": [
     "/properties/piso-calle-vilar-centre-blanes/01.png",
