@@ -1,0 +1,158 @@
+{
+  "id": "estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar",
+  "reference": "GH-LLORET-JMV-001",
+  "slug": "estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar",
+  "title": {
+    "es": "Estudio de 34 m² en pleno centro del pueblo con balcón",
+    "ca": "Estudi de 34 m² al centre del poble amb balcó",
+    "en": "34 m² studio in the town centre with balcony",
+    "fr": "Studio de 34 m² en plein centre-ville avec balcon"
+  },
+  "price": 100000,
+  "location": {
+    "es": "Avenida Just Marlés Vilarrodona, Fenals, Lloret de Mar",
+    "ca": "Avinguda Just Marlés Vilarrodona, Fenals, Lloret de Mar",
+    "en": "Avenida Just Marlés Vilarrodona, Fenals, Lloret de Mar",
+    "fr": "Avenida Just Marlés Vilarrodona, Fenals, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6958, "lng": 2.8578 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 0,
+  "bathrooms": 1,
+  "builtArea": 34,
+  "plotArea": 0,
+  "description": {
+    "es": "Acogedor estudio de 34 m² situado en pleno centro del pueblo, ideal para quienes buscan comodidad y una ubicación inmejorable.\n\nLa vivienda se encuentra en una 5ª planta exterior con ascensor y dispone de balcón, perfecto para disfrutar de luz natural y del ambiente del centro.\n\nUbicado cerca de todos los comercios, supermercados, cafeterías, farmacias y servicios, con todo al alcance a pocos pasos, lo que lo convierte en una excelente opción tanto como vivienda habitual, segunda residencia o inversión.\n\nUna oportunidad perfecta para vivir en el corazón del pueblo, con todas las comodidades y servicios a tu alrededor.\n\nCaracterísticas:\n\n34 m²\nEstudio diáfano\n5ª planta exterior con ascensor\nBalcón\nUbicación céntrica\nCerca de todos los comercios y servicios\n\nPara más información o visitas, no dudes en contactar.",
+    "ca": "Acollidor estudi de 34 m² situat al centre del poble, ideal per a qui busca comoditat i una ubicació inmillorable.\n\nLa vivenda es troba en una 5a planta exterior amb ascensor i disposa de balcó, perfecte per gaudir de llum natural i de l'ambient del centre.\n\nUbicat a prop de tots els comerços, supermercats, cafeteries, farmàcies i serveis, amb tot a l'abast a pocs passos, cosa que el converteix en una excel·lent opció tant com a vivenda habitual, segona residència o inversió.\n\nUna oportunitat perfecta per viure al cor del poble, amb totes les comoditats i serveis al teu voltant.\n\nCaracterístiques:\n\n34 m²\nEstudi diàfan\n5a planta exterior amb ascensor\nBalcó\nUbicació cèntrica\nA prop de tots els comerços i serveis\n\nPer a més informació o visites, no dubtis en contactar.",
+    "en": "Cosy 34 m² studio located in the heart of town, ideal for those seeking comfort and an unbeatable location.\n\nThe property is on the 5th exterior floor with elevator and has a balcony, perfect for enjoying natural light and the lively town atmosphere.\n\nClose to all shops, supermarkets, cafés, pharmacies and services, with everything within a few steps, making it an excellent option as a main home, second residence or investment.\n\nA perfect opportunity to live in the heart of town with all amenities and services around you.\n\nFeatures:\n\n34 m²\nOpen-plan studio\n5th exterior floor with elevator\nBalcony\nCentral location\nClose to all shops and services\n\nFor more information or viewings, please do not hesitate to contact us.",
+    "fr": "Studio accueillant de 34 m² situé en plein centre-ville, idéal pour ceux qui recherchent confort et emplacement imbattable.\n\nLe logement se trouve au 5e étage extérieur avec ascenseur et dispose d'un balcon, parfait pour profiter de la lumière naturelle et de l'ambiance du centre.\n\nProche de tous les commerces, supermarchés, cafés, pharmacies et services, avec tout à portée de quelques pas, ce qui en fait une excellente option comme résidence principale, résidence secondaire ou investissement.\n\nUne opportunité parfaite pour vivre au cœur de la ville, avec toutes les commodités et services autour de vous.\n\nCaractéristiques :\n\n34 m²\nStudio en open space\n5e étage extérieur avec ascenseur\nBalcon\nEmplacement central\nProche de tous les commerces et services\n\nPour plus d'informations ou des visites, n'hésitez pas à nous contacter."
+  },
+  "features": [
+    { "es": "Estudio diáfano", "ca": "Estudi diàfan", "en": "Open-plan studio", "fr": "Studio en open space" },
+    { "es": "34 m²", "ca": "34 m²", "en": "34 m²", "fr": "34 m²" },
+    { "es": "5ª planta exterior con ascensor", "ca": "5a planta exterior amb ascensor", "en": "5th floor exterior with elevator", "fr": "5e étage extérieur avec ascenseur" },
+    { "es": "Balcón", "ca": "Balcó", "en": "Balcony", "fr": "Balcon" },
+    { "es": "Ubicación céntrica", "ca": "Ubicació cèntrica", "en": "Central location", "fr": "Emplacement central" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Sin calefacción", "ca": "Sense calefacció", "en": "No heating", "fr": "Sans chauffage" },
+    { "es": "Segunda mano / para reformar", "ca": "Segona mà / per reformar", "en": "Second hand / needs renovation", "fr": "Seconde main / à rénover" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Fenals",
+      "ca": "Fenals",
+      "en": "Fenals",
+      "fr": "Fenals"
+    },
+    "floor": {
+      "es": "5ª planta exterior",
+      "ca": "5a planta exterior",
+      "en": "5th floor exterior",
+      "fr": "5e étage extérieur"
+    },
+    "condition": {
+      "es": "Segunda mano / para reformar",
+      "ca": "Segona mà / per reformar",
+      "en": "Second hand / needs renovation",
+      "fr": "Seconde main / à rénover"
+    },
+    "heating": {
+      "es": "No dispone de calefacción",
+      "ca": "No disposa de calefacció",
+      "en": "No heating",
+      "fr": "Pas de chauffage"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Playa de Fenals",
+        "ca": "Platja de Fenals",
+        "en": "Fenals Beach",
+        "fr": "Plage de Fenals"
+      },
+      "distance": "8 min"
+    },
+    {
+      "name": {
+        "es": "Supermercados y comercios",
+        "ca": "Supermercats i comerços",
+        "en": "Supermarkets and shops",
+        "fr": "Supermarchés et commerces"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Blanes",
+        "ca": "Blanes",
+        "en": "Blanes",
+        "fr": "Blanes"
+      },
+      "distance": "6 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "G",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": false,
+  "garden": false,
+  "parking": false,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Estudio 34 m² en Fenals, Lloret de Mar | 100.000 € | Golden Home",
+      "ca": "Estudi 34 m² a Fenals, Lloret de Mar | 100.000 € | Golden Home",
+      "en": "34 m² studio in Fenals, Lloret de Mar | €100,000 | Golden Home",
+      "fr": "Studio 34 m² à Fenals, Lloret de Mar | 100 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Estudio de 34 m² con balcón en Avenida Just Marlés Vilarrodona, Fenals, Lloret de Mar. 5ª planta con ascensor. Ubicación céntrica. 100.000 €. Golden Home.",
+      "ca": "Estudi de 34 m² amb balcó a l'Avinguda Just Marlés Vilarrodona, Fenals, Lloret de Mar. 5a planta amb ascensor. Ubicació cèntrica. 100.000 €. Golden Home.",
+      "en": "34 m² studio with balcony on Avenida Just Marlés Vilarrodona, Fenals, Lloret de Mar. 5th floor with elevator. Central location. €100,000. Golden Home.",
+      "fr": "Studio de 34 m² avec balcon à l'Avenida Just Marlés Vilarrodona, Fenals, Lloret de Mar. 5e étage avec ascenseur. Emplacement central. 100 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "estudio lloret venta, piso fenals lloret, estudio inversion lloret, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "estudi lloret venda, pis fenals lloret, estudi inversió lloret, immobiliaria lloret de mar, golden home lloret",
+      "en": "studio lloret sale, fenals flat lloret, studio investment lloret, real estate lloret de mar, golden home lloret",
+      "fr": "studio lloret vente, appartement fenals lloret, studio investissement lloret, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

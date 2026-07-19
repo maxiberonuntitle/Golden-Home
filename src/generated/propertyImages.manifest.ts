@@ -1,5 +1,20 @@
 /* Auto-generated — do not edit. Updated when running dev/build or adding photos. */
 export const propertyImagesManifest: Record<string, readonly string[]> = {
+  "casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar": [
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/01.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/02.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/03.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/04.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/05.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/06.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/07.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/08.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/09.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/10.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/11.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/12.png",
+    "/properties/casa-avenida-roca-grossa-barri-dels-pescadors-lloret-de-mar/13.png"
+  ],
   "casa-calle-almadrava-st-francesc-blanes": [
     "/properties/casa-calle-almadrava-st-francesc-blanes/01.png",
     "/properties/casa-calle-almadrava-st-francesc-blanes/02.png",
@@ -63,6 +78,24 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/casa-calle-nicaragua-lloret-residencial-lloret-de-mar/14.png",
     "/properties/casa-calle-nicaragua-lloret-residencial-lloret-de-mar/15.png"
   ],
+  "chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar": [
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/01.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/02.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/03.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/04.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/05.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/06.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/07.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/08.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/09.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/10.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/11.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/12.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/13.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/14.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/15.png",
+    "/properties/chalet-avenida-sa-boadella-santa-clotilde-lloret-de-mar/16.png"
+  ],
   "chalet-calle-ramon-llull-can-sabata-lloret-de-mar": [
     "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/01.png",
     "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/02.png",
@@ -91,6 +124,29 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/duplex-calle-selva-els-pavos-blanes/10.png",
     "/properties/duplex-calle-selva-els-pavos-blanes/11.png"
   ],
+  "estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar": [
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/01.png",
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/02.png",
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/03.png",
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/04.png",
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/05.png",
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/06.png",
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/07.png",
+    "/properties/estudio-avenida-just-marles-vilarrodona-fenals-lloret-de-mar/08.png"
+  ],
+  "piso-avenida-america-fenals-lloret-de-mar": [
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/01.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/02.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/03.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/04.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/05.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/06.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/07.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/08.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/09.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/10.png",
+    "/properties/piso-avenida-america-fenals-lloret-de-mar/11.png"
+  ],
   "piso-avenida-joan-llaverias-lloret-de-mar": [
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/01.png",
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/02.png",
@@ -103,6 +159,20 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/09.png",
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/10.png",
     "/properties/piso-avenida-joan-llaverias-lloret-de-mar/11.png"
+  ],
+  "piso-avenida-les-alegries-can-sabata-lloret-de-mar": [
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/01.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/02.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/03.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/04.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/05.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/06.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/07.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/08.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/09.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/10.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/11.png",
+    "/properties/piso-avenida-les-alegries-can-sabata-lloret-de-mar/12.png"
   ],
   "piso-avenida-vila-de-blanes-fenals-lloret-de-mar": [
     "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/01.png",
@@ -117,6 +187,39 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/10.png",
     "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/11.png"
   ],
+  "piso-calle-marfull-santa-clotilde-lloret-de-mar": [
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/01.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/02.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/03.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/04.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/05.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/06.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/07.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/08.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/09.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/10.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/11.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/12.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/13.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/14.png",
+    "/properties/piso-calle-marfull-santa-clotilde-lloret-de-mar/15.png"
+  ],
+  "piso-calle-puerto-rico-fenals-lloret-de-mar": [
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/01.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/02.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/03.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/04.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/05.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/06.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/07.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/08.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/09.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/10.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/11.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/12.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/13.png",
+    "/properties/piso-calle-puerto-rico-fenals-lloret-de-mar/14.png"
+  ],
   "piso-calle-riu-de-la-plata-fenals-lloret-de-mar": [
     "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/01.png",
     "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/02.png",
@@ -128,6 +231,23 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/08.png",
     "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/09.png",
     "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/10.png"
+  ],
+  "piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar": [
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/01.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/02.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/03.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/04.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/05.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/06.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/07.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/08.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/09.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/10.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/11.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/12.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/13.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/14.png",
+    "/properties/piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar/15.png"
   ],
   "piso-calle-vilar-centre-blanes": [
     "/properties/piso-calle-vilar-centre-blanes/01.png",
@@ -147,6 +267,22 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/piso-camino-sant-pere-del-bosc-blanes/06.png",
     "/properties/piso-camino-sant-pere-del-bosc-blanes/07.png",
     "/properties/piso-camino-sant-pere-del-bosc-blanes/08.png"
+  ],
+  "piso-la-dreta-eixample-barcelona": [
+    "/properties/piso-la-dreta-eixample-barcelona/01.png",
+    "/properties/piso-la-dreta-eixample-barcelona/02.png",
+    "/properties/piso-la-dreta-eixample-barcelona/03.png",
+    "/properties/piso-la-dreta-eixample-barcelona/04.png",
+    "/properties/piso-la-dreta-eixample-barcelona/05.png",
+    "/properties/piso-la-dreta-eixample-barcelona/06.png",
+    "/properties/piso-la-dreta-eixample-barcelona/07.png",
+    "/properties/piso-la-dreta-eixample-barcelona/08.png",
+    "/properties/piso-la-dreta-eixample-barcelona/09.png",
+    "/properties/piso-la-dreta-eixample-barcelona/10.png",
+    "/properties/piso-la-dreta-eixample-barcelona/11.png",
+    "/properties/piso-la-dreta-eixample-barcelona/12.png",
+    "/properties/piso-la-dreta-eixample-barcelona/13.png",
+    "/properties/piso-la-dreta-eixample-barcelona/14.png"
   ]
 } as const
 

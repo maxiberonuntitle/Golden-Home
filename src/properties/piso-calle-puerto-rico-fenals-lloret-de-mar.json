@@ -1,0 +1,164 @@
+{
+  "id": "piso-calle-puerto-rico-fenals-lloret-de-mar",
+  "reference": "GH-LLORET-PRI-001",
+  "slug": "piso-calle-puerto-rico-fenals-lloret-de-mar",
+  "title": {
+    "es": "Piso en venta en Fenals – Reformado y a pocos pasos del mar",
+    "ca": "Pis en venda a Fenals – Reformat i a pocs passos del mar",
+    "en": "Flat for sale in Fenals – Renovated and steps from the sea",
+    "fr": "Appartement à vendre à Fenals – Rénové et à deux pas de la mer"
+  },
+  "price": 380000,
+  "location": {
+    "es": "Calle Puerto Rico, Fenals, Lloret de Mar",
+    "ca": "Carrer Puerto Rico, Fenals, Lloret de Mar",
+    "en": "Calle Puerto Rico, Fenals, Lloret de Mar",
+    "fr": "Calle Puerto Rico, Fenals, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6964, "lng": 2.8602 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "builtArea": 80,
+  "plotArea": 0,
+  "description": {
+    "es": "Descubre este acogedor piso situado en una de las zonas más demandadas de Fenals, a escasos pasos de la playa. Una vivienda ideal tanto como residencia habitual como para disfrutar de escapadas junto al mar.\n\nEl inmueble dispone de dos amplias habitaciones dobles. Originalmente eran tres dormitorios, pero uno de ellos se ha transformado en un práctico vestidor, aportando mayor comodidad y espacio de almacenaje. Cuenta con un baño completo equipado con ducha.\n\nEl salón-comedor es amplio y luminoso, con acceso directo a una agradable terraza desde la que se puede disfrutar de vistas parciales al mar. La cocina es independiente y tiene salida a un lavadero, lo que añade funcionalidad al conjunto.\n\nLa vivienda se encuentra reformada, lista para entrar a vivir, y destaca por su excelente ubicación en una zona tranquila pero muy cercana a todos los servicios y al mar.\n\nUna oportunidad perfecta para quienes buscan comodidad, ubicación y calidad de vida en la Costa Brava.",
+    "ca": "Descobreix aquest acollidor pis situat en una de les zones més demandades de Fenals, a escassos passos de la platja. Una vivenda ideal tant com a residència habitual com per gaudir d'escapades al costat del mar.\n\nL'immoble disposa de dues àmplies habitacions dobles. Originalment eren tres dormitoris, però un d'ells s'ha transformat en un pràctic vestidor, aportant major comoditat i espai d'emmagatzematge. Compta amb un bany complet equipat amb dutxa.\n\nEl saló-menjador és ampli i lluminós, amb accés directe a una agradable terrassa des de la qual es poden gaudir vistes parcials al mar. La cuina és independent i té sortida a un safareig, cosa que afegeix funcionalitat al conjunt.\n\nLa vivenda es troba reformada, a punt per entrar a viure, i destaca per la seva excel·lent ubicació en una zona tranquil·la però molt propera a tots els serveis i al mar.\n\nUna oportunitat perfecta per a qui busca comoditat, ubicació i qualitat de vida a la Costa Brava.",
+    "en": "Discover this cosy flat located in one of the most sought-after areas of Fenals, just steps from the beach. An ideal home both as a main residence and for seaside getaways.\n\nThe property has two spacious double bedrooms. Originally three bedrooms, one has been converted into a practical walk-in wardrobe, adding comfort and storage space. It includes a full bathroom with shower.\n\nThe living-dining room is spacious and bright, with direct access to a pleasant terrace offering partial sea views. The separate kitchen opens to a laundry room, adding functionality to the layout.\n\nThe home has been renovated and is ready to move in, standing out for its excellent location in a quiet area yet very close to all services and the sea.\n\nA perfect opportunity for those seeking comfort, location and quality of life on the Costa Brava.",
+    "fr": "Découvrez cet appartement accueillant situé dans l'un des quartiers les plus recherchés de Fenals, à deux pas de la plage. Un logement idéal comme résidence principale ou pour des escapades au bord de la mer.\n\nLe bien comprend deux chambres doubles spacieuses. À l'origine trois chambres, l'une a été transformée en dressing pratique, apportant plus de confort et d'espace de rangement. Il dispose d'une salle de bain complète avec douche.\n\nLe salon-salle à manger est spacieux et lumineux, avec accès direct à une agréable terrasse offrant une vue partielle sur la mer. La cuisine est indépendante et donne accès à une buanderie, ajoutant de la fonctionnalité à l'ensemble.\n\nLe logement a été rénové et est prêt à emménager, se distinguant par son excellent emplacement dans un quartier calme mais très proche de tous les services et de la mer.\n\nUne opportunité parfaite pour ceux qui recherchent confort, emplacement et qualité de vie sur la Costa Brava."
+  },
+  "features": [
+    { "es": "Reformado", "ca": "Reformat", "en": "Renovated", "fr": "Rénové" },
+    { "es": "80 m² construidos, 75 m² útiles", "ca": "80 m² construïts, 75 m² útils", "en": "80 m² built, 75 m² usable", "fr": "80 m² construits, 75 m² utiles" },
+    { "es": "2 habitaciones dobles", "ca": "2 habitacions dobles", "en": "2 double bedrooms", "fr": "2 chambres doubles" },
+    { "es": "Vestidor (antiguo dormitorio)", "ca": "Vestidor (antic dormitori)", "en": "Walk-in wardrobe (former bedroom)", "fr": "Dressing (ancienne chambre)" },
+    { "es": "Vistas parciales al mar", "ca": "Vistes parcials al mar", "en": "Partial sea views", "fr": "Vue partielle sur la mer" },
+    { "es": "Terraza", "ca": "Terrassa", "en": "Terrace", "fr": "Terrasse" },
+    { "es": "Cocina independiente con lavadero", "ca": "Cuina independent amb safareig", "en": "Separate kitchen with laundry room", "fr": "Cuisine indépendante avec buanderie" },
+    { "es": "Orientación sur", "ca": "Orientació sud", "en": "South-facing", "fr": "Orientation sud" },
+    { "es": "2ª planta exterior con ascensor", "ca": "2a planta exterior amb ascensor", "en": "2nd floor exterior with elevator", "fr": "2e étage extérieur avec ascenseur" },
+    { "es": "Calefacción central: Gas", "ca": "Calefacció central: Gas", "en": "Central heating: Gas", "fr": "Chauffage central : Gaz" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Piscina comunitaria", "ca": "Piscina comunitària", "en": "Communal pool", "fr": "Piscine commune" },
+    { "es": "Listo para entrar a vivir", "ca": "A punt per entrar a viure", "en": "Ready to move in", "fr": "Prêt à emménager" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Fenals",
+      "ca": "Fenals",
+      "en": "Fenals",
+      "fr": "Fenals"
+    },
+    "floor": {
+      "es": "2ª planta exterior",
+      "ca": "2a planta exterior",
+      "en": "2nd floor exterior",
+      "fr": "2e étage extérieur"
+    },
+    "condition": {
+      "es": "Reformado / buen estado",
+      "ca": "Reformat / bon estat",
+      "en": "Renovated / good condition",
+      "fr": "Rénové / bon état"
+    },
+    "heating": {
+      "es": "Calefacción central: Gas",
+      "ca": "Calefacció central: Gas",
+      "en": "Central heating: Gas",
+      "fr": "Chauffage central : Gaz"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Fenals",
+        "ca": "Platja de Fenals",
+        "en": "Fenals Beach",
+        "fr": "Plage de Fenals"
+      },
+      "distance": "3 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "10 min"
+    },
+    {
+      "name": {
+        "es": "Supermercados y comercios",
+        "ca": "Supermercats i comerços",
+        "en": "Supermarkets and shops",
+        "fr": "Supermarchés et commerces"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Blanes",
+        "ca": "Blanes",
+        "en": "Blanes",
+        "fr": "Blanes"
+      },
+      "distance": "6 km"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "D",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": true,
+  "garden": false,
+  "parking": false,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Piso reformado 2 hab. con vistas al mar, Fenals | 380.000 € | Golden Home",
+      "ca": "Pis reformat 2 hab. amb vistes al mar, Fenals | 380.000 € | Golden Home",
+      "en": "Renovated 2-bed flat with sea views, Fenals | €380,000 | Golden Home",
+      "fr": "Appartement rénové 2 ch. vue mer, Fenals | 380 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso reformado de 80 m² con 2 habitaciones y vistas parciales al mar en Calle Puerto Rico, Fenals, Lloret de Mar. 2ª planta con ascensor. 380.000 €. Golden Home.",
+      "ca": "Pis reformat de 80 m² amb 2 habitacions i vistes parcials al mar al Carrer Puerto Rico, Fenals, Lloret de Mar. 2a planta amb ascensor. 380.000 €. Golden Home.",
+      "en": "Renovated 80 m² flat with 2 bedrooms and partial sea views on Calle Puerto Rico, Fenals, Lloret de Mar. 2nd floor with elevator. €380,000. Golden Home.",
+      "fr": "Appartement rénové de 80 m² avec 2 chambres et vue partielle sur la mer au Calle Puerto Rico, Fenals, Lloret de Mar. 2e étage avec ascenseur. 380 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso lloret venta, piso fenals vistas mar, piso reformado fenals, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "pis lloret venda, pis fenals vistes mar, pis reformat fenals, immobiliaria lloret de mar, golden home lloret",
+      "en": "apartment lloret sale, fenals sea view flat, renovated flat fenals, real estate lloret de mar, golden home lloret",
+      "fr": "appartement lloret vente, appartement fenals vue mer, appartement rénové fenals, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

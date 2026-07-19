@@ -32,8 +32,11 @@ export function getPropertyBySlug(slug: string): Property | undefined {
   return allProperties.find((property) => property.slug === slug)
 }
 
-export function getFeaturedProperties(): Property[] {
-  return allProperties.filter((property) => property.featured)
+export function getFeaturedProperties(limit = 5): Property[] {
+  return allProperties
+    .filter((property) => property.featured)
+    .sort((a, b) => b.price - a.price)
+    .slice(0, limit)
 }
 
 export function getRelatedProperties(slug: string, limit = 3): Property[] {

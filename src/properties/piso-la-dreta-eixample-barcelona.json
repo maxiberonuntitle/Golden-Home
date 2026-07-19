@@ -1,0 +1,179 @@
+{
+  "id": "piso-la-dreta-eixample-barcelona",
+  "reference": "GH-BCN-EIX-001",
+  "slug": "piso-la-dreta-eixample-barcelona",
+  "title": {
+    "es": "Exclusivo piso en alquiler junto al Paseo de Gracia",
+    "ca": "Exclusiu pis de lloguer al costat del Passeig de Gràcia",
+    "en": "Exclusive flat for rent next to Passeig de Gràcia",
+    "fr": "Appartement exclusif à louer près du Passeig de Gràcia"
+  },
+  "price": 3000,
+  "location": {
+    "es": "La Dreta de l'Eixample, Barcelona",
+    "ca": "La Dreta de l'Eixample, Barcelona",
+    "en": "La Dreta de l'Eixample, Barcelona",
+    "fr": "La Dreta de l'Eixample, Barcelona"
+  },
+  "province": "Barcelona",
+  "city": "Barcelona",
+  "coordinates": { "lat": 41.3945, "lng": 2.1692 },
+  "type": "apartment",
+  "status": "rent",
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "builtArea": 117,
+  "plotArea": 0,
+  "description": {
+    "es": "Vive en una de las zonas más emblemáticas de Barcelona en este elegante piso, situado a pocos pasos del Paseo de Gracia. Ubicado en una distinguida finca, combina el carácter de la arquitectura clásica con espacios amplios, luminosos y funcionales.\n\nLa vivienda cuenta con dos dormitorios dobles y dos baños completos, ofreciendo una distribución cómoda y práctica para el día a día. La luz natural es protagonista gracias a sus amplios ventanales, mientras que los techos altos y los acabados en madera aportan una agradable sensación de amplitud y calidez.\n\nSituado en una cuarta planta exterior con orientación este, el piso disfruta de un ambiente tranquilo y una excelente entrada de luz durante las primeras horas del día. El edificio dispone de ascensor, garantizando un acceso cómodo a la vivienda.\n\nSu privilegiada ubicación permite disfrutar de todos los servicios a pocos minutos: boutiques exclusivas, restaurantes de referencia, zonas comerciales, transporte público y todo el encanto del Eixample. Una vivienda ideal para quienes buscan comodidad, estilo y una ubicación inmejorable en el centro de Barcelona.\n\nAdecuado para un máximo de 2 personas.",
+    "ca": "Viu en una de les zones més emblemàtiques de Barcelona en aquest elegant pis, situat a pocs passos del Passeig de Gràcia. Ubicat en una distingida finca, combina el caràcter de l'arquitectura clàssica amb espais amplis, lluminosos i funcionals.\n\nLa vivenda compta amb dos dormitoris dobles i dos banys complets, oferint una distribució còmoda i pràctica per al dia a dia. La llum natural és protagonista gràcies als seus amplis finestrals, mentre que els sostres alts i els acabats en fusta aporten una agradable sensació d'amplitud i calidesa.\n\nSituat en una quarta planta exterior amb orientació est, el pis gaudeix d'un ambient tranquil i una excel·lent entrada de llum durant les primeres hores del dia. L'edifici disposa d'ascensor, garantint un accés còmode a la vivenda.\n\nLa seva privilegiada ubicació permet gaudir de tots els serveis a pocs minuts: boutiques exclusives, restaurants de referència, zones comercials, transport públic i tot l'encant de l'Eixample. Una vivenda ideal per a qui busca comoditat, estil i una ubicació inmillorable al centre de Barcelona.\n\nAdequat per a un màxim de 2 persones.",
+    "en": "Live in one of Barcelona's most iconic areas in this elegant flat, located just steps from Passeig de Gràcia. Set in a distinguished building, it combines classic architecture with spacious, bright and functional rooms.\n\nThe home has two double bedrooms and two full bathrooms, offering a comfortable and practical layout for everyday life. Natural light takes centre stage thanks to its large windows, while high ceilings and wood finishes create a pleasant sense of space and warmth.\n\nLocated on a fourth exterior floor with east-facing orientation, the flat enjoys a quiet atmosphere and excellent morning light. The building has an elevator, ensuring comfortable access.\n\nIts privileged location puts every service within minutes: exclusive boutiques, renowned restaurants, shopping areas, public transport and all the charm of the Eixample. An ideal home for those seeking comfort, style and an unbeatable location in central Barcelona.\n\nSuitable for a maximum of 2 people.",
+    "fr": "Vivez dans l'un des quartiers les plus emblématiques de Barcelone dans cet élégant appartement, situé à quelques pas du Passeig de Gràcia. Logé dans un immeuble distingué, il allie le caractère de l'architecture classique à des espaces spacieux, lumineux et fonctionnels.\n\nLe logement comprend deux chambres doubles et deux salles de bain complètes, offrant une distribution confortable et pratique au quotidien. La lumière naturelle est mise en valeur grâce à ses grandes fenêtres, tandis que les hauts plafonds et les finitions en bois apportent une agréable sensation d'espace et de chaleur.\n\nSitué au quatrième étage extérieur avec orientation est, l'appartement bénéficie d'une atmosphère calme et d'une excellente luminosité le matin. L'immeuble dispose d'un ascenseur pour un accès confortable.\n\nSon emplacement privilégié permet de profiter de tous les services en quelques minutes : boutiques exclusives, restaurants de référence, zones commerciales, transports publics et tout le charme de l'Eixample. Un logement idéal pour ceux qui recherchent confort, style et un emplacement imbattable au centre de Barcelone.\n\nConvient pour un maximum de 2 personnes."
+  },
+  "features": [
+    { "es": "4ª planta exterior con ascensor", "ca": "4a planta exterior amb ascensor", "en": "4th floor exterior with elevator", "fr": "4e étage extérieur avec ascenseur" },
+    { "es": "2 dormitorios dobles", "ca": "2 dormitoris dobles", "en": "2 double bedrooms", "fr": "2 chambres doubles" },
+    { "es": "2 baños completos", "ca": "2 banys complets", "en": "2 full bathrooms", "fr": "2 salles de bain complètes" },
+    { "es": "Amueblado y cocina equipada", "ca": "Moblat i cuina equipada", "en": "Furnished with equipped kitchen", "fr": "Meublé et cuisine équipée" },
+    { "es": "Techos altos y acabados en madera", "ca": "Sostres alts i acabats en fusta", "en": "High ceilings and wood finishes", "fr": "Hauts plafonds et finitions en bois" },
+    { "es": "Amplios ventanales", "ca": "Amplis finestrals", "en": "Large windows", "fr": "Grandes fenêtres" },
+    { "es": "Orientación este", "ca": "Orientació est", "en": "East-facing", "fr": "Orientation est" },
+    { "es": "Calefacción individual: Bomba de frío/calor", "ca": "Calefacció individual: Bomba de fred/calor", "en": "Individual heating: Heat pump", "fr": "Chauffage individuel : Pompe à chaleur" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Junto al Paseo de Gracia", "ca": "Al costat del Passeig de Gràcia", "en": "Next to Passeig de Gràcia", "fr": "Près du Passeig de Gràcia" },
+    { "es": "Máximo 2 personas", "ca": "Màxim 2 persones", "en": "Maximum 2 people", "fr": "Maximum 2 personnes" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "La Dreta de l'Eixample",
+      "ca": "La Dreta de l'Eixample",
+      "en": "La Dreta de l'Eixample",
+      "fr": "La Dreta de l'Eixample"
+    },
+    "floor": {
+      "es": "4ª planta exterior",
+      "ca": "4a planta exterior",
+      "en": "4th floor exterior",
+      "fr": "4e étage extérieur"
+    },
+    "condition": {
+      "es": "Buen estado",
+      "ca": "Bon estat",
+      "en": "Good condition",
+      "fr": "Bon état"
+    },
+    "orientation": {
+      "es": "Este",
+      "ca": "Est",
+      "en": "East",
+      "fr": "Est"
+    },
+    "heating": {
+      "es": "Calefacción individual: Bomba de frío/calor",
+      "ca": "Calefacció individual: Bomba de fred/calor",
+      "en": "Individual heating: Heat pump",
+      "fr": "Chauffage individuel : Pompe à chaleur"
+    },
+    "energyConsumption": 45,
+    "energyEmissions": 12.4,
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Paseo de Gracia",
+        "ca": "Passeig de Gràcia",
+        "en": "Passeig de Gràcia",
+        "fr": "Passeig de Gràcia"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Estación Passeig de Gràcia (Metro L2, L3, L4)",
+        "ca": "Estació Passeig de Gràcia (Metro L2, L3, L4)",
+        "en": "Passeig de Gràcia station (Metro L2, L3, L4)",
+        "fr": "Station Passeig de Gràcia (Métro L2, L3, L4)"
+      },
+      "distance": "3 min"
+    },
+    {
+      "name": {
+        "es": "Casa Batlló",
+        "ca": "Casa Batlló",
+        "en": "Casa Batlló",
+        "fr": "Casa Batlló"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Plaza Catalunya",
+        "ca": "Plaça Catalunya",
+        "en": "Plaça Catalunya",
+        "fr": "Plaça Catalunya"
+      },
+      "distance": "10 min"
+    },
+    {
+      "name": {
+        "es": "Restaurantes y boutiques de lujo",
+        "ca": "Restaurants i boutiques de luxe",
+        "en": "Restaurants and luxury boutiques",
+        "fr": "Restaurants et boutiques de luxe"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Josep Tarradellas Barcelona-El Prat",
+        "ca": "Aeroport Josep Tarradellas Barcelona-El Prat",
+        "en": "Josep Tarradellas Barcelona-El Prat Airport",
+        "fr": "Aéroport Josep Tarradellas Barcelona-El Prat"
+      },
+      "distance": "30 min"
+    }
+  ],
+  "energyCertificate": "D",
+  "featured": true,
+  "exclusive": true,
+  "luxury": true,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": false,
+  "garden": false,
+  "parking": false,
+  "elevator": true,
+  "terrace": false,
+  "nearBeach": false,
+  "mountain": false,
+  "investment": false,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Piso en alquiler La Dreta de l'Eixample, Barcelona | 3.000 €/mes | Golden Home",
+      "ca": "Pis de lloguer La Dreta de l'Eixample, Barcelona | 3.000 €/mes | Golden Home",
+      "en": "Flat for rent La Dreta de l'Eixample, Barcelona | €3,000/month | Golden Home",
+      "fr": "Appartement à louer La Dreta de l'Eixample, Barcelone | 3 000 €/mois | Golden Home"
+    },
+    "description": {
+      "es": "Piso en alquiler de 117 m² con 2 dormitorios dobles y 2 baños junto al Paseo de Gracia, La Dreta de l'Eixample, Barcelona. Amueblado. 3.000 €/mes. Golden Home.",
+      "ca": "Pis de lloguer de 117 m² amb 2 dormitoris dobles i 2 banys al costat del Passeig de Gràcia, La Dreta de l'Eixample, Barcelona. Moblat. 3.000 €/mes. Golden Home.",
+      "en": "117 m² flat for rent with 2 double bedrooms and 2 bathrooms next to Passeig de Gràcia, La Dreta de l'Eixample, Barcelona. Furnished. €3,000/month. Golden Home.",
+      "fr": "Appartement de 117 m² à louer avec 2 chambres doubles et 2 salles de bain près du Passeig de Gràcia, La Dreta de l'Eixample, Barcelone. Meublé. 3 000 €/mois. Golden Home."
+    },
+    "keywords": {
+      "es": "alquiler piso barcelona, piso eixample alquiler, piso paseo gracia alquiler, inmobiliaria barcelona alquiler, golden home barcelona",
+      "ca": "lloguer pis barcelona, pis eixample lloguer, pis passeig gracia lloguer, immobiliaria barcelona lloguer, golden home barcelona",
+      "en": "barcelona flat rent, eixample apartment rent, passeig gracia flat rent, barcelona real estate rent, golden home barcelona",
+      "fr": "location appartement barcelone, appartement eixample location, appartement passeig gracia location, immobilier barcelone location, golden home barcelone"
+    }
+  }
+}

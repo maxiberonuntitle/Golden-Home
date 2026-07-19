@@ -1,0 +1,178 @@
+{
+  "id": "piso-avenida-america-fenals-lloret-de-mar",
+  "reference": "GH-LLORET-AME-001",
+  "slug": "piso-avenida-america-fenals-lloret-de-mar",
+  "title": {
+    "es": "Piso reformado en Fenals a 1 minuto de la playa",
+    "ca": "Pis reformat a Fenals a 1 minut de la platja",
+    "en": "Renovated flat in Fenals 1 minute from the beach",
+    "fr": "Appartement rénové à Fenals à 1 minute de la plage"
+  },
+  "price": 270000,
+  "location": {
+    "es": "Avenida Amèrica, Fenals, Lloret de Mar",
+    "ca": "Avinguda Amèrica, Fenals, Lloret de Mar",
+    "en": "Avenida Amèrica, Fenals, Lloret de Mar",
+    "fr": "Avenida Amèrica, Fenals, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.6996, "lng": 2.8441 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "builtArea": 80,
+  "plotArea": 0,
+  "description": {
+    "es": "Se vende precioso piso totalmente reformado, ideal tanto como vivienda habitual como inversión.\n\nLa vivienda dispone de:\n• 2 habitaciones\n• 1 baño completo\n• Cocina americana moderna y funcional\n• Salón luminoso\n• Plaza de parking incluida en el precio\n\nUbicado en una de las principales calles de Fenals, a tan solo 1 minuto caminando de la playa y rodeado de todos los servicios necesarios: supermercados, restaurantes, transporte público, farmacias y comercios.\n\nUna oportunidad única para disfrutar de la Costa Brava con todas las comodidades.\n\nFenals – Lloret de Mar.",
+    "ca": "Es ven un preciós pis totalment reformat, ideal tant com a vivenda habitual com a inversió.\n\nLa vivenda disposa de:\n• 2 habitacions\n• 1 bany complet\n• Cuina americana moderna i funcional\n• Saló lluminós\n• Plaça d'aparcament inclosa en el preu\n\nUbicat en un dels carrers principals de Fenals, a només 1 minut caminant de la platja i envoltat de tots els serveis necessaris: supermercats, restaurants, transport públic, farmàcies i comerços.\n\nUna oportunitat única per gaudir de la Costa Brava amb totes les comoditats.\n\nFenals – Lloret de Mar.",
+    "en": "Beautiful fully renovated flat for sale, ideal as a main home or investment.\n\nThe property includes:\n• 2 bedrooms\n• 1 full bathroom\n• Modern, functional open-plan kitchen\n• Bright living room\n• Parking space included in the price\n\nLocated on one of the main streets of Fenals, just a 1-minute walk from the beach and surrounded by all essential services: supermarkets, restaurants, public transport, pharmacies and shops.\n\nA unique opportunity to enjoy the Costa Brava with every comfort.\n\nFenals – Lloret de Mar.",
+    "fr": "À vendre, un bel appartement entièrement rénové, idéal comme résidence principale ou investissement.\n\nLe logement comprend :\n• 2 chambres\n• 1 salle de bain complète\n• Cuisine américaine moderne et fonctionnelle\n• Salon lumineux\n• Place de parking incluse dans le prix\n\nSitué dans l'une des rues principales de Fenals, à seulement 1 minute à pied de la plage et entouré de tous les services nécessaires : supermarchés, restaurants, transports publics, pharmacies et commerces.\n\nUne opportunité unique pour profiter de la Costa Brava avec tout le confort.\n\nFenals – Lloret de Mar."
+  },
+  "features": [
+    { "es": "2ª planta exterior con ascensor", "ca": "2a planta exterior amb ascensor", "en": "2nd floor exterior with elevator", "fr": "2e étage extérieur avec ascenseur" },
+    { "es": "Totalmente reformado", "ca": "Totalment reformat", "en": "Fully renovated", "fr": "Entièrement rénové" },
+    { "es": "Cocina americana moderna y funcional", "ca": "Cuina americana moderna i funcional", "en": "Modern, functional open-plan kitchen", "fr": "Cuisine américaine moderne et fonctionnelle" },
+    { "es": "Salón luminoso", "ca": "Saló lluminós", "en": "Bright living room", "fr": "Salon lumineux" },
+    { "es": "Terraza", "ca": "Terrassa", "en": "Terrace", "fr": "Terrasse" },
+    { "es": "Plaza de garaje incluida en el precio", "ca": "Plaça de garatge inclosa en el preu", "en": "Parking space included in price", "fr": "Place de parking incluse dans le prix" },
+    { "es": "Orientación sur y oeste", "ca": "Orientació sud i oest", "en": "South and west facing", "fr": "Orientation sud et ouest" },
+    { "es": "Calefacción individual: Gas natural", "ca": "Calefacció individual: Gas natural", "en": "Individual heating: Natural gas", "fr": "Chauffage individuel : Gaz naturel" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Piscina comunitaria", "ca": "Piscina comunitària", "en": "Communal pool", "fr": "Piscine commune" },
+    { "es": "Jardín comunitario", "ca": "Jardí comunitari", "en": "Communal garden", "fr": "Jardin commun" },
+    { "es": "A 1 minuto de la playa", "ca": "A 1 minut de la platja", "en": "1 minute from the beach", "fr": "À 1 minute de la plage" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Fenals",
+      "ca": "Fenals",
+      "en": "Fenals",
+      "fr": "Fenals"
+    },
+    "floor": {
+      "es": "2ª planta exterior",
+      "ca": "2a planta exterior",
+      "en": "2nd floor exterior",
+      "fr": "2e étage extérieur"
+    },
+    "condition": {
+      "es": "Reformado / buen estado",
+      "ca": "Reformat / bon estat",
+      "en": "Renovated / good condition",
+      "fr": "Rénové / bon état"
+    },
+    "orientation": {
+      "es": "Sur y oeste",
+      "ca": "Sud i oest",
+      "en": "South and west",
+      "fr": "Sud et ouest"
+    },
+    "heating": {
+      "es": "Calefacción individual: Gas natural",
+      "ca": "Calefacció individual: Gas natural",
+      "en": "Individual heating: Natural gas",
+      "fr": "Chauffage individuel : Gaz naturel"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Fenals",
+        "ca": "Platja de Fenals",
+        "en": "Fenals Beach",
+        "fr": "Plage de Fenals"
+      },
+      "distance": "1 min"
+    },
+    {
+      "name": {
+        "es": "Supermercados y farmacias",
+        "ca": "Supermercats i farmàcies",
+        "en": "Supermarkets and pharmacies",
+        "fr": "Supermarchés et pharmacies"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Restaurantes y comercios",
+        "ca": "Restaurants i comerços",
+        "en": "Restaurants and shops",
+        "fr": "Restaurants et commerces"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Transporte público",
+        "ca": "Transport públic",
+        "en": "Public transport",
+        "fr": "Transports publics"
+      },
+      "distance": "3 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "10 min"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "C",
+  "featured": true,
+  "exclusive": false,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": false,
+  "garden": true,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Piso reformado 2 hab. con garaje Fenals | 270.000 € | Golden Home",
+      "ca": "Pis reformat 2 hab. amb garatge Fenals | 270.000 € | Golden Home",
+      "en": "Renovated 2-bed flat with garage Fenals | €270,000 | Golden Home",
+      "fr": "Appartement rénové 2 ch. avec garage Fenals | 270 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso reformado de 80 m² con 2 habitaciones, terraza y garaje incluido en Avenida Amèrica, Fenals, Lloret de Mar. A 1 min de la playa. 270.000 €. Golden Home.",
+      "ca": "Pis reformat de 80 m² amb 2 habitacions, terrassa i garatge inclòs a l'Avinguda Amèrica, Fenals, Lloret de Mar. A 1 min de la platja. 270.000 €. Golden Home.",
+      "en": "Renovated 80 m² flat with 2 bedrooms, terrace and included garage on Avenida Amèrica, Fenals, Lloret de Mar. 1 min from beach. €270,000. Golden Home.",
+      "fr": "Appartement rénové de 80 m² avec 2 chambres, terrasse et garage inclus sur Avenida Amèrica, Fenals, Lloret de Mar. À 1 min de la plage. 270 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso lloret venta, piso reformado fenals, piso avenida america lloret, garaje incluido fenals, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "pis lloret venda, pis reformat fenals, pis avinguda america lloret, garatge inclòs fenals, immobiliaria lloret de mar, golden home lloret",
+      "en": "apartment lloret sale, renovated flat fenals, avenida america flat lloret, parking included fenals, real estate lloret de mar, golden home lloret",
+      "fr": "appartement lloret vente, appartement rénové fenals, appartement avenida america lloret, parking inclus fenals, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

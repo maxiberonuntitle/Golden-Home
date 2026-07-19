@@ -1,0 +1,181 @@
+{
+  "id": "piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar",
+  "reference": "GH-LLORET-SDC-001",
+  "slug": "piso-calle-santiago-de-cuba-santa-clotilde-lloret-de-mar",
+  "title": {
+    "es": "Exclusivo piso reformado de 3 dormitorios con terraza y parking a 5 min de la playa de Fenals",
+    "ca": "Exclusiu pis reformat de 3 dormitoris amb terrassa i aparcament a 5 min de la platja de Fenals",
+    "en": "Exclusive renovated 3-bedroom flat with terrace and parking 5 min from Fenals beach",
+    "fr": "Appartement exclusif rénové 3 chambres avec terrasse et parking à 5 min de la plage de Fenals"
+  },
+  "price": 385000,
+  "location": {
+    "es": "Calle de Santiago de Cuba, Santa Clotilde, Lloret de Mar",
+    "ca": "Carrer de Santiago de Cuba, Santa Clotilde, Lloret de Mar",
+    "en": "Calle de Santiago de Cuba, Santa Clotilde, Lloret de Mar",
+    "fr": "Calle de Santiago de Cuba, Santa Clotilde, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.7018, "lng": 2.8388 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "builtArea": 117,
+  "plotArea": 0,
+  "description": {
+    "es": "Descubre esta magnífica vivienda situada en una de las zonas más demandadas de Lloret de Mar, a tan solo 5 minutos caminando de la playa de Fenals.\n\nEste elegante piso, completamente reformado, ofrece 117 m² construidos y destaca por su amplitud, luminosidad y excelente distribución. Dispone de 3 dormitorios, 2 baños, uno de ellos con un exclusivo Sauna, perfecto para disfrutar de momentos de relax y bienestar en casa.\n\nEl amplio salón, lleno de luz natural gracias a su doble orientación, se convierte en el corazón de la vivienda, con acceso a una agradable terraza ideal para desayunos al sol, cenas al aire libre o momentos de descanso. La cocina, funcional y cómoda, completa un espacio pensado para el confort diario.\n\nLa vivienda cuenta con acabados de alta calidad, incluyendo calefacción por suelo radiante y aire acondicionado, que garantizan una temperatura perfecta durante todo el año.\n\nAdemás, incluye una amplia plaza de aparcamiento aportando máxima comodidad y fácil acceso.\n\nUbicación inmejorable, rodeada de todos los servicios: supermercados, restaurantes, colegios y transporte público, lo que la convierte en una opción ideal tanto como residencia habitual, segunda vivienda o inversión.\n\nUna propiedad lista para entrar a vivir, cerca del mar y con todas las comodidades.",
+    "ca": "Descobreix aquesta magnífica vivenda situada en una de les zones més demandades de Lloret de Mar, a només 5 minuts caminant de la platja de Fenals.\n\nAquest elegant pis, completament reformat, ofereix 117 m² construïts i destaca per la seva amplitud, lluminositat i excel·lent distribució. Disposa de 3 dormitoris, 2 banys, un d'ells amb un exclusiu Sauna, perfecte per gaudir de moments de relax i benestar a casa.\n\nL'ample saló, ple de llum natural gràcies a la seva doble orientació, es converteix en el cor de la vivenda, amb accés a una agradable terrassa ideal per esmorzar al sol, sopars a l'aire lliure o moments de descans. La cuina, funcional i còmoda, completa un espai pensat per al confort diari.\n\nLa vivenda compta amb acabats d'alta qualitat, incloent calefacció per sòl radiant i aire condicionat, que garanteixen una temperatura perfecta durant tot l'any.\n\nA més, inclou una àmplia plaça d'aparcament aportant màxima comoditat i fàcil accés.\n\nUbicació inmillorable, envoltada de tots els serveis: supermercats, restaurants, col·legis i transport públic, cosa que la converteix en una opció ideal tant com residència habitual, segona vivenda o inversió.\n\nUna propietat a punt per entrar a viure, a prop del mar i amb totes les comoditats.",
+    "en": "Discover this magnificent home located in one of the most sought-after areas of Lloret de Mar, just a 5-minute walk from Fenals beach.\n\nThis elegant, fully renovated flat offers 117 m² built and stands out for its spaciousness, brightness and excellent layout. It has 3 bedrooms and 2 bathrooms, one of them with an exclusive sauna, perfect for enjoying moments of relaxation and wellbeing at home.\n\nThe large living room, filled with natural light thanks to its dual aspect, becomes the heart of the home, with access to a pleasant terrace ideal for sunny breakfasts, outdoor dinners or moments of rest. The functional, comfortable kitchen completes a space designed for everyday comfort.\n\nThe property features high-quality finishes, including underfloor heating and air conditioning, ensuring a perfect temperature all year round.\n\nIt also includes a spacious parking space, offering maximum convenience and easy access.\n\nAn unbeatable location surrounded by all services: supermarkets, restaurants, schools and public transport, making it an ideal option as a main residence, second home or investment.\n\nA property ready to move into, close to the sea and with every comfort.",
+    "fr": "Découvrez ce magnifique logement situé dans l'un des quartiers les plus recherchés de Lloret de Mar, à seulement 5 minutes à pied de la plage de Fenals.\n\nCet élégant appartement entièrement rénové offre 117 m² construits et se distingue par son espace, sa luminosité et son excellente distribution. Il comprend 3 chambres et 2 salles de bains, dont l'une avec un sauna exclusif, parfait pour profiter de moments de détente et de bien-être à la maison.\n\nLe vaste salon, baigné de lumière naturelle grâce à sa double orientation, devient le cœur du logement, avec accès à une agréable terrasse idéale pour les petits-déjeuners au soleil, les dîners en plein air ou les moments de repos. La cuisine, fonctionnelle et confortable, complète un espace pensé pour le confort quotidien.\n\nLe logement dispose de finitions de haute qualité, notamment un chauffage au sol et la climatisation, garantissant une température parfaite toute l'année.\n\nIl inclut également une grande place de parking, offrant un maximum de confort et un accès facile.\n\nEmplacement imbattable, entouré de tous les services : supermarchés, restaurants, écoles et transports publics, ce qui en fait une option idéale comme résidence principale, résidence secondaire ou investissement.\n\nUne propriété prête à emménager, près de la mer et avec tout le confort nécessaire."
+  },
+  "features": [
+    { "es": "2ª planta exterior con ascensor", "ca": "2a planta exterior amb ascensor", "en": "2nd floor exterior with elevator", "fr": "2e étage extérieur avec ascenseur" },
+    { "es": "Completamente reformado", "ca": "Completament reformat", "en": "Fully renovated", "fr": "Entièrement rénové" },
+    { "es": "3 dormitorios y 2 baños", "ca": "3 dormitoris i 2 banys", "en": "3 bedrooms and 2 bathrooms", "fr": "3 chambres et 2 salles de bains" },
+    { "es": "Baño con sauna exclusivo", "ca": "Bany amb sauna exclusiu", "en": "Bathroom with exclusive sauna", "fr": "Salle de bains avec sauna exclusif" },
+    { "es": "Terraza y balcón", "ca": "Terrassa i balcó", "en": "Terrace and balcony", "fr": "Terrasse et balcon" },
+    { "es": "Doble orientación", "ca": "Doble orientació", "en": "Dual aspect", "fr": "Double orientation" },
+    { "es": "Orientación sur", "ca": "Orientació sud", "en": "South-facing", "fr": "Orientation sud" },
+    { "es": "Calefacción por suelo radiante", "ca": "Calefacció per sòl radiant", "en": "Underfloor heating", "fr": "Chauffage au sol" },
+    { "es": "Calefacción individual: Bomba de frío/calor", "ca": "Calefacció individual: Bomba de fred/calor", "en": "Individual heating: Heat pump", "fr": "Chauffage individuel : Pompe à chaleur" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Plaza de garaje incluida en el precio", "ca": "Plaça de garatge inclosa en el preu", "en": "Parking space included in price", "fr": "Place de parking incluse dans le prix" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Piscina comunitaria", "ca": "Piscina comunitària", "en": "Communal pool", "fr": "Piscine commune" },
+    { "es": "A 5 minutos de la playa de Fenals", "ca": "A 5 minuts de la platja de Fenals", "en": "5 minutes from Fenals beach", "fr": "À 5 minutes de la plage de Fenals" },
+    { "es": "Listo para entrar a vivir", "ca": "A punt per entrar a viure", "en": "Ready to move in", "fr": "Prêt à emménager" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Santa Clotilde",
+      "ca": "Santa Clotilde",
+      "en": "Santa Clotilde",
+      "fr": "Santa Clotilde"
+    },
+    "floor": {
+      "es": "2ª planta exterior",
+      "ca": "2a planta exterior",
+      "en": "2nd floor exterior",
+      "fr": "2e étage extérieur"
+    },
+    "condition": {
+      "es": "Reformado / buen estado",
+      "ca": "Reformat / bon estat",
+      "en": "Renovated / good condition",
+      "fr": "Rénové / bon état"
+    },
+    "orientation": {
+      "es": "Sur",
+      "ca": "Sud",
+      "en": "South",
+      "fr": "Sud"
+    },
+    "heating": {
+      "es": "Calefacción individual: Bomba de frío/calor",
+      "ca": "Calefacció individual: Bomba de fred/calor",
+      "en": "Individual heating: Heat pump",
+      "fr": "Chauffage individuel : Pompe à chaleur"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Fenals",
+        "ca": "Platja de Fenals",
+        "en": "Fenals Beach",
+        "fr": "Plage de Fenals"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Jardín Botánico Santa Clotilde",
+        "ca": "Jardí Botànic Santa Clotilde",
+        "en": "Santa Clotilde Botanical Garden",
+        "fr": "Jardin botanique Santa Clotilde"
+      },
+      "distance": "3 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "10 min"
+    },
+    {
+      "name": {
+        "es": "Supermercados y restaurantes",
+        "ca": "Supermercats i restaurants",
+        "en": "Supermarkets and restaurants",
+        "fr": "Supermarchés et restaurants"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Colegios y transporte público",
+        "ca": "Col·legis i transport públic",
+        "en": "Schools and public transport",
+        "fr": "Écoles et transports publics"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "C",
+  "featured": true,
+  "exclusive": true,
+  "luxury": true,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": false,
+  "garden": false,
+  "parking": true,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Piso reformado 3 hab. con garaje Santa Clotilde | 385.000 € | Golden Home",
+      "ca": "Pis reformat 3 hab. amb garatge Santa Clotilde | 385.000 € | Golden Home",
+      "en": "Renovated 3-bed flat with garage Santa Clotilde | €385,000 | Golden Home",
+      "fr": "Appartement rénové 3 ch. avec garage Santa Clotilde | 385 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Piso reformado de 117 m² con 3 dormitorios, terraza, sauna y garaje incluido en Calle de Santiago de Cuba, Santa Clotilde. A 5 min de Fenals. 385.000 €. Golden Home.",
+      "ca": "Pis reformat de 117 m² amb 3 dormitoris, terrassa, sauna i garatge inclòs al Carrer de Santiago de Cuba, Santa Clotilde. A 5 min de Fenals. 385.000 €. Golden Home.",
+      "en": "Renovated 117 m² flat with 3 bedrooms, terrace, sauna and included garage on Calle de Santiago de Cuba, Santa Clotilde. 5 min from Fenals. €385,000. Golden Home.",
+      "fr": "Appartement rénové de 117 m² avec 3 chambres, terrasse, sauna et garage inclus au Calle de Santiago de Cuba, Santa Clotilde. À 5 min de Fenals. 385 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso lloret venta, piso reformado santa clotilde, piso 3 habitaciones fenals, garaje incluido lloret, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "pis lloret venda, pis reformat santa clotilde, pis 3 habitacions fenals, garatge inclòs lloret, immobiliaria lloret de mar, golden home lloret",
+      "en": "apartment lloret sale, renovated flat santa clotilde, 3 bedroom fenals, parking included lloret, real estate lloret de mar, golden home lloret",
+      "fr": "appartement lloret vente, appartement rénové santa clotilde, 3 chambres fenals, parking inclus lloret, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}

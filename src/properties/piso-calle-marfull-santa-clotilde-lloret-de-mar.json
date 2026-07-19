@@ -1,0 +1,164 @@
+{
+  "id": "piso-calle-marfull-santa-clotilde-lloret-de-mar",
+  "reference": "GH-LLORET-MRF-001",
+  "slug": "piso-calle-marfull-santa-clotilde-lloret-de-mar",
+  "title": {
+    "es": "Bajo reformado de alto standing a 1 minuto de la playa – Fenals",
+    "ca": "Baix reformat d'alt standing a 1 minut de la platja – Fenals",
+    "en": "High-end renovated ground floor 1 minute from the beach – Fenals",
+    "fr": "Rez-de-chaussée rénové haut standing à 1 minute de la plage – Fenals"
+  },
+  "price": 255000,
+  "location": {
+    "es": "Calle del Marfull, Santa Clotilde, Lloret de Mar",
+    "ca": "Carrer del Marfull, Santa Clotilde, Lloret de Mar",
+    "en": "Calle del Marfull, Santa Clotilde, Lloret de Mar",
+    "fr": "Calle del Marfull, Santa Clotilde, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.7031, "lng": 2.8412 },
+  "type": "apartment",
+  "status": "sale",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "builtArea": 100,
+  "plotArea": 0,
+  "description": {
+    "es": "Espectacular bajo de 100 m² situado en una de las zonas más exclusivas de Fenals, a tan solo 1 minuto caminando de la playa. La vivienda ha sido completamente reformada con materiales de alta calidad y un diseño moderno y elegante, lista para entrar a vivir.\n\nDispone de 2 amplias habitaciones, salón-comedor con acceso directo al exterior, cocina moderna totalmente equipada y acabados premium en toda la vivienda.\n\nUno de sus grandes atractivos es su fantástica terraza privada de 22 m², perfecta para disfrutar del clima mediterráneo durante todo el año.\n\nUbicación inmejorable, cerca de todos los servicios, restaurantes, supermercados y zonas verdes, en un entorno tranquilo y privilegiado.\n\nCaracterísticas principales:\n• 100 m² construidos\n• 2 habitaciones\n• Terraza privada de 22 m²\n• Reformado con materiales de alta gama\n• A 1 minuto de la playa\n• Zona Fenals / Santa Clotilde\n• Listo para entrar a vivir\n\nUna oportunidad única para vivir o invertir junto al mar.",
+    "ca": "Espectacular baix de 100 m² situat en una de les zones més exclusives de Fenals, a només 1 minut caminant de la platja. La vivenda ha estat completament reformada amb materials d'alta qualitat i un disseny modern i elegant, a punt per entrar a viure.\n\nDisposa de 2 àmplies habitacions, saló-menjador amb accés directe a l'exterior, cuina moderna totalment equipada i acabats premium a tota la vivenda.\n\nUn dels seus grans atractius és la seva fantàstica terrassa privada de 22 m², perfecta per gaudir del clima mediterrani durant tot l'any.\n\nUbicació inmillorable, a prop de tots els serveis, restaurants, supermercats i zones verdes, en un entorn tranquil i privilegiat.\n\nCaracterístiques principals:\n• 100 m² construïts\n• 2 habitacions\n• Terrassa privada de 22 m²\n• Reformat amb materials d'alta gamma\n• A 1 minut de la platja\n• Zona Fenals / Santa Clotilde\n• A punt per entrar a viure\n\nUna oportunitat única per viure o invertir al costat del mar.",
+    "en": "Spectacular 100 m² ground-floor home located in one of the most exclusive areas of Fenals, just a 1-minute walk from the beach. The property has been completely renovated with high-quality materials and a modern, elegant design, ready to move in.\n\nIt has 2 spacious bedrooms, a living-dining room with direct outdoor access, a fully equipped modern kitchen and premium finishes throughout.\n\nOne of its main attractions is its fantastic 22 m² private terrace, perfect for enjoying the Mediterranean climate all year round.\n\nAn unbeatable location close to all services, restaurants, supermarkets and green areas, in a quiet and privileged setting.\n\nMain features:\n• 100 m² built\n• 2 bedrooms\n• 22 m² private terrace\n• Renovated with high-end materials\n• 1 minute from the beach\n• Fenals / Santa Clotilde area\n• Ready to move in\n\nA unique opportunity to live or invest by the sea.",
+    "fr": "Spectaculaire rez-de-chaussée de 100 m² situé dans l'un des quartiers les plus exclusifs de Fenals, à seulement 1 minute à pied de la plage. Le logement a été entièrement rénové avec des matériaux de haute qualité et un design moderne et élégant, prêt à emménager.\n\nIl comprend 2 chambres spacieuses, un salon-salle à manger avec accès direct à l'extérieur, une cuisine moderne entièrement équipée et des finitions premium dans tout le logement.\n\nL'un de ses grands attraits est sa fantastique terrasse privée de 22 m², parfaite pour profiter du climat méditerranéen toute l'année.\n\nEmplacement imbattable, proche de tous les services, restaurants, supermarchés et espaces verts, dans un environnement calme et privilégié.\n\nCaractéristiques principales :\n• 100 m² construits\n• 2 chambres\n• Terrasse privée de 22 m²\n• Rénové avec des matériaux haut de gamme\n• À 1 minute de la plage\n• Zone Fenals / Santa Clotilde\n• Prêt à emménager\n\nUne opportunité unique pour vivre ou investir au bord de la mer."
+  },
+  "features": [
+    { "es": "Bajo exterior con ascensor", "ca": "Baix exterior amb ascensor", "en": "Ground floor exterior with elevator", "fr": "Rez-de-chaussée extérieur avec ascenseur" },
+    { "es": "Reformado de alto standing", "ca": "Reformat d'alt standing", "en": "High-end renovation", "fr": "Rénovation haut standing" },
+    { "es": "Terraza privada de 22 m²", "ca": "Terrassa privada de 22 m²", "en": "22 m² private terrace", "fr": "Terrasse privée de 22 m²" },
+    { "es": "Terraza y balcón", "ca": "Terrassa i balcó", "en": "Terrace and balcony", "fr": "Terrasse et balcon" },
+    { "es": "Cocina moderna totalmente equipada", "ca": "Cuina moderna totalment equipada", "en": "Fully equipped modern kitchen", "fr": "Cuisine moderne entièrement équipée" },
+    { "es": "Acabados premium", "ca": "Acabats premium", "en": "Premium finishes", "fr": "Finitions premium" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Calefacción individual: Bomba de frío/calor", "ca": "Calefacció individual: Bomba de fred/calor", "en": "Individual heating: Heat pump", "fr": "Chauffage individuel : Pompe à chaleur" },
+    { "es": "Aire acondicionado", "ca": "Aire condicionat", "en": "Air conditioning", "fr": "Climatisation" },
+    { "es": "Piscina comunitaria", "ca": "Piscina comunitària", "en": "Communal pool", "fr": "Piscine commune" },
+    { "es": "Jardín comunitario", "ca": "Jardí comunitari", "en": "Communal garden", "fr": "Jardin commun" },
+    { "es": "A 1 minuto de la playa", "ca": "A 1 minut de la platja", "en": "1 minute from the beach", "fr": "À 1 minute de la plage" },
+    { "es": "Listo para entrar a vivir", "ca": "A punt per entrar a viure", "en": "Ready to move in", "fr": "Prêt à emménager" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Santa Clotilde",
+      "ca": "Santa Clotilde",
+      "en": "Santa Clotilde",
+      "fr": "Santa Clotilde"
+    },
+    "floor": {
+      "es": "Bajo exterior",
+      "ca": "Baix exterior",
+      "en": "Ground floor exterior",
+      "fr": "Rez-de-chaussée extérieur"
+    },
+    "condition": {
+      "es": "Reformado / buen estado",
+      "ca": "Reformat / bon estat",
+      "en": "Renovated / good condition",
+      "fr": "Rénové / bon état"
+    },
+    "heating": {
+      "es": "Calefacción individual: Bomba de frío/calor",
+      "ca": "Calefacció individual: Bomba de fred/calor",
+      "en": "Individual heating: Heat pump",
+      "fr": "Chauffage individuel : Pompe à chaleur"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Fenals",
+        "ca": "Platja de Fenals",
+        "en": "Fenals Beach",
+        "fr": "Plage de Fenals"
+      },
+      "distance": "1 min"
+    },
+    {
+      "name": {
+        "es": "Jardín Botánico Santa Clotilde",
+        "ca": "Jardí Botànic Santa Clotilde",
+        "en": "Santa Clotilde Botanical Garden",
+        "fr": "Jardin botanique Santa Clotilde"
+      },
+      "distance": "5 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "10 min"
+    },
+    {
+      "name": {
+        "es": "Restaurantes y supermercados",
+        "ca": "Restaurants i supermercats",
+        "en": "Restaurants and supermarkets",
+        "fr": "Restaurants et supermarchés"
+      },
+      "distance": "2 min"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "C",
+  "featured": true,
+  "exclusive": true,
+  "luxury": true,
+  "newConstruction": false,
+  "pool": true,
+  "seaViews": false,
+  "garden": true,
+  "parking": false,
+  "elevator": true,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Bajo reformado 2 hab. Santa Clotilde, Lloret | 255.000 € | Golden Home",
+      "ca": "Baix reformat 2 hab. Santa Clotilde, Lloret | 255.000 € | Golden Home",
+      "en": "Renovated 2-bed ground floor Santa Clotilde, Lloret | €255,000 | Golden Home",
+      "fr": "Rez-de-chaussée rénové 2 ch. Santa Clotilde, Lloret | 255 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Bajo reformado de 100 m² con terraza de 22 m² en Calle del Marfull, Santa Clotilde, Lloret de Mar. A 1 min de la playa. 255.000 €. Golden Home.",
+      "ca": "Baix reformat de 100 m² amb terrassa de 22 m² al Carrer del Marfull, Santa Clotilde, Lloret de Mar. A 1 min de la platja. 255.000 €. Golden Home.",
+      "en": "Renovated 100 m² ground floor with 22 m² terrace on Calle del Marfull, Santa Clotilde, Lloret de Mar. 1 min from beach. €255,000. Golden Home.",
+      "fr": "Rez-de-chaussée rénové de 100 m² avec terrasse de 22 m² au Calle del Marfull, Santa Clotilde, Lloret de Mar. À 1 min de la plage. 255 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "piso lloret venta, bajo reformado fenals, piso santa clotilde lloret, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "pis lloret venda, baix reformat fenals, pis santa clotilde lloret, immobiliaria lloret de mar, golden home lloret",
+      "en": "apartment lloret sale, renovated ground floor fenals, santa clotilde flat lloret, real estate lloret de mar, golden home lloret",
+      "fr": "appartement lloret vente, rez-de-chaussée rénové fenals, appartement santa clotilde lloret, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}
