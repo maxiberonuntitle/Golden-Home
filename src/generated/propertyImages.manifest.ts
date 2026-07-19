@@ -63,6 +63,21 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/casa-calle-nicaragua-lloret-residencial-lloret-de-mar/14.png",
     "/properties/casa-calle-nicaragua-lloret-residencial-lloret-de-mar/15.png"
   ],
+  "chalet-calle-ramon-llull-can-sabata-lloret-de-mar": [
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/01.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/02.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/03.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/04.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/05.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/06.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/07.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/08.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/09.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/10.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/11.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/12.png",
+    "/properties/chalet-calle-ramon-llull-can-sabata-lloret-de-mar/13.png"
+  ],
   "duplex-calle-selva-els-pavos-blanes": [
     "/properties/duplex-calle-selva-els-pavos-blanes/01.png",
     "/properties/duplex-calle-selva-els-pavos-blanes/02.png",
@@ -101,6 +116,18 @@ export const propertyImagesManifest: Record<string, readonly string[]> = {
     "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/09.png",
     "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/10.png",
     "/properties/piso-avenida-vila-de-blanes-fenals-lloret-de-mar/11.png"
+  ],
+  "piso-calle-riu-de-la-plata-fenals-lloret-de-mar": [
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/01.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/02.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/03.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/04.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/05.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/06.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/07.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/08.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/09.png",
+    "/properties/piso-calle-riu-de-la-plata-fenals-lloret-de-mar/10.png"
   ],
   "piso-calle-vilar-centre-blanes": [
     "/properties/piso-calle-vilar-centre-blanes/01.png",

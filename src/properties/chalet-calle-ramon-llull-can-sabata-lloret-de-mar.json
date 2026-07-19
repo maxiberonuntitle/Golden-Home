@@ -1,0 +1,165 @@
+{
+  "id": "chalet-calle-ramon-llull-can-sabata-lloret-de-mar",
+  "reference": "GH-LLORET-RLL-001",
+  "slug": "chalet-calle-ramon-llull-can-sabata-lloret-de-mar",
+  "title": {
+    "es": "¡Descubre tu nuevo hogar en Lloret de Mar!",
+    "ca": "Descobreix la teva nova llar a Lloret de Mar!",
+    "en": "Discover your new home in Lloret de Mar!",
+    "fr": "Découvrez votre nouvelle maison à Lloret de Mar !"
+  },
+  "price": 480000,
+  "location": {
+    "es": "Calle Ramon Llull, Can Sabata, Lloret de Mar",
+    "ca": "Carrer Ramon Llull, Can Sabata, Lloret de Mar",
+    "en": "Calle Ramon Llull, Can Sabata, Lloret de Mar",
+    "fr": "Calle Ramon Llull, Can Sabata, Lloret de Mar"
+  },
+  "province": "Girona",
+  "city": "Lloret de Mar",
+  "coordinates": { "lat": 41.701, "lng": 2.8452 },
+  "type": "townhouse",
+  "status": "sale",
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "builtArea": 250,
+  "plotArea": 0,
+  "description": {
+    "es": "Este encantador chalet pareado, situado en un barrio tranquilo y seguro, te ofrece la combinación perfecta de comodidad y estilo. Esta propiedad amueblada cuenta con cuatro dormitorios y dos baños, ideal para familias que buscan espacio y funcionalidad.\n\nLa moderna cocina en el segundo piso se abre a un amplio balcón, perfecto para disfrutar de tus desayunos al sol. El salón luminoso invita a relajarse, mientras que el jardín privado de 60 m² con zona de césped, barbacoa y espacio de descanso se convierte en el lugar ideal para reuniones al aire libre.\n\nEl diseño de la casa está pensado para maximizar el confort: desde el garaje con una habitación adicional o estudio, hasta la espectacular terraza en el cuarto piso, cada rincón está diseñado para tu disfrute.\n\nAdemás, la propiedad cuenta con aire acondicionado en dos dormitorios, calefacción de gas natural y armarios empotrados que optimizan el espacio. Su orientación sur asegura luz natural durante todo el día, mientras que su ubicación a solo 6 minutos a pie de la playa te permite disfrutar del mar siempre que lo desees.\n\n¡No pierdas la oportunidad de vivir en este refugio de paz cerca de todos los servicios esenciales!",
+    "ca": "Aquest encantador xalet parellat, situat en un barri tranquil i segur, t'ofereix la combinació perfecta de comoditat i estil. Aquesta propietat moblada compta amb quatre dormitoris i dos banys, ideal per a famílies que busquen espai i funcionalitat.\n\nLa moderna cuina al segon pis s'obre a un ampli balcó, perfecte per gaudir dels esmorzars al sol. El saló lluminós convida a relaxar-se, mentre que el jardí privat de 60 m² amb zona de gespa, barbacoa i espai de descans es converteix en el lloc ideal per a reunions a l'aire lliure.\n\nEl disseny de la casa està pensat per maximitzar el confort: des del garatge amb una habitació addicional o estudi, fins a l'espectacular terrassa al quart pis, cada racó està dissenyat per al teu gaudi.\n\nA més, la propietat compta amb aire condicionat en dos dormitoris, calefacció de gas natural i armaris encastats que optimitzen l'espai. La seva orientació sud assegura llum natural durant tot el dia, mentre que la seva ubicació a només 6 minuts a peu de la platja et permet gaudir del mar sempre que ho desitgis.\n\nNo perdis l'oportunitat de viure en aquest refugi de pau a prop de tots els serveis essencials!",
+    "en": "This charming semi-detached chalet, located in a quiet and safe neighbourhood, offers the perfect combination of comfort and style. This furnished property has four bedrooms and two bathrooms, ideal for families seeking space and functionality.\n\nThe modern kitchen on the second floor opens onto a large balcony, perfect for enjoying breakfast in the sun. The bright living room invites you to relax, while the private 60 m² garden with lawn area, barbecue and relaxation space becomes the ideal place for outdoor gatherings.\n\nThe house design is intended to maximise comfort: from the garage with an additional bedroom or study, to the spectacular terrace on the fourth floor, every corner is designed for your enjoyment.\n\nThe property also has air conditioning in two bedrooms, natural gas heating and fitted wardrobes that optimise space. Its south-facing orientation ensures natural light throughout the day, while its location just a 6-minute walk from the beach allows you to enjoy the sea whenever you wish.\n\nDon't miss the opportunity to live in this peaceful retreat close to all essential services!",
+    "fr": "Ce charmant chalet jumelé, situé dans un quartier calme et sûr, vous offre la combinaison parfaite de confort et de style. Cette propriété meublée comprend quatre chambres et deux salles de bain, idéale pour les familles recherchant espace et fonctionnalité.\n\nLa cuisine moderne au deuxième étage s'ouvre sur un grand balcon, parfait pour profiter de vos petits-déjeuners au soleil. Le salon lumineux invite à la détente, tandis que le jardin privé de 60 m² avec pelouse, barbecue et espace de détente devient l'endroit idéal pour les réunions en plein air.\n\nLa conception de la maison vise à maximiser le confort : du garage avec une chambre supplémentaire ou bureau, à la spectaculaire terrasse au quatrième étage, chaque recoin est pensé pour votre plaisir.\n\nLa propriété dispose également de la climatisation dans deux chambres, du chauffage au gaz naturel et de placards intégrés qui optimisent l'espace. Son orientation sud assure une lumière naturelle toute la journée, tandis que son emplacement à seulement 6 minutes à pied de la plage vous permet de profiter de la mer quand vous le souhaitez.\n\nNe manquez pas l'opportunité de vivre dans ce refuge paisible, proche de tous les services essentiels !"
+  },
+  "features": [
+    { "es": "Chalet pareado", "ca": "Xalet parellat", "en": "Semi-detached chalet", "fr": "Chalet jumelé" },
+    { "es": "4 plantas", "ca": "4 plantes", "en": "4 floors", "fr": "4 étages" },
+    { "es": "Construido en 1998", "ca": "Construït el 1998", "en": "Built in 1998", "fr": "Construit en 1998" },
+    { "es": "Amueblado", "ca": "Moblat", "en": "Furnished", "fr": "Meublé" },
+    { "es": "Jardín privado 60 m² con barbacoa", "ca": "Jardí privat 60 m² amb barbacoa", "en": "Private 60 m² garden with barbecue", "fr": "Jardin privé 60 m² avec barbecue" },
+    { "es": "Terraza en el cuarto piso", "ca": "Terrassa al quart pis", "en": "Terrace on the fourth floor", "fr": "Terrasse au quatrième étage" },
+    { "es": "Garaje con habitación adicional o estudio", "ca": "Garatge amb habitació addicional o estudi", "en": "Garage with extra bedroom or study", "fr": "Garage avec chambre supplémentaire ou bureau" },
+    { "es": "Plaza de garaje incluida en el precio", "ca": "Plaça d'aparcament inclosa en el preu", "en": "Garage space included in price", "fr": "Place de garage incluse dans le prix" },
+    { "es": "Cocina moderna con balcón", "ca": "Cuina moderna amb balcó", "en": "Modern kitchen with balcony", "fr": "Cuisine moderne avec balcon" },
+    { "es": "Orientación sur", "ca": "Orientació sud", "en": "South-facing", "fr": "Orientation sud" },
+    { "es": "Armarios empotrados", "ca": "Armaris encastats", "en": "Fitted wardrobes", "fr": "Placards intégrés" },
+    { "es": "Trastero", "ca": "Traster", "en": "Storage room", "fr": "Débarras" },
+    { "es": "Aire acondicionado en 2 dormitorios", "ca": "Aire condicionat en 2 dormitoris", "en": "Air conditioning in 2 bedrooms", "fr": "Climatisation dans 2 chambres" },
+    { "es": "Calefacción individual: Gas natural", "ca": "Calefacció individual: Gas natural", "en": "Individual heating: Natural gas", "fr": "Chauffage individuel : Gaz naturel" },
+    { "es": "Segunda mano / buen estado", "ca": "Segona mà / bon estat", "en": "Second hand / good condition", "fr": "Seconde main / bon état" }
+  ],
+  "listingDetails": {
+    "zone": {
+      "es": "Can Sabata",
+      "ca": "Can Sabata",
+      "en": "Can Sabata",
+      "fr": "Can Sabata"
+    },
+    "floor": {
+      "es": "4 plantas",
+      "ca": "4 plantes",
+      "en": "4 floors",
+      "fr": "4 étages"
+    },
+    "condition": {
+      "es": "Segunda mano / buen estado",
+      "ca": "Segona mà / bon estat",
+      "en": "Second hand / good condition",
+      "fr": "Seconde main / bon état"
+    },
+    "heating": {
+      "es": "Calefacción individual: Gas natural",
+      "ca": "Calefacció individual: Gas natural",
+      "en": "Individual heating: Natural gas",
+      "fr": "Chauffage individuel : Gaz naturel"
+    },
+    "advertiserNote": {
+      "es": "Si tienes alguna duda recuerda que puedes hablar con Golden Home por chat.",
+      "ca": "Si tens algun dubte recorda que pots parlar amb Golden Home per xat.",
+      "en": "If you have any questions, remember you can chat with Golden Home.",
+      "fr": "Si vous avez des questions, n'oubliez pas que vous pouvez contacter Golden Home par chat."
+    }
+  },
+  "nearbyPlaces": [
+    {
+      "name": {
+        "es": "Playa de Lloret de Mar",
+        "ca": "Platja de Lloret de Mar",
+        "en": "Lloret de Mar Beach",
+        "fr": "Plage de Lloret de Mar"
+      },
+      "distance": "6 min"
+    },
+    {
+      "name": {
+        "es": "Centro de Lloret de Mar",
+        "ca": "Centre de Lloret de Mar",
+        "en": "Lloret de Mar town centre",
+        "fr": "Centre de Lloret de Mar"
+      },
+      "distance": "8 min"
+    },
+    {
+      "name": {
+        "es": "Supermercados y comercios",
+        "ca": "Supermercats i comerços",
+        "en": "Supermarkets and shops",
+        "fr": "Supermarchés et commerces"
+      },
+      "distance": "3 min"
+    },
+    {
+      "name": {
+        "es": "Girona",
+        "ca": "Girona",
+        "en": "Girona",
+        "fr": "Girona"
+      },
+      "distance": "30 min"
+    },
+    {
+      "name": {
+        "es": "Aeropuerto Girona-Costa Brava",
+        "ca": "Aeroport Girona-Costa Brava",
+        "en": "Girona-Costa Brava Airport",
+        "fr": "Aéroport Girona-Costa Brava"
+      },
+      "distance": "35 km"
+    }
+  ],
+  "energyCertificate": "E",
+  "featured": true,
+  "exclusive": true,
+  "luxury": false,
+  "newConstruction": false,
+  "pool": false,
+  "seaViews": false,
+  "garden": true,
+  "parking": true,
+  "elevator": false,
+  "terrace": true,
+  "nearBeach": true,
+  "mountain": false,
+  "investment": true,
+  "views": 0,
+  "createdAt": "2026-07-19",
+  "seo": {
+    "title": {
+      "es": "Chalet pareado 4 hab. Can Sabata, Lloret | 480.000 € | Golden Home",
+      "ca": "Xalet parellat 4 hab. Can Sabata, Lloret | 480.000 € | Golden Home",
+      "en": "4-bed semi-detached chalet Can Sabata, Lloret | €480,000 | Golden Home",
+      "fr": "Chalet jumelé 4 ch. Can Sabata, Lloret | 480 000 € | Golden Home"
+    },
+    "description": {
+      "es": "Chalet pareado amueblado de 250 m² con 4 habitaciones, jardín y garaje en Calle Ramon Llull, Can Sabata, Lloret de Mar. A 6 min de la playa. 480.000 €. Golden Home.",
+      "ca": "Xalet parellat moblat de 250 m² amb 4 habitacions, jardí i garatge al Carrer Ramon Llull, Can Sabata, Lloret de Mar. A 6 min de la platja. 480.000 €. Golden Home.",
+      "en": "Furnished 250 m² semi-detached chalet with 4 bedrooms, garden and garage on Calle Ramon Llull, Can Sabata, Lloret de Mar. 6 min from beach. €480,000. Golden Home.",
+      "fr": "Chalet jumelé meublé de 250 m² avec 4 chambres, jardin et garage au Calle Ramon Llull, Can Sabata, Lloret de Mar. À 6 min de la plage. 480 000 €. Golden Home."
+    },
+    "keywords": {
+      "es": "chalet lloret venta, chalet pareado can sabata, casa 4 habitaciones lloret, inmobiliaria lloret de mar, golden home lloret",
+      "ca": "xalet lloret venda, xalet parellat can sabata, casa 4 habitacions lloret, immobiliaria lloret de mar, golden home lloret",
+      "en": "chalet lloret sale, semi-detached can sabata, 4 bedroom house lloret, real estate lloret de mar, golden home lloret",
+      "fr": "chalet lloret vente, chalet jumelé can sabata, maison 4 chambres lloret, immobilier lloret de mar, golden home lloret"
+    }
+  }
+}
