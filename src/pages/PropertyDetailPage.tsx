@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import {
@@ -7,13 +7,14 @@ import {
   Maximize,
   MapPin,
   Share2,
-  Copy,
   Download,
   ExternalLink,
   X,
   ZoomIn,
   MessageCircle,
   Leaf,
+  Copy,
+  Mail,
 } from 'lucide-react'
 import { SEO } from '@/components/seo/SEO'
 import { Container } from '@/components/ui/Container'
@@ -28,6 +29,7 @@ import { useLocalizedProperty } from '@/hooks/useLocalizedProperty'
 import { useAppStore } from '@/stores/useAppStore'
 import { getRelatedProperties } from '@/services/propertyService'
 import { formatArea, formatPrice, getLocalizedText } from '@/utils/format'
+import { copyTextToClipboard, getShareLinks, tryNativeShare } from '@/utils/share'
 import { COMPANY } from '@/utils/constants'
 import type { Language } from '@/types'
 
@@ -46,6 +48,8 @@ export function PropertyDetailPage() {
   const [lightboxIndex, setLightboxIndex] = useState(0)
   const [zoomLevel, setZoomLevel] = useState(1)
   const [copied, setCopied] = useState(false)
+  const [shareMenuOpen, setShareMenuOpen] = useState(false)
+  const shareMenuRef = useRef<HTMLDivElement>(null)
 
   const relatedProperties = useMemo(
     () => (slug ? getRelatedProperties(slug, 3) : []),
@@ -57,6 +61,27 @@ export function PropertyDetailPage() {
       addRecentlyViewed(property.id)
     }
   }, [property, addRecentlyViewed])
+
+  useEffect(() => {
+    if (!shareMenuOpen) return
+
+    const handlePointerDown = (event: MouseEvent) => {
+      if (shareMenuRef.current && !shareMenuRef.current.contains(event.target as Node)) {
+        setShareMenuOpen(false)
+      }
+    }
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setShareMenuOpen(false)
+    }
+
+    document.addEventListener('mousedown', handlePointerDown)
+    document.addEventListener('keydown', handleEscape)
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown)
+      document.removeEventListener('keydown', handleEscape)
+    }
+  }, [shareMenuOpen])
 
   if (!property || !localized) {
     return (
@@ -118,11 +143,35 @@ export function PropertyDetailPage() {
   const whatsappMessage = encodeURIComponent(
     `${localized.title} - ${formatPrice(property.price, currency, lang)} ${shareUrl}`,
   )
+  const shareContent = {
+    title: localized.title,
+    text: `${localized.title} - ${formatPrice(property.price, currency, lang)}`,
+    url: shareUrl,
+  }
+  const shareLinks = getShareLinks(shareContent)
 
-  const handleCopyLink = async () => {
-    await navigator.clipboard.writeText(shareUrl)
+  const markCopied = () => {
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
+  }
+
+  const handleShare = async () => {
+    // Native share is reliable on mobile; on desktop open our own options menu.
+    const preferNativeShare = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+    if (preferNativeShare) {
+      const nativeResult = await tryNativeShare(shareContent)
+      if (nativeResult === 'shared' || nativeResult === 'cancelled') return
+    }
+
+    setShareMenuOpen((open) => !open)
+  }
+
+  const handleCopyShareLink = async () => {
+    const ok = await copyTextToClipboard(shareUrl)
+    if (ok) {
+      markCopied()
+      setShareMenuOpen(false)
+    }
   }
 
   const characteristics = [
@@ -452,22 +501,98 @@ export function PropertyDetailPage() {
                     <Download className="w-4 h-4" />
                     {t('property.downloadPdf')}
                   </button>
-                  <button
-                    type="button"
-                    onClick={handleCopyLink}
-                    className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 dark:border-white/15 text-charcoal dark:text-warm-white text-sm hover:border-gold transition-colors"
-                  >
-                    <Copy className="w-4 h-4" />
-                    {copied ? '✓' : t('property.share')}
-                  </button>
+                  <div className="relative" ref={shareMenuRef}>
+                    <button
+                      type="button"
+                      onClick={handleShare}
+                      aria-expanded={shareMenuOpen}
+                      aria-haspopup="menu"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 dark:border-white/15 text-charcoal dark:text-warm-white text-sm hover:border-gold transition-colors"
+                    >
+                      <Share2 className="w-4 h-4" />
+                      {copied ? t('property.shareLinkCopied') : t('property.share')}
+                    </button>
+                    {shareMenuOpen && (
+                      <div
+                        role="menu"
+                        className="absolute left-0 bottom-full z-20 mb-2 w-56 overflow-hidden rounded-lg border border-charcoal/10 bg-warm-white shadow-xl dark:border-white/10 dark:bg-graphite"
+                      >
+                        <p className="px-3 py-2 text-[11px] uppercase tracking-[0.16em] text-charcoal/45 dark:text-warm-white/45">
+                          {t('property.shareVia')}
+                        </p>
+                        <a
+                          role="menuitem"
+                          href={shareLinks.whatsapp}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setShareMenuOpen(false)}
+                          className="flex items-center gap-2 px-3 py-2.5 text-sm text-charcoal hover:bg-cream dark:text-warm-white dark:hover:bg-white/5"
+                        >
+                          <MessageCircle className="w-4 h-4 text-gold" />
+                          WhatsApp
+                        </a>
+                        <a
+                          role="menuitem"
+                          href={shareLinks.email}
+                          onClick={() => setShareMenuOpen(false)}
+                          className="flex items-center gap-2 px-3 py-2.5 text-sm text-charcoal hover:bg-cream dark:text-warm-white dark:hover:bg-white/5"
+                        >
+                          <Mail className="w-4 h-4 text-gold" />
+                          {t('property.shareEmail')}
+                        </a>
+                        <a
+                          role="menuitem"
+                          href={shareLinks.telegram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setShareMenuOpen(false)}
+                          className="flex items-center gap-2 px-3 py-2.5 text-sm text-charcoal hover:bg-cream dark:text-warm-white dark:hover:bg-white/5"
+                        >
+                          <Share2 className="w-4 h-4 text-gold" />
+                          {t('property.shareTelegram')}
+                        </a>
+                        <a
+                          role="menuitem"
+                          href={shareLinks.facebook}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setShareMenuOpen(false)}
+                          className="flex items-center gap-2 px-3 py-2.5 text-sm text-charcoal hover:bg-cream dark:text-warm-white dark:hover:bg-white/5"
+                        >
+                          <Share2 className="w-4 h-4 text-gold" />
+                          {t('property.shareFacebook')}
+                        </a>
+                        <a
+                          role="menuitem"
+                          href={shareLinks.x}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setShareMenuOpen(false)}
+                          className="flex items-center gap-2 px-3 py-2.5 text-sm text-charcoal hover:bg-cream dark:text-warm-white dark:hover:bg-white/5"
+                        >
+                          <Share2 className="w-4 h-4 text-gold" />
+                          {t('property.shareX')}
+                        </a>
+                        <button
+                          type="button"
+                          role="menuitem"
+                          onClick={handleCopyShareLink}
+                          className="flex w-full items-center gap-2 border-t border-charcoal/10 px-3 py-2.5 text-left text-sm text-charcoal hover:bg-cream dark:border-white/10 dark:text-warm-white dark:hover:bg-white/5"
+                        >
+                          <Copy className="w-4 h-4 text-gold" />
+                          {t('property.copyLink')}
+                        </button>
+                      </div>
+                    )}
+                  </div>
                   <a
                     href={`${COMPANY.whatsapp}?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 border border-charcoal/15 dark:border-white/15 text-charcoal dark:text-warm-white text-sm hover:border-gold transition-colors"
                   >
-                    <Share2 className="w-4 h-4" />
-                    WhatsApp
+                    <MessageCircle className="w-4 h-4" />
+                    {t('common.whatsapp')}
                   </a>
                 </div>
               </ScrollReveal>

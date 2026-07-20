@@ -88,7 +88,7 @@ export function HomePage() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-4 text-xs font-medium uppercase tracking-[0.28em] text-gold/85 sm:text-sm"
+              className="mb-4 text-xs font-medium uppercase tracking-[0.28em] text-gold drop-shadow-[0_1px_8px_rgba(0,0,0,0.45)] sm:text-sm"
             >
               {getLocalizedText(COMPANY.tagline, lang)}
             </motion.p>
@@ -96,7 +96,7 @@ export function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.15 }}
-              className="mx-auto mb-4 font-serif text-2xl uppercase leading-tight tracking-[0.1em] text-warm-white/70 sm:text-3xl md:text-4xl lg:text-5xl"
+              className="mx-auto mb-4 font-serif text-2xl uppercase leading-tight tracking-[0.1em] text-warm-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)] sm:text-3xl md:text-4xl lg:text-5xl"
             >
               {t('hero.title')}
             </motion.h1>
@@ -104,7 +104,7 @@ export function HomePage() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="mx-auto max-w-xl text-sm leading-relaxed text-warm-white/60 sm:text-base md:max-w-2xl md:text-lg"
+              className="mx-auto max-w-xl text-sm leading-relaxed text-warm-white/90 drop-shadow-[0_1px_10px_rgba(0,0,0,0.5)] sm:text-base md:max-w-2xl md:text-lg"
             >
               {t('hero.subtitle')}
             </motion.p>
@@ -232,26 +232,51 @@ export function HomePage() {
         </Container>
       </section>
 
-      {/* Lifestyle Parallax */}
-      <section className="relative py-32 lg:py-40 overflow-hidden">
+      {/* Lifestyle */}
+      <section className="relative flex min-h-[68vh] items-center overflow-hidden py-28 lg:py-36">
         <div
           className="absolute inset-0 bg-cover bg-center will-change-transform"
           style={{
             backgroundImage:
               'url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80)',
-            transform: `translateY(${parallaxOffset}px)`,
+            transform: `translate3d(0, ${Math.min(parallaxOffset * 0.35, 80)}px, 0) scale(1.12)`,
           }}
+          aria-hidden
         />
-        <div className="absolute inset-0 bg-charcoal/60" />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/55 to-charcoal/80"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
+          aria-hidden
+        />
+
         <Container className="relative z-10">
           <ScrollReveal>
-            <div className="max-w-2xl">
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-warm-white mb-6">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="mb-5 text-xs font-medium uppercase tracking-[0.28em] text-gold sm:text-sm">
+                {t('home.lifestyleEyebrow')}
+              </p>
+              <h2 className="font-serif text-3xl leading-tight text-balance text-warm-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.35)] sm:text-4xl lg:text-5xl">
                 {t('home.lifestyleTitle')}
               </h2>
-              <p className="text-warm-white/80 text-lg leading-relaxed">
+              <div className="mx-auto my-7 h-px w-16 bg-gold/70" aria-hidden />
+              <p className="mx-auto max-w-2xl text-base leading-relaxed text-balance text-warm-white/85 sm:text-lg">
                 {t('home.lifestyleText')}
               </p>
+              <div className="mt-10">
+                <Link to={`/${lang}/properties`}>
+                  <Button variant="primary" size="lg">
+                    {t('home.lifestyleCta')}
+                    <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </ScrollReveal>
         </Container>

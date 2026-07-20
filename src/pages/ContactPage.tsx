@@ -8,6 +8,7 @@ import { Container } from '@/components/ui/Container'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Button } from '@/components/ui/Button'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
+import { sendContactMessage } from '@/services/contactService'
 import { COMPANY } from '@/utils/constants'
 import { getLocalizedText } from '@/utils/format'
 import type { Language } from '@/types'
@@ -17,6 +18,8 @@ interface ContactFormData {
   email: string
   phone: string
   message: string
+  /** Honeypot — debe quedar vacío */
+  website?: string
 }
 
 export function ContactPage() {
@@ -32,10 +35,10 @@ export function ContactPage() {
     formState: { errors, isSubmitting },
   } = useForm<ContactFormData>()
 
-  const onSubmit = async (_data: ContactFormData) => {
+  const onSubmit = async (data: ContactFormData) => {
     setError(false)
     try {
-      await new Promise((resolve) => setTimeout(resolve, 800))
+      await sendContactMessage(data)
       setSubmitted(true)
       reset()
     } catch {
@@ -112,12 +115,22 @@ export function ContactPage() {
                   {t('contact.form.success')}
                 </div>
               ) : (
-                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate>
                   {error && (
                     <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm">
                       {t('contact.form.error')}
                     </div>
                   )}
+
+                  {/* Honeypot anti-spam (oculto) */}
+                  <input
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    className="absolute -left-[9999px] h-0 w-0 opacity-0"
+                    {...register('website')}
+                  />
 
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-charcoal dark:text-warm-white mb-2">

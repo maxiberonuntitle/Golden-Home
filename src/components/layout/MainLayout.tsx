@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Header } from '@/components/layout/Header'
@@ -5,9 +6,14 @@ import { Footer } from '@/components/layout/Footer'
 import { FloatingButtons } from '@/components/layout/FloatingButtons'
 import { LegalModal } from '@/components/legal/LegalModal'
 import { CookieConsent } from '@/components/legal/CookieConsent'
+import { scrollToTop } from '@/utils/scroll'
 
 export function MainLayout() {
   const location = useLocation()
+
+  useLayoutEffect(() => {
+    scrollToTop(false)
+  }, [location.pathname])
 
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden bg-warm-white dark:bg-charcoal">
